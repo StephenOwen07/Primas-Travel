@@ -1,0 +1,19 @@
+/*************************************** 
+              Componenets                    
+/**************************************/
+
+
+/* button */
+
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+
+.button-danger {
+  background: #CB242D;
+}
+
+.button-danger:hover,
+.button-danger:focus {}

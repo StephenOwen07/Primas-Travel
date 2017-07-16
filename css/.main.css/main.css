@@ -1,7 +1,0 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-}

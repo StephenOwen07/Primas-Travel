@@ -1,196 +1,228 @@
-    /*  Base styles                    
-======================================= */
-    /* colors
-Red-button: #CB242D
-alternate-main: #434343
-nav a:hover: #73B5B7
-footer: #292826
-footer-font: #424240
+/*************************************** 
+        Base styles                    
+/**************************************/
+
+
+/*
+hero title #10DEBC
+alternate section bg 
+footer #252528
+section h2 #1C1D22
+red #c63940
 */
 
-    html {
-      box-sizing: border-box;
-    }
 
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
+/*
+https://dribbble.com/shots/2073113-Space-Exploration-Web-Freebie/attachments/371833
+*/
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: #fff;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-    }
+html {
+  box-sizing: border-box;
+}
 
-    h1 {
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-    p {
-      font-family: 'Roboto';
-      font-weight: 400;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background: #F1F2F6;
+  font-size: 16px;
+}
 
-    a {
-      color: inherit;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
+h1 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 3.5em;
+  font-weight: 900;
+  letter-spacing: 2px;
+  word-spacing: 15px;
+  text-transform: uppercase;
+}
 
-    header {
-      height: 60px;
-      width: 100%;
-    }
+h2 {
+  margin: 10px 0 80px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+}
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
+p {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
 
-    img {
-      height: auto;
-      max-width: 100%;
-    }
-    /*  Components                 
-======================================= */
-    /* button */
+a {
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
 
-    .button {
-      display: inline-block;
-      border-radius: 5px;
-      padding: 20px 20px;
-    }
+header {
+  height: 60px;
+  width: 100%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
 
-    .button-danger {
-      background: #CB242D;
-    }
+header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-    .button-danger:hover,
-    .button-danger:focus {}
-    /*  Header           
-======================================= */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-    header.home-header {
-      position: absolute;
-      color: #eee;
-    }
+img {
+  height: auto;
+  max-width: 100%;
+}
 
-    header:after {
-      content: '';
-      display: block;
-      clear: both;
-    }
 
-    .header-shadow {
-      margin-top: 0;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
-    }
+/*************************************** 
+            Header                    
+/**************************************/
 
-    .container-header {
-      margin: 0 auto;
-      width: 90%;
-    }
-    /* logo  */
+header.header-primary {
+  position: absolute;
+  color: #eee;
+}
 
-    .logo {
-      float: left;
-      margin-top: 4px;
-      padding: 5px 0;
-      color: #fff;
-      font-size: 2em;
-      text-align: center;
-    }
+.header-shadow {
+  margin-top: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
+}
 
-    .logo span {
-      font-weight: 300;
-    }
 
-    .logo a {
-      padding: 10px;
-      letter-spacing: 0;
-    }
-    /* nav  */
+/*  logo  */
 
-    nav ul {
-      float: right;
-      text-align: center;
-    }
+.logo {
+  float: left;
+  margin-top: 4px;
+  padding: 5px 0;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
 
-    nav li {
-      padding: 0 10px;
-      display: inline-block;
-      margin-left: 10px;
-      line-height: 60px;
-    }
+.logo a {
+  padding: 10px;
+  letter-spacing: 0;
+}
 
-    nav a {
-      position: relative;
-      padding: 15px;
-      font-size: 1em;
-      font-weight: 700;
-      text-transform: uppercase;
-      transition: 400ms;
-    }
+.logo span {
+  border: 2px solid #fff;
+  padding: 4px;
+  color: #10DEBC;
+  font-weight: 700;
+}
 
-    nav a:hover {
-      color: #CB242D
-    }
 
-    nav .nav-active {
-      color: #CB242D
-    }
+/* nav  */
 
-    nav a::after {
-      content: '';
-      position: absolute;
-      bottom: 3px;
-      left: 0;
-      width: 0%;
-      border-bottom: 2px solid #CB242D;
-      transition: 0.4s;
-    }
+nav ul {
+  float: right;
+  text-align: center;
+}
 
-    nav a:hover::after {
-      width: 100%;
-    }
-    /*  Hero              
-======================================= */
+nav li {
+  padding: 0 10px;
+  display: inline-block;
+  line-height: 60px;
+}
 
-    .home-hero {
-      height: 100vh;
-      padding: 250px 0;
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/slider-couple.jpeg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+nav a {
+  position: relative;
+  padding: 15px;
+  color: #fff;
+  /*rgba(184, 187, 196, 1)*/
+  font-size: 0.9em;
+  font-weight: 400;
+  transition: 400ms;
+}
 
-    .home-hero-container {
-      position: relative;
-      bottom: 50px;
-      width: 70%;
-      margin: 0 auto;
-      padding: 10px 0 30px;
-      color: #fff;
-      text-align: center;
-    }
+nav a:hover,
+nav a:focus,
+nav .nav-active {
+  color: #10DEBC
+}
 
-    .home-hero-container h1 {
-      margin: 0;
-      font-size: 3.5em;
-      word-spacing: 15px;
-    }
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #10DEBC;
+  transition: 0.4s;
+}
 
-    .home-hero-container h2 {
-      margin: 10px 0 80px;
-      font-size: 1.4em;
-      font-weight: 300;
-    }
+nav a:hover::after {
+  width: 100%;
+}
+
+
+/*************************************** 
+                 Hero                    
+/**************************************/
+
+.hero {
+  height: 100vh;
+  padding: 140px 0;
+  background: linear-gradient(rgba(37, 37, 40, 0.5), rgba(37, 37, 40, 0.7)), url(../img/slider-couple.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero .container {
+  /* position: relative; */
+  /* bottom: 100px; */
+  width: 100%;
+  padding: 10px 0 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  color: #10DEBC;
+}
+
+.hero h2 {
+  width: 80%;
+  margin: 20px auto 100px;
+  line-height: 30px;
+}
+
+
+/*************************************** 
+              Componenets                    
+/**************************************/
+
+
+/* button */
+
+.button {
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.button-primary {
+  border-color: white;
+  color: #10DEBC;
+}
+
+.button-primary:hover,
+.button-primary:focus {}
