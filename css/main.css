@@ -3,6 +3,9 @@
 /**************************************/
 
 
+/* https://alpha.wallhaven.cc/wallpaper/179391 */
+
+
 /*
 hero title #10DEBC
 alternate section bg 
@@ -29,29 +32,33 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #F1F2F6;
+  background: #E9EAEA;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
 
 h1 {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 3.5em;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 2px;
   word-spacing: 15px;
   text-transform: uppercase;
 }
 
 h2 {
-  margin: 10px 0 80px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
-  font-weight: 300;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 p {
-  font-family: 'Roboto';
   font-weight: 400;
+  font-size: 0.9em;
+  line-height: 2;
 }
 
 a {
@@ -61,16 +68,11 @@ a {
 }
 
 header {
-  height: 60px;
+  height: 70px;
   width: 100%;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-header:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+header:after {}
 
 ul {
   margin: 0;
@@ -78,14 +80,57 @@ ul {
   list-style: none;
 }
 
+section {
+  padding: 50px 0;
+  color: #444444;
+}
+
 img {
   height: auto;
   max-width: 100%;
 }
 
+footer {
+  padding: 30px 0 10px;
+  background: #252528;
+  color: #6C6E70;
+  font-size: 0.8em;
+}
+
+hr {
+  border: none;
+  margin-bottom: 20px;
+  height: 1px;
+  color: #6C6E70;
+  background: #6C6E70;
+}
+
 
 /*************************************** 
-            Header                    
+                Layout                   
+/**************************************/
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+
+/*************************************** 
+                Header                    
 /**************************************/
 
 header.header-primary {
@@ -102,14 +147,12 @@ header.header-primary {
 /*  logo  */
 
 .logo {
-  float: left;
   margin-top: 4px;
   padding: 5px 0;
   color: #fff;
   font-size: 1.2em;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
+  font-weight: 500;
+  line-height: 50px;
 }
 
 .logo a {
@@ -120,22 +163,17 @@ header.header-primary {
 .logo span {
   border: 2px solid #fff;
   padding: 4px;
-  color: #10DEBC;
+  color: #CB242D;
   font-weight: 700;
 }
 
 
 /* nav  */
 
-nav ul {
-  float: right;
-  text-align: center;
-}
-
 nav li {
   padding: 0 10px;
   display: inline-block;
-  line-height: 60px;
+  line-height: 70px;
 }
 
 nav a {
@@ -143,15 +181,16 @@ nav a {
   padding: 15px;
   color: #fff;
   /*rgba(184, 187, 196, 1)*/
-  font-size: 0.9em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 500;
+  -webkit-transition: 400ms;
   transition: 400ms;
 }
 
 nav a:hover,
 nav a:focus,
 nav .nav-active {
-  color: #10DEBC
+  color: #CB242D
 }
 
 nav a::after {
@@ -160,7 +199,8 @@ nav a::after {
   bottom: 3px;
   left: 0;
   width: 0%;
-  border-bottom: 2px solid #10DEBC;
+  border-bottom: 2px solid #CB242D;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -175,8 +215,9 @@ nav a:hover::after {
 
 .hero {
   height: 100vh;
-  padding: 140px 0;
-  background: linear-gradient(rgba(37, 37, 40, 0.5), rgba(37, 37, 40, 0.7)), url(../img/slider-couple.jpeg);
+  padding: 160px 0;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/slider-couple.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -188,18 +229,130 @@ nav a:hover::after {
   width: 100%;
   padding: 10px 0 30px;
   color: #fff;
-  text-align: center;
 }
 
 .hero h1 {
-  margin-bottom: 20px;
-  color: #10DEBC;
+  margin-bottom: 10px;
+  /* color: #CB242D; */
 }
 
 .hero h2 {
   width: 80%;
-  margin: 20px auto 100px;
+  margin: 10px auto 100px;
+  font-size: 1.4em;
+  font-weight: 300;
   line-height: 30px;
+  text-transform: none;
+}
+
+
+/*************************************** 
+              Sections                    
+/**************************************/
+
+.section-primary {
+  background: #fff;
+}
+
+
+/*  benefits */
+
+.benefits {
+  margin-top: 50px;
+}
+
+.benefits i {
+  font-size: 5em;
+}
+
+.benefits p {
+  font-size: 1em;
+}
+
+
+/*  notsure  */
+
+.notsure {
+  background: #CB242D;
+}
+
+
+/*  Testimonials  */
+
+.testimonials {
+  /* background: #CB242D; */
+}
+
+.card {
+  border-radius: 15px;
+  height: 450px;
+  background: #fff;
+  margin: 30px 30px;
+  padding: 40px 20px;
+}
+
+.card img {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.card hr {
+  width: 80%;
+  background: #ccc;
+}
+
+
+/*  featured  */
+
+.featured img {
+  height: 40px;
+  margin: 60px 65px 0;
+}
+
+
+/*************************************** 
+              Footer            
+/**************************************/
+
+footer p {
+  font-size: 1em;
+}
+
+footer strong {
+  text-transform: uppercase;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer ul {
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+footer ul a:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer .footer-nav {
+  margin-bottom: 40px;
+  font-size: 1em;
+}
+
+footer
+/*  social icons  */
+
+ul.footer-social {
+  font-size: 3em;
+}
+
+.footer-social li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 30px;
 }
 
 
@@ -212,17 +365,27 @@ nav a:hover::after {
 
 .button {
   display: inline-block;
-  border: 2px solid;
   border-radius: 5px;
   padding: 15px;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .button-primary {
-  border-color: white;
-  color: #10DEBC;
+  background: #CB242D;
+  color: #fff;
 }
 
-.button-primary:hover,
-.button-primary:focus {}
+.line {
+  background: #CB242D;
+  height: 2px;
+  width: 70px;
+  display: block;
+  margin: 40px auto;
+}
