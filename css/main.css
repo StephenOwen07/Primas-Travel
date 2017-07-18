@@ -85,11 +85,6 @@ section {
   color: #444444;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-}
-
 footer {
   padding: 30px 0 10px;
   background: #252528;
@@ -124,8 +119,54 @@ hr {
   clear: both;
 }
 
+.margin-auto {
+  margin: 0 auto;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
 .ta-center {
   text-align: center;
+}
+
+
+/*************************************** 
+              Componenets                    
+/**************************************/
+
+
+/* button */
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 1em;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.button-primary {
+  background: #CB242D;
+  color: #fff;
+}
+
+
+/*  underline  */
+
+.line {
+  background: #CB242D;
+  height: 2px;
+  width: 70px;
+  display: block;
+  margin: 40px auto;
 }
 
 
@@ -218,9 +259,9 @@ nav a:hover::after {
   padding: 160px 0;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/slider-couple.jpeg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container {
@@ -270,18 +311,25 @@ nav a:hover::after {
 }
 
 
-/*  notsure  */
+/*  About-home  */
 
-.notsure {
-  background: #CB242D;
+.about-home-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/plan.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-home-text {
+  padding: 0 30px 20px;
+}
+
+.about-home-img h2 {
+  color: transparent;
 }
 
 
 /*  Testimonials  */
-
-.testimonials {
-  /* background: #CB242D; */
-}
 
 .card {
   border-radius: 15px;
@@ -353,39 +401,4 @@ ul.footer-social {
   display: inline-block;
   padding: 0 10px;
   margin-bottom: 30px;
-}
-
-
-/*************************************** 
-              Componenets                    
-/**************************************/
-
-
-/* button */
-
-.button {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 15px;
-  font-size: 1em;
-  transition: all 0.2s ease-in-out;
-}
-
-.button:hover,
-.button:focus {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.button-primary {
-  background: #CB242D;
-  color: #fff;
-}
-
-.line {
-  background: #CB242D;
-  height: 2px;
-  width: 70px;
-  display: block;
-  margin: 40px auto;
 }
