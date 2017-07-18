@@ -48,16 +48,19 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 1.2em;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  font-weight: 500;
 }
 
 p {
   font-weight: 400;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 2;
 }
 
@@ -72,8 +75,6 @@ header {
   width: 100%;
 }
 
-header:after {}
-
 ul {
   margin: 0;
   padding: 0;
@@ -83,6 +84,12 @@ ul {
 section {
   padding: 50px 0;
   color: #444444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 footer {
@@ -170,13 +177,27 @@ hr {
 }
 
 
+/*  style  */
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-dark {
+  background: #252528;
+}
+
+.text-white {
+  color: #fff;
+}
+
+
 /*************************************** 
                 Header                    
 /**************************************/
 
 header.header-primary {
   position: absolute;
-  color: #eee;
 }
 
 .header-shadow {
@@ -265,11 +286,8 @@ nav a:hover::after {
 }
 
 .hero .container {
-  /* position: relative; */
-  /* bottom: 100px; */
   width: 100%;
   padding: 10px 0 30px;
-  color: #fff;
 }
 
 .hero h1 {
@@ -291,10 +309,6 @@ nav a:hover::after {
               Sections                    
 /**************************************/
 
-.section-primary {
-  background: #fff;
-}
-
 
 /*  benefits */
 
@@ -306,26 +320,19 @@ nav a:hover::after {
   font-size: 5em;
 }
 
-.benefits p {
-  font-size: 1em;
-}
-
 
 /*  About-home  */
 
-.about-home-img-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/plan.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .about-home-text {
-  padding: 0 30px 20px;
+  padding: 30px 50px;
 }
 
-.about-home-img h2 {
-  color: transparent;
+.about-home-text h3 {
+  margin-top: 0;
+}
+
+.about-home-text p {
+  margin-bottom: 50px;
 }
 
 
@@ -354,6 +361,7 @@ nav a:hover::after {
 /*  featured  */
 
 .featured img {
+  display: inline-block;
   height: 40px;
   margin: 60px 65px 0;
 }
