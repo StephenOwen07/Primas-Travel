@@ -1,23 +1,9 @@
 /*************************************** 
-        Base styles                    
+               Base styles                    
 /**************************************/
 
 
 /* https://alpha.wallhaven.cc/wallpaper/179391 */
-
-
-/*
-hero title #10DEBC
-alternate section bg 
-footer #252528
-section h2 #1C1D22
-red #c63940
-*/
-
-
-/*
-https://dribbble.com/shots/2073113-Space-Exploration-Web-Freebie/attachments/371833
-*/
 
 html {
   box-sizing: border-box;
@@ -58,6 +44,11 @@ h3 {
   font-weight: 500;
 }
 
+h4 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
 p {
   font-weight: 400;
   font-size: 1em;
@@ -68,11 +59,6 @@ a {
   color: #fff;
   letter-spacing: 1px;
   text-decoration: none;
-}
-
-header {
-  height: 70px;
-  width: 100%;
 }
 
 ul {
@@ -92,13 +78,6 @@ img {
   display: block;
 }
 
-footer {
-  padding: 30px 0 10px;
-  background: #252528;
-  color: #6C6E70;
-  font-size: 0.8em;
-}
-
 hr {
   border: none;
   margin-bottom: 20px;
@@ -109,8 +88,11 @@ hr {
 
 
 /*************************************** 
-                Layout                   
+              Componenets                    
 /**************************************/
+
+
+/*  layout  */
 
 .float-left {
   float: left;
@@ -130,6 +112,10 @@ hr {
   margin: 0 auto;
 }
 
+.bottom-buffer {
+  margin-bottom: 50px;
+}
+
 .padding-0 {
   padding: 0;
 }
@@ -138,10 +124,41 @@ hr {
   text-align: center;
 }
 
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
 
-/*************************************** 
-              Componenets                    
-/**************************************/
+
+/*  style  */
+
+.bg-white {
+  background: #fff;
+}
+
+.bg-dark {
+  background: #252528;
+}
+
+.bg-danger {
+  background: #CB242D;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-dark {
+  color: #262521;
+}
+
+.line {
+  background: #CB242D;
+  height: 2px;
+  width: 70px;
+  display: block;
+  margin: 40px auto;
+}
 
 
 /* button */
@@ -151,6 +168,7 @@ hr {
   border-radius: 3px;
   padding: 15px;
   font-size: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -166,41 +184,20 @@ hr {
 }
 
 
-/*  underline  */
-
-.line {
-  background: #CB242D;
-  height: 2px;
-  width: 70px;
-  display: block;
-  margin: 40px auto;
-}
-
-
-/*  style  */
-
-.bg-white {
-  background: #fff;
-}
-
-.bg-dark {
-  background: #252528;
-}
-
-.text-white {
-  color: #fff;
-}
-
-
 /*************************************** 
                 Header                    
 /**************************************/
+
+header {
+  height: 70px;
+  width: 100%;
+}
 
 header.header-primary {
   position: absolute;
 }
 
-.header-shadow {
+header.header-default {
   margin-top: 0;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
 }
@@ -229,6 +226,15 @@ header.header-primary {
   font-weight: 700;
 }
 
+.header-default .logo {
+  color: #CB242D;
+}
+
+.header-default .logo span {
+  border-color: #444;
+  color: #CB242D;
+}
+
 
 /* nav  */
 
@@ -249,10 +255,17 @@ nav a {
   transition: 400ms;
 }
 
+.header-default nav a {
+  color: #444;
+}
+
 nav a:hover,
-nav a:focus,
-nav .nav-active {
-  color: #CB242D
+nav a:focus {
+  color: #CB242D;
+}
+
+li a.nav-active {
+  color: #CB242D;
 }
 
 nav a::after {
@@ -278,8 +291,9 @@ nav a:hover::after {
 .hero {
   height: 100vh;
   padding: 160px 0;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/slider-couple.jpeg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3));
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,8 +337,15 @@ nav a:hover::after {
 
 /*  About-home  */
 
+.about-home img {
+  margin: 0;
+  height: 380px;
+  width: 100%;
+}
+
 .about-home-text {
   padding: 30px 50px;
+  /* min-height: 20px; */
 }
 
 .about-home-text h3 {
@@ -338,9 +359,13 @@ nav a:hover::after {
 
 /*  Testimonials  */
 
+.testimonials>div {
+  margin-bottom: 50px;
+}
+
 .card {
-  border-radius: 15px;
-  height: 450px;
+  border-radius: 5px;
+  height: 470px;
   background: #fff;
   margin: 30px 30px;
   padding: 40px 20px;
@@ -363,13 +388,71 @@ nav a:hover::after {
 .featured img {
   display: inline-block;
   height: 40px;
-  margin: 60px 65px 0;
+  margin: 90px 65px 0;
+}
+
+
+/* About page
+=====================================*/
+
+
+/*  banner  */
+
+.banner-about {
+  height: 80vh;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner.jpeg);
+  background-position: center -120px;
+  background-size: cover;
+}
+
+.banner-about h1 {
+  position: relative;
+  top: 160px;
+  color: #CB242D;
+}
+
+
+/*  stats  */
+
+.stats .row h2 {
+  margin: 0;
+  font-size: 2em;
+  padding: 0;
+}
+
+.stats .row p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.stats-col-1st {
+  margin-bottom: 50px;
+}
+
+
+/*  leadership  */
+
+.leader img {
+  display: inline-block;
+  border-radius: 50%;
+  max-width: 50%;
+  height: auto;
 }
 
 
 /*************************************** 
               Footer            
 /**************************************/
+
+footer {
+  padding: 30px 0 10px;
+  background: #252528;
+  color: #6C6E70;
+  font-size: 0.8em;
+}
 
 footer p {
   font-size: 1em;
@@ -390,6 +473,7 @@ footer ul {
 
 footer ul a:hover {
   color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -398,7 +482,7 @@ footer .footer-nav {
   font-size: 1em;
 }
 
-footer
+
 /*  social icons  */
 
 ul.footer-social {
