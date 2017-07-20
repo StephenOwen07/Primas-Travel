@@ -292,8 +292,9 @@ nav a:hover::after {
   height: 100vh;
   padding: 160px 0;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero.jpeg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero.jpeg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -400,8 +401,9 @@ nav a:hover::after {
 
 .banner-about {
   height: 80vh;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner.jpeg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
+  background-attachment: fixed;
   background-position: center -120px;
   background-size: cover;
 }
