@@ -68,7 +68,7 @@ ul {
 }
 
 section {
-  padding: 50px 0;
+  padding: 80px 0;
   color: #444444;
 }
 
@@ -160,6 +160,14 @@ hr {
   margin: 40px auto;
 }
 
+.summary {
+  display: block;
+  margin-top: 0;
+  padding-bottom: 30px;
+  padding-top: 0;
+  color: #848383;
+}
+
 
 /* button */
 
@@ -183,14 +191,55 @@ hr {
   color: #fff;
 }
 
+.button-submit {
+  width: 11em;
+  cursor: pointer;
+  transition: all 0.2s 0;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background: #a31d24;
+  transform: none;
+}
+
+
+/*  form  */
+
+input[type=submit] {
+  border: none;
+  margin: 0;
+}
+
+.form-control {
+  margin: 0;
+  padding: 0 10px;
+  height: 3.1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #F5F7F8;
+  color: #444444;
+  font-size: 1em;
+  line-height: 1.4;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
 
 /*************************************** 
                 Header                    
 /**************************************/
 
 header {
+  position: fixed;
   height: 70px;
   width: 100%;
+  z-index: 10;
 }
 
 header.header-primary {
@@ -384,12 +433,10 @@ nav a:hover::after {
 }
 
 
-/*  featured  */
+/*  social proof  */
 
-.featured img {
-  display: inline-block;
-  height: 40px;
-  margin: 90px 65px 0;
+.social-proof {
+  padding-top: 40px;
 }
 
 
