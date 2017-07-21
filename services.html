@@ -40,19 +40,70 @@
   <main>
 
     <!--  carousel  -->
+    <div class="carousel ta-center">
 
-    <div class="carousel ta-center ">
-      <div class="carousel-img carousel-img-1 ">
+      <div class="carousel-img carousel-img-1">
       </div>
-      <div class="carousel-img carousel-img-2 ">
+      <div class="carousel-img carousel-img-2">
       </div>
-      <div class="carousel-img carousel-img-3 ">
+      <div class="carousel-img carousel-img-3">
       </div>
-      <div class="carousel-img carousel-img-4 ">
+      <div class="carousel-img carousel-img-4">
       </div>
+
     </div>
 
-    <section style="height:500px; ">
+    <!--  Price plan  -->
+    <section class="price-plan">
+
+      <div class="container ta-center">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h1>Choose Your Plan</h1>
+            <p>There's a plan for every person, group or family. Feel free to contact us for more information.</p>
+          </div>
+        </div>
+        <div class="row col-centered">
+
+          <div class="col-md-4">
+            <div class="card">
+              <h3>Starter plan</h3>
+              <h4>$600</h4>
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 2 countries</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 5 activies</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 2 users</li>
+              </ul>
+              <a href="#" class="button button-secondary button-ghosted col-centered">Get Started Now</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h3>Family plan</h3>
+              <h4>$1500</h4>
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 5 countries</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 10 activies</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 4 users</li>
+              </ul>
+              <a href="#" class="button button-secondary button-ghosted col-centered">Get Started Now</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-primary text-white">
+              <h3>Premium plan</h3>
+              <h4>Custom</h4>
+              <ul>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 2 countries</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 5 activies</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> 2 users</li>
+              </ul>
+              <a href="#" class="button button-secondary button-primary col-centered">Get Started Now</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </section>
 
@@ -131,12 +182,13 @@
 
       $('.carousel').slick({
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 2000,
+        autoplaySpeed: 1000,
+        speed: 3000,
         fade: true,
         arrows: false,
         dots: true,
         dotsClass: 'slick-dots',
+        pauseOnHover: false
       });
 
     });
