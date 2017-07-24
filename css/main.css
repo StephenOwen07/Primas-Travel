@@ -827,3 +827,15 @@ label.inline {
   height: 150px;
   width: 100%;
 }
+
+
+/*  location  */
+
+.location h2 {
+  margin-bottom: 50px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
