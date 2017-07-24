@@ -68,7 +68,7 @@ ul {
 }
 
 section {
-  padding: 80px 0;
+  padding: 100px 0;
   color: #444444;
 }
 
@@ -106,10 +106,6 @@ hr {
   content: '';
   display: block;
   clear: both;
-}
-
-.margin-auto {
-  margin: 0 auto;
 }
 
 .bottom-buffer {
@@ -166,6 +162,16 @@ hr {
   padding-bottom: 30px;
   padding-top: 0;
   color: #848383;
+}
+
+.info-link {
+  color: #ed0914;
+}
+
+.info-link:hover,
+.info-link:focus {
+  color: #a0080d;
+  text-decoration: underline;
 }
 
 
@@ -261,13 +267,24 @@ input[type=submit] {
 }
 
 
+/*  card  */
+
+.card {
+  border-radius: 5px;
+  height: auto;
+  background: #fff;
+  margin: 30px 20px;
+  padding: 40px 30px;
+}
+
+
 /*************************************** 
               Header                    
 /**************************************/
 
 header {
   position: fixed;
-  height: 70px;
+  height: 60px;
   width: 100%;
   z-index: 10;
 }
@@ -290,7 +307,7 @@ header.header-default {
   color: #fff;
   font-size: 1.2em;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .logo a {
@@ -320,7 +337,7 @@ header.header-default {
 nav li {
   padding: 0 10px;
   display: inline-block;
-  line-height: 70px;
+  line-height: 60px;
 }
 
 nav a {
@@ -443,14 +460,6 @@ nav a:hover::after {
   margin-bottom: 50px;
 }
 
-.card {
-  border-radius: 5px;
-  height: auto;
-  background: #fff;
-  margin: 30px 20px;
-  padding: 40px 30px;
-}
-
 .card img {
   display: block;
   border-radius: 50%;
@@ -531,7 +540,7 @@ ul.footer-social {
 /*  banner  */
 
 .banner-about {
-  height: 80vh;
+  height: 90vh;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
   background-attachment: fixed;
@@ -541,7 +550,7 @@ ul.footer-social {
 
 .banner-about h1 {
   position: relative;
-  top: 160px;
+  top: 250px;
   color: #CB242D;
 }
 
@@ -590,9 +599,12 @@ ul.footer-social {
   overflow: hidden;
 }
 
+.carousel.ta-center {
+  margin: 0;
+}
+
 .carousel-img {
-  position: relative;
-  height: 80vh;
+  height: 90vh;
   background-repeat: no-reapeat;
   background-position: center;
   background-size: cover;
@@ -639,11 +651,11 @@ ul.footer-social {
 /*  Price plan  */
 
 .price-plan {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .price-plan .card {
-  margin: 30px 0;
+  margin: 30px 0 0;
 }
 
 .price-plan .card.card-primary {
@@ -683,4 +695,36 @@ ul.footer-social {
 .price-plan li i {
   margin-right: 10px;
   font-weight: 300;
+}
+
+.price-plan hr {
+  margin: 30px;
+}
+
+.price-plan .card p {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+
+/*  How it works  */
+
+.step-icon {
+  font-size: 12em;
+  padding-top: 50px;
+}
+
+
+/*  FAQ  */
+
+.faq-text-block {
+  margin-bottom: 50px;
+}
+
+.faq-text-block h3 {
+  font-size: 1.1em;
+}
+
+.faq-text-block p {
+  font-size: 0.9em;
 }
