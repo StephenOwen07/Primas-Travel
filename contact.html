@@ -52,11 +52,12 @@
     <!--  location  -->
     <section class="location bg-white ">
       <div class="container">
+        <i class="fa fa-chevron-up scroll-btn" aria-hidden="true"></i>
 
         <div class="row">
           <div class="col-md-3">
             <h4>General Contact</h4>
-            <p>Phone: +65 7461 6556<br> Fax: +65 9899 6269<br>Email: info@primastravel.com
+            <p>Phone: +65 7461 6556<br> Fax: +65 9899 6269<br>Email: info@primastravel.com<br>
             </p>
           </div>
           <div class="col-md-3">
@@ -198,6 +199,10 @@
     </div>
   </footer>
 
+  <!--  scripts  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin=" anonymous "></script>
+  <script src="js/main.js"></script>
   <script>
     // Google maps 
     function initMap() {
@@ -207,12 +212,12 @@
         center: {
           lat: 22.3964,
           lng: 114.1095
-        }
+        },
+        gestureHandling: 'cooperative'
       }
 
       // New map
       var map = new google.maps.Map(document.getElementById('map'), options);
-
 
       // array of markers
       var markers = [{
@@ -220,21 +225,21 @@
             lat: 1.3041,
             lng: 103.8319
           },
-          content: '<h3>Ion Orchard</h3>'
+          content: '<div class="info-window"><h3>Singapore Head Office</h3><p>Ion Orchard<br>2 Orchard Turn<br>Singapore<br> 238801</p></div>'
         },
         {
           coords: {
             lat: 22.2799,
             lng: 114.1737
           },
-          content: '<h3>Central Plaza</h3>'
+          content: '<div class="info-window"><h3>Hong Kong Office</h3><p>Central Plaza<br> 18 Harbour Rd<br> Wan Chai<br> Hong Kong</p></div>'
         },
         {
           coords: {
             lat: 25.0340,
             lng: 121.5645
           },
-          content: '<h3>Taipe 101</h3>'
+          content: '<div class="info-window"><h3>Taipei Office</h3><p>No.7, Sec. 5<br> Xinyi Rd<br> Xinyi Dist<br> Taipei City 110<br> Taiwan</p></div></p>'
         }
       ];
 
@@ -258,6 +263,8 @@
 
           marker.addListener('click', function () {
             infoWindow.open(map, marker);
+            map.setZoom(17);
+            map.setCenter(marker.getPosition());
           });
         }
       }
