@@ -246,21 +246,28 @@ hr {
   position: fixed;
   padding: 15px 13px;
   border-radius: 3px;
+  border: none;
   right: 2%;
   bottom: 10%;
-  background-color: black;
-  color: rgb(255, 255, 255);
-  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   font-size: 20px;
   text-align: center;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   cursor: pointer;
   z-index: 1001;
 }
 
 .scroll-btn:hover {
-  opacity: 1;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.scroll-btn:focus {
+  outline: none;
+}
+
+.scroll-btn__icon {
+  color: #ffffff;
 }
 
 
@@ -789,7 +796,7 @@ ul.footer-social {
 .banner-contact .container {
   position: absolute;
   left: 2%;
-  top: 33%;
+  top: 20%;
 }
 
 
@@ -833,10 +840,6 @@ ul.footer-social {
 .info-window h3 {
   color: #000;
   font-size: 1.1em;
-}
-
-.info-window {
-  color:
 }
 
 
