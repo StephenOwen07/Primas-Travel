@@ -37,43 +37,59 @@
 
   <main>
 
-    <!--  contact us  -->
-    <!-- <section class="bg-white contact-us">
-      <div class="container-fluid">
-
-        <div class="row ta-center">
-          <h1>Contact us</h1>
-          <span class="line"></span>
+    <section class="banner-contact text-white">
+      <div class="container">
+        <div class="row">
           <div class="col-md-4">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <h3>Address</h3>
-            <h4>Hong Kong Office</h4>
-            <p>Kwai Hei Street <br> Hong Kong <br> Hong Kong
-            </p>
+            <h1>Contact us</h1>
+            <p>We're friendly and available to chat. Reach out to us anytime and we'll happily answer your questions.</p>
 
           </div>
-          <div class="col-md-4">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <h3>Phone</h3>
-          </div>
-          <div class="col-md-4">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <h3>Email</h3>
-          </div>
-
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <!--  location  -->
+    <section class="location bg-white ">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3">
+            <h4>General Contact</h4>
+            <p>Phone: +65 7461 6556<br> Fax: +65 9899 6269<br>Email: info@primastravel.com
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h4>Singapore Head Office</h4>
+            <p>Ion Orchard<br>2 Orchard Turn<br>Singapore<br> 238801</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Hong Kong Office</h4>
+            <p>Central Plaza<br> 18 Harbour Rd<br> Wan Chai<br> Hong Kong</p>
+          </div>
+          <div class="col-md-3">
+            <h4>Taipei office</h4>
+            <p>
+              No.7, Sec. 5<br> Xinyi Rd<br> Xinyi Dist<br> Taipei City 110<br> Taiwan </p>
+          </div>
+        </div>
+
+        <div id="map">
+        </div>
+      </div>
+
+    </section>
 
     <!--contact form  -->
     <section class="contact-form">
       <div class="container">
+
         <div class="row">
           <div class="card clearfix">
             <h2>Have a question?</h2>
             <p>Please leave your details below and we will be in contact shortly</p>
 
-            <form class="">
+            <form>
 
               <label>First Name
                 <input class="form-control" type="text" name="firs tname" placeholder="first name" required>
@@ -108,21 +124,14 @@
               </label>
 
               <input class="button button-primary button-submit float-right" type="submit" value="submit" name="submit">
+
             </form>
 
           </div>
         </div>
       </div>
-
     </section>
 
-    <!--  location  -->
-    <section class="location bg-white ta-center">
-      <div class="container">
-        <h2>Where can you find us?</h2>
-        <div id="map"></div>
-      </div>
-    </section>
   </main>
 
   <!--  Footer  -->
@@ -190,63 +199,67 @@
   </footer>
 
   <script>
+    // Google maps 
     function initMap() {
       // Map Options
       var options = {
-        zoom: 11,
+        zoom: 3,
         center: {
-          lat: 1.290270,
-          lng: 103.851959
+          lat: 22.3964,
+          lng: 114.1095
         }
       }
 
       // New map
       var map = new google.maps.Map(document.getElementById('map'), options);
 
-      /*
-       // Add marker
-       var marker = new google.maps.Marker({
-         position: {
-           lat: 1.2987,
-           lng: 103.8474
-         },
-         map: map
-       });
 
-       var infoWindow = new google.maps.InfoWindow({
-         content: '<h4>Orchard Road</h4>'
-       });
-
-       marker.addListener('click', function () {
-         infoWindow.open(map, marker);
-       }); 
-       */
-
-      // Ion Orchard
-      addMarker({
-        coords: {
-          lat: 1.3041,
-          lng: 103.8319
+      // array of markers
+      var markers = [{
+          coords: {
+            lat: 1.3041,
+            lng: 103.8319
+          },
+          content: '<h3>Ion Orchard</h3>'
         },
-        iconImage:
-      });
-      // Central Plaza
-      addMarker({
-        lat: 22.2799,
-        lng: 114.1737
-      });
-      // Taipei 101
-      addMarker({
-        lat: 25.0340,
-        lng: 121.5645
-      });
+        {
+          coords: {
+            lat: 22.2799,
+            lng: 114.1737
+          },
+          content: '<h3>Central Plaza</h3>'
+        },
+        {
+          coords: {
+            lat: 25.0340,
+            lng: 121.5645
+          },
+          content: '<h3>Taipe 101</h3>'
+        }
+      ];
+
+      // loop through markers
+      for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+      }
 
       //  Add marker function
-      function addMarker(coords) {
+      function addMarker(props) {
         var marker = new google.maps.Marker({
-          position: coords,
+          position: props.coords,
           map: map
         });
+
+        // check content 
+        if (props.content) {
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+          marker.addListener('click', function () {
+            infoWindow.open(map, marker);
+          });
+        }
       }
     }
   </script>

@@ -214,7 +214,7 @@ hr {
 .button-ghosted {
   border: 1px solid #CB242D;
   padding: 14px;
-  background: #fff;
+  background: transparent;
   color: #CB242D;
 }
 
@@ -541,8 +541,8 @@ ul.footer-social {
 
 .banner-about {
   height: 90vh;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner.jpeg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-about.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-about.jpeg);
   background-attachment: fixed;
   background-position: center -120px;
   background-size: cover;
@@ -739,26 +739,61 @@ ul.footer-social {
             Contact Page         
 /**************************************/
 
-.contact-us h1 {
+
+/*  banner  */
+
+.banner-contact {
+  position: relative;
+  height: 90vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/banner-contact.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-contact h1 {
   font-size: 3em;
 }
 
-.contact-us span {
-  margin-bottom: 50px;
+.banner-contact p {
+  font-size: 1.1em;
+  line-height: 1.5;
 }
 
-.contact-us i {
-  margin-top: 50px;
-  font-size: 3em;
+.banner-contact .container {
+  position: absolute;
+  left: 2%;
+  top: 33%;
 }
 
-.contact-us h3 {
-  text-transform: uppercase;
+
+/*  location  */
+
+.location .row {
+  margin-bottom: 30px;
 }
 
-.contact-us h4,
-.contact-us p {
+.location h2 {
+  margin-bottom: 80px;
+}
+
+.location h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.location p {
+  margin: 0 0 20px;
+  padding-bottom: 20px;
   color: #848383;
+  font-size: 0.9em;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 
@@ -825,17 +860,5 @@ label.inline {
   margin-top: 10px;
   max-width: 100%;
   height: 150px;
-  width: 100%;
-}
-
-
-/*  location  */
-
-.location h2 {
-  margin-bottom: 50px;
-}
-
-#map {
-  height: 400px;
   width: 100%;
 }
