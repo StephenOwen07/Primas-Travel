@@ -420,6 +420,7 @@ nav a:hover::after {
   padding: 160px 0;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3));
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../home/img/hero-compressor.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -571,7 +572,7 @@ ul.footer-social {
 /*  banner  */
 
 .banner-about {
-  height: 90vh;
+  height: 80vh;
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-attachment: fixed;
@@ -581,7 +582,7 @@ ul.footer-social {
 
 .banner-about h1 {
   position: relative;
-  top: 250px;
+  top: 180px;
   color: #CB242D;
 }
 
@@ -635,7 +636,7 @@ ul.footer-social {
 }
 
 .carousel-img {
-  height: 90vh;
+  height: 80vh;
   background-repeat: no-reapeat;
   background-position: center;
   background-size: cover;
@@ -775,7 +776,7 @@ ul.footer-social {
 
 .banner-contact {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
   background-attachment: fixed;

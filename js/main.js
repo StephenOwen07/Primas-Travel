@@ -1,9 +1,8 @@
 $(document).ready(function () {
 
-
   // scroll top button
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 300) {
       $(".scroll-btn").fadeIn(300);
     } else {
       $(".scroll-btn").fadeOut(300);
