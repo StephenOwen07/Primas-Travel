@@ -419,8 +419,8 @@ nav a:hover::after {
   height: 100vh;
   padding: 160px 0;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/hero.jpeg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../home/img/hero-compressor.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -572,8 +572,8 @@ ul.footer-social {
 
 .banner-about {
   height: 90vh;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-about.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/banner-about.jpeg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-attachment: fixed;
   background-position: center -120px;
   background-size: cover;
@@ -642,21 +642,21 @@ ul.footer-social {
 }
 
 .carousel-img-1 {
-  background-image: url(../img/slider-beach.jpeg);
+  background-image: url(../img/services/slider-beach-compressor.jpg);
   background-position: center 100%;
 }
 
 .carousel-img-2 {
-  background-image: url(../img/slider-safari.jpeg);
+  background-image: url(../img/services/slider-safari-compressor.jpeg);
   background-position: center 70%;
 }
 
 .carousel-img-3 {
-  background-image: url(../img/slider-japan.jpeg);
+  background-image: url(../img/services/slider-japan-compressor.jpeg);
 }
 
 .carousel-img-4 {
-  background-image: url(../img/slider-venice.jpeg);
+  background-image: url(../img/services/slider-venice-compressor.jpg);
 }
 
 .slick-dots {
@@ -776,8 +776,8 @@ ul.footer-social {
 .banner-contact {
   position: relative;
   height: 90vh;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/banner-contact.jpeg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/banner-contact.jpeg);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
