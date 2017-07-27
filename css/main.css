@@ -378,8 +378,8 @@ nav a {
   /*rgba(184, 187, 196, 1)*/
   font-size: 1em;
   font-weight: 500;
-  -webkit-transition: 400ms;
-  transition: 400ms;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .header-default nav a {
@@ -408,6 +408,14 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;
+}
+
+.nav--icon {
+  display: none;
+}
+
+.hamburger-toggle {
+  display: none;
 }
 
 
