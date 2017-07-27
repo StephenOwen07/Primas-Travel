@@ -19,12 +19,4 @@ $(document).ready(function () {
     });
   });
 
-  // mobile nav
-  $('.hamburger-toggle').click(function () {
-
-    $('nav').toggleClass('nav--open', 200);
-    $(this).toggleClass('open');
-
-  });
-
 });
