@@ -416,6 +416,10 @@ nav a:hover::after {
   display: none;
 }
 
+.nav--open {
+  display: none;
+}
+
 
 /*************************************** 
                 Hero                    
