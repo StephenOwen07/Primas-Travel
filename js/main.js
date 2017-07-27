@@ -1,15 +1,17 @@
 // Mobile Overlay Nav
 var buttonOpen = document.querySelector('.nav--open');
 var buttonClose = document.querySelector('.nav--close');
+var overlay = document.querySelector('.overlay');
 
 buttonOpen.addEventListener('click', function () {
-  document.querySelector('.overlay').style.height = '100%';
+  overlay.style.height = '100%';
 });
 
 buttonClose.addEventListener('click', function () {
-  document.querySelector('.overlay').style.height = '0%';
+  overlay.style.height = '0%';
 });
 
+// jQuery
 $(document).ready(function () {
 
   // scroll top button
