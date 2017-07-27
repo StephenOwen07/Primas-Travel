@@ -320,8 +320,12 @@ header {
   z-index: 10;
 }
 
-header.header-primary {
+.header-primary {
   position: absolute;
+}
+
+.header-primary a {
+  color: #fff;
 }
 
 header.header-default {
@@ -374,15 +378,13 @@ nav li {
 nav a {
   position: relative;
   padding: 15px;
-  color: #fff;
-  /*rgba(184, 187, 196, 1)*/
   font-size: 1em;
   font-weight: 500;
   -webkit-transition: 400ms;
   transition: 400ms;
 }
 
-.header-default nav a {
+nav a {
   color: #444;
 }
 
@@ -408,6 +410,10 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;
+}
+
+.nav--close {
+  display: none;
 }
 
 
