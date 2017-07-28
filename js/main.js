@@ -5,10 +5,12 @@ var overlay = document.querySelector('.overlay');
 
 buttonOpen.addEventListener('click', function () {
   overlay.style.height = '100%';
+  buttonOpen.style.display = 'none';
 });
 
 buttonClose.addEventListener('click', function () {
   overlay.style.height = '0%';
+  buttonOpen.style.display = 'initial';
 });
 
 // jQuery
@@ -28,7 +30,7 @@ $(document).ready(function () {
       $("html, body").animate({
           scrollTop: "0px"
         },
-        700
+        500
       );
     });
   });

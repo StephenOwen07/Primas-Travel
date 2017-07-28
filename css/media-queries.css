@@ -1,5 +1,5 @@
 /*************************************** 
-              Desktop         
+        Desktop         
 /**************************************/
 
 @media (max-width:1200px) {
@@ -11,7 +11,7 @@
 
 
 /*************************************** 
-  Tablet Landscape          
+Tablet Landscape          
 /**************************************/
 
 @media (max-width: 992px) {
@@ -97,7 +97,7 @@ Tablet Portrait
     line-height: 2;
   }
   .overlay-content a {
-    padding: 8;
+    padding: 8px;
     color: #818181;
     font-size: 2.5em;
     transition: 0.3s;
@@ -207,6 +207,10 @@ Landscape phone
   .hero h2 {
     font-size: 1em;
   }
+  /*  about home  */
+  .about-home-text p {
+    margin-bottom: 30px;
+  }
   /*  newsletter  */
   .newsletter .form-control {
     width: 15em;
@@ -235,5 +239,25 @@ Landscape phone
   .contact-form .card {
     margin: 30px auto;
     width: 95%;
+  }
+}
+
+
+/*************************************** 
+old iphone     
+/**************************************/
+
+@media (max-height: 560px) {
+  /*  hero  */
+  .hero .container-fluid {
+    position: relative;
+    bottom: 70px;
+  }
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  /*  about home  */
+  .about-home-text {
+    padding-top: 0;
   }
 }
