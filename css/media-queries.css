@@ -1,8 +1,48 @@
 /*************************************** 
-           Overlay Nav        
+              Desktop         
 /**************************************/
 
-@media (max-width:900px) {
+@media (max-width:1200px) {}
+
+
+/*************************************** 
+  Tablet Landscape          
+/**************************************/
+
+@media (max-width: 992px) {
+  /*  button  */
+  .scroll-btn {
+    padding: 11px 8px;
+  }
+  /*  Nav  */
+  nav li {
+    padding: 0;
+  }
+  /*  hero  */
+  .hero h1 {
+    font-size: 2.8em;
+    word-spacing: 5px;
+  }
+  .hero h2 {
+    font-size: 1.3em;
+  }
+  /*  benefits  */
+  .benefits i {
+    margin-top: 90px;
+  }
+  /*  testimonials  */
+  .testimonials .card {
+    margin: 30px 0;
+  }
+}
+
+
+/*************************************** 
+Tablet Portrait     
+/**************************************/
+
+@media (max-width:767px) {
+  /*  Nav  */
   .header-default {
     position: relative;
   }
@@ -58,7 +98,7 @@
     color: #444;
     font-size: 1.6em;
   }
-  .nav--close {
+  a.nav--close {
     position: absolute;
     right: 2%;
     top: 0%;
@@ -72,12 +112,78 @@
   .nav--close:focus {
     color: #f1f1f1;
   }
+  /*  Home hero  */
+  .hero h1 {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 2.7em;
+  }
+  .hero h2 {
+    font-size: 1.2em;
+  }
+  /*  benefits  */
+  .benefits p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  /*  social proof  */
+  .social-proof img {
+    margin-bottom: 70px;
+  }
+  /*  newsletter  */
+  .newsletter {
+    line-height: 1.5;
+  }
+  .newsletter input[type=submit] {
+    width: 25em;
+  }
+  .newsletter .form-control {
+    margin-bottom: 1px;
+  }
+  /*  footer  */
+  footer {
+    text-align: center;
+  }
 }
 
 
 /*************************************** 
-            Contact Page         
+Landscape phone         
 /**************************************/
 
-
-/*  banner  */
+@media (max-width: 480px) {
+  /*  base styles  */
+  h2 {
+    font-size: 1.6em;
+  }
+  /*  button  */
+  .button {
+    font-size: 0.9em;
+  }
+  /*  card  */
+  .card-container {
+    padding: 0;
+  }
+  .card {
+    padding: 40px 15px;
+  }
+  /*  hero  */
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero h2 {
+    font-size: 1em;
+  }
+  /*  newsletter  */
+  .newsletter .form-control {
+    width: 15em;
+    font-size: 0.9em;
+  }
+  .newsletter input[type=submit] {
+    width: 15em;
+  }
+  /*  footer  */
+  footer p {
+    font-size: 0.9em;
+  }
+}

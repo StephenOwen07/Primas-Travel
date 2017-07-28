@@ -238,9 +238,6 @@ hr {
   transform: none;
 }
 
-
-/*  Scroll top  */
-
 .scroll-btn {
   display: none;
   position: fixed;
@@ -339,6 +336,7 @@ header.header-default {
 .logo {
   margin-top: 4px;
   padding: 5px 0;
+  padding-left: 2%;
   color: #fff;
   font-size: 1.2em;
   font-weight: 500;
@@ -368,6 +366,10 @@ header.header-default {
 
 
 /* nav  */
+
+nav {
+  padding-right: 2%;
+}
 
 nav li {
   padding: 0 10px;
@@ -438,14 +440,12 @@ nav a:hover::after {
   background-size: cover;
 }
 
-.hero .container {
-  width: 100%;
+.hero .container-fluid {
   padding: 10px 0 30px;
 }
 
 .hero h1 {
   margin-bottom: 10px;
-  /* color: #CB242D; */
 }
 
 .hero h2 {
@@ -476,15 +476,30 @@ nav a:hover::after {
 
 /*  About-home  */
 
-.about-home img {
-  margin: 0;
-  height: 380px;
-  width: 100%;
+.about-home-box {
+  height: 110vh;
+  width: 100vw;
+  padding-top: 10%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.personalize {
+  padding-left: 2%;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/plan-compressor.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/plan-compressor.jpg);
+}
+
+.any-destination {
+  padding-right: 2%;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/ice-compressor.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/ice-compressor.jpg);
 }
 
 .about-home-text {
-  padding: 30px 50px;
-  /* min-height: 20px; */
+  padding: 80px 50px;
 }
 
 .about-home-text h3 {
@@ -492,7 +507,8 @@ nav a:hover::after {
 }
 
 .about-home-text p {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+  font-size: 1.1em;
 }
 
 
@@ -518,6 +534,13 @@ nav a:hover::after {
 
 .social-proof {
   padding-top: 40px;
+}
+
+
+/*  newsletter  */
+
+.newsletter .form-control {
+  width: 25em;
 }
 
 
@@ -755,7 +778,11 @@ ul.footer-social {
   font-size: 3em;
 }
 
-.step-icon {
+.step {
+  height: 600px;
+}
+
+.step-text .step-icon {
   font-size: 12em;
   padding-top: 50px;
 }
