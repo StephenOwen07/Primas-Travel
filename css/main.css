@@ -623,20 +623,16 @@ ul.footer-social {
 /*  stats  */
 
 .stats .row h2 {
-  margin: 0;
+  /* margin-top: 60px; */
   font-size: 2em;
   padding: 0;
 }
 
 .stats .row p {
-  margin: 10px 0 0 0;
+  margin-bottom: 60px;
   padding: 0;
   font-weight: 400;
   letter-spacing: 1px;
-}
-
-.stats-col-1st {
-  margin-bottom: 50px;
 }
 
 
@@ -713,6 +709,22 @@ ul.footer-social {
 }
 
 
+/*  How it works  */
+
+.how-it-works h1 {
+  font-size: 3em;
+}
+
+.step {
+  height: auto;
+}
+
+.step-icon {
+  font-size: 12em;
+  padding-top: 50px;
+}
+
+
 /*  Price plan  */
 
 .price-plan {
@@ -769,22 +781,6 @@ ul.footer-social {
 .price-plan .card p {
   font-size: 0.9em;
   font-weight: 300;
-}
-
-
-/*  How it works  */
-
-.how-it-works h1 {
-  font-size: 3em;
-}
-
-.step {
-  height: 600px;
-}
-
-.step-text .step-icon {
-  font-size: 12em;
-  padding-top: 50px;
 }
 
 

@@ -2,7 +2,12 @@
               Desktop         
 /**************************************/
 
-@media (max-width:1200px) {}
+@media (max-width:1200px) {
+  /*  about page banner  */
+  .banner-about {
+    background-position: center;
+  }
+}
 
 
 /*************************************** 
@@ -10,6 +15,11 @@
 /**************************************/
 
 @media (max-width: 992px) {
+  /*  base styles  */
+  h1 {
+    font-size: 2.8em;
+    word-spacing: 5px;
+  }
   /*  button  */
   .scroll-btn {
     padding: 11px 8px;
@@ -19,10 +29,6 @@
     padding: 0;
   }
   /*  hero  */
-  .hero h1 {
-    font-size: 2.8em;
-    word-spacing: 5px;
-  }
   .hero h2 {
     font-size: 1.3em;
   }
@@ -34,6 +40,17 @@
   .testimonials .card {
     margin: 30px 0;
   }
+  /*  map  */
+  #map {
+    height: 500px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 80%;
+  }
 }
 
 
@@ -42,6 +59,12 @@ Tablet Portrait
 /**************************************/
 
 @media (max-width:767px) {
+  /*  base styles  */
+  h1 {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 2.7em;
+  }
   /*  Nav  */
   .header-default {
     position: relative;
@@ -113,11 +136,6 @@ Tablet Portrait
     color: #f1f1f1;
   }
   /*  Home hero  */
-  .hero h1 {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-size: 2.7em;
-  }
   .hero h2 {
     font-size: 1.2em;
   }
@@ -144,6 +162,21 @@ Tablet Portrait
   footer {
     text-align: center;
   }
+  /*  About: how it works  */
+  .step {
+    text-align: center;
+  }
+  /*  map  */
+  #map {
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 90%;
+  }
 }
 
 
@@ -153,6 +186,9 @@ Landscape phone
 
 @media (max-width: 480px) {
   /*  base styles  */
+  h1 {
+    font-size: 2em;
+  }
   h2 {
     font-size: 1.6em;
   }
@@ -168,9 +204,6 @@ Landscape phone
     padding: 40px 15px;
   }
   /*  hero  */
-  .hero h1 {
-    font-size: 2em;
-  }
   .hero h2 {
     font-size: 1em;
   }
@@ -185,5 +218,22 @@ Landscape phone
   /*  footer  */
   footer p {
     font-size: 0.9em;
+  }
+  /*  About page banner  */
+  .banner-about h1 {
+    line-height: 1.5;
+  }
+  /*  About: how it works  */
+  .step-icon {
+    font-size: 10em;
+  }
+  /*  About: Price plan  */
+  .price-plan a.button {
+    font-size: 0.9em;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 95%;
   }
 }
