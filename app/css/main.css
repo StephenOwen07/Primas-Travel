@@ -177,6 +177,43 @@ hr {
 }
 
 
+/*  preloader  */
+
+#preload {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #ccc;
+  border-top: 10px solid #CB242D;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 /* button */
 
 .button {
