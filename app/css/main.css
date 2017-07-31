@@ -6,12 +6,14 @@
 /* https://alpha.wallhaven.cc/wallpaper/179391 */
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -285,13 +287,18 @@ input[type=submit] {
   color: #444444;
   font-size: 1em;
   line-height: 1.4;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
 }
 
 .form-control:focus {
   outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
@@ -327,6 +334,7 @@ header {
 
 header.header-default {
   margin-top: 0;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
 }
 
@@ -430,9 +438,7 @@ nav a:hover::after {
 .hero {
   height: 100vh;
   padding: 160px 0;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3));
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../home/img/hero-compressor.jpg);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(33, 120, 140, 0.3))), url(../img/home/hero-compressor.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -488,13 +494,13 @@ nav a:hover::after {
 
 .personalize {
   padding-left: 2%;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/plan-compressor.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/home/plan-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/plan-compressor.jpg);
 }
 
 .any-destination {
   padding-right: 2%;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/ice-compressor.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/home/ice-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/home/ice-compressor.jpg);
 }
 
@@ -606,7 +612,7 @@ ul.footer-social {
 
 .banner-about {
   height: 80vh;
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/about/banner-about-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-attachment: fixed;
   background-position: center -120px;
@@ -810,7 +816,7 @@ ul.footer-social {
 .banner-contact {
   position: relative;
   height: 80vh;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0))), url(../img/contact/banner-contact-compressor.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
   background-attachment: fixed;
   background-position: center;

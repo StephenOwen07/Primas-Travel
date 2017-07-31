@@ -1,9 +1,28 @@
 var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
+var uglify = require('gulp-uglify');
 
-// minify images task
-gulp.task('image', function () {
-  return gulp.src('img/*/*')
-    .pipe(imagemin())
-    .pipe(gulp.dest('img'));
+/* 
+  -- TOP LEVEL FUNCTIONS --
+  gulp.task - Define task
+  gulp.src - Point to files to use
+  gulp.dest - Point to folder to output
+  gulp.watch - Watch files and folders for changes
+  */
+
+
+// Minify JS
+gulp.task('minify', function () {
+  gulp.src('app/js/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/js'));
+});
+
+
+
+// Default task
+gulp.task('default', ['minify']);
+
+// Watch task
+gulp.task('watch', function () {
+  gulp.watch('app/js/*.js', ['minify;']);
 });

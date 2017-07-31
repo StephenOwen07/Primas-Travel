@@ -13,7 +13,6 @@ buttonClose.addEventListener('click', function () {
   buttonOpen.style.display = 'initial';
 });
 
-// jQuery
 $(document).ready(function () {
 
   // scroll top button
