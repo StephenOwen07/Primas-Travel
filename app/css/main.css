@@ -285,7 +285,7 @@ hr {
   border: none;
   right: 2%;
   bottom: 10%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: background-color 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
   font-size: 20px;
