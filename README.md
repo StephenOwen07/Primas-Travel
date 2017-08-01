@@ -1,3 +1,3 @@
 # Primas Travel
 
-Static Travel website using HTML, CSS, javaScript and jQuery
+Business travel website using HTML, CSS, Boostrap grid, javaScript and jQuery
