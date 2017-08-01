@@ -191,7 +191,11 @@ Tablet Portrait
   footer {
     text-align: center;
   }
-  /*  About: how it works  */
+  /*  About: leadership  */
+  .leader {
+    margin-bottom: 50px;
+  }
+  /*  Services: how it works  */
   .step {
     text-align: center;
   }
