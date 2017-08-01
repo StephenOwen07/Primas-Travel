@@ -201,14 +201,28 @@ hr {
   left: 0;
   right: 0;
   margin: auto;
+  -webkit-animation: spin 1s infinite linear;
   animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -520,7 +534,7 @@ nav a:hover::after {
 /*  About-home  */
 
 .about-home-box {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   padding-top: 10%;
   background-attachment: fixed;
@@ -758,13 +772,38 @@ ul.footer-social {
   font-size: 3em;
 }
 
-.step {
-  height: auto;
+section.step {
+  padding: 0;
 }
 
-.step-icon {
-  font-size: 12em;
-  padding-top: 50px;
+.step-text {
+  padding: 50px;
+  height: 550px;
+}
+
+.step-text span {
+  position: relative;
+  right: 38%;
+  margin-top: 10px;
+}
+
+.step-img {
+  position: relative;
+  height: 550px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.step-img img {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+  width: auto;
+  max-width: none;
 }
 
 

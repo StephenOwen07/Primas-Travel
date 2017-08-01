@@ -40,6 +40,13 @@ Tablet Landscape
   .testimonials .card {
     margin: 30px 0;
   }
+  /*  steps  */
+  .step-text {
+    height: auto;
+  }
+  .step-text span {
+    right: 42%;
+  }
   /*  map  */
   #map {
     height: 500px;
@@ -80,6 +87,7 @@ Tablet Portrait
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow: hidden;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
   }
   .overlay-content {
@@ -100,6 +108,7 @@ Tablet Portrait
     padding: 8px;
     color: #818181;
     font-size: 2.5em;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .overlay-content .nav-active {
@@ -111,6 +120,7 @@ Tablet Portrait
   }
   .overlay a::after {
     border: none;
+    -webkit-transition: none;
     transition: none;
   }
   .nav--open {
@@ -165,6 +175,10 @@ Tablet Portrait
   /*  About: how it works  */
   .step {
     text-align: center;
+  }
+  .step-text span {
+    position: initial;
+    width: 70px;
   }
   /*  map  */
   #map {
