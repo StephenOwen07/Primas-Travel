@@ -29,6 +29,9 @@ Tablet Landscape
     padding: 0;
   }
   /*  hero  */
+  .hero {
+    background-attachment: scroll;
+  }
   .hero h2 {
     font-size: 1.3em;
   }
@@ -36,9 +39,21 @@ Tablet Landscape
   .benefits i {
     margin-top: 90px;
   }
+  /*  about-home  */
+  .about-home-box {
+    background-attachment: scroll;
+  }
   /*  testimonials  */
   .testimonials .card {
     margin: 30px 0;
+  }
+  /*  About: banner  */
+  .banner-about {
+    background-attachment: scroll;
+  }
+  /*  How it works  */
+  section.how-it-works.bg-white {
+    padding-bottom: 0;
   }
   /*  steps  */
   .step-text {
@@ -46,6 +61,10 @@ Tablet Landscape
   }
   .step-text span {
     right: 42%;
+  }
+  /*  Contact: banner  */
+  .banner-contact {
+    background-attachment: scroll;
   }
   /*  map  */
   #map {
