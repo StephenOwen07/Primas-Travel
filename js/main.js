@@ -42,12 +42,23 @@ $(document).ready(function () {
   $(function () {
     $(".scroll-btn").click(function (e) {
       $("html, body").animate({
-          scrollTop: "0px"
-        },
+        scrollTop: "0px"
+      },
         500
       );
     });
   });
 
 
+  // Carousel
+  $('.carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 2000,
+    fade: true,
+    arrows: false,
+    dots: true,
+    dotsClass: 'slick-dots',
+    pauseOnHover: false
+  });
 });

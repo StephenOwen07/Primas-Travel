@@ -344,7 +344,21 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin=" anonymous "></script>
   <script src="slick/slick.min.js "></script>
-  <script src="js/carousel.js "></script>
+  <script>
+    $(document).ready(function () {
+      // Carousel
+      $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        speed: 2000,
+        fade: true,
+        arrows: false,
+        dots: true,
+        dotsClass: 'slick-dots',
+        pauseOnHover: false
+      });
+    });
+  </script>
   <script src="js/main.js "></script>
 
 </body>
