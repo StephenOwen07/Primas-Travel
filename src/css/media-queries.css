@@ -1,0 +1,277 @@
+/*************************************** 
+        Desktop         
+/**************************************/
+
+@media (max-width:1200px) {
+  /*  about page banner  */
+  .banner-about {
+    background-position: center;
+  }
+}
+
+
+/*************************************** 
+Tablet Landscape          
+/**************************************/
+
+@media (max-width: 992px) {
+  /*  base styles  */
+  h1 {
+    font-size: 2.8em;
+    word-spacing: 5px;
+  }
+  /*  button  */
+  .scroll-btn {
+    padding: 11px 8px;
+  }
+  /*  Nav  */
+  nav li {
+    padding: 0;
+  }
+  /*  hero  */
+  .hero h2 {
+    font-size: 1.3em;
+  }
+  /*  benefits  */
+  .benefits i {
+    margin-top: 90px;
+  }
+  /*  testimonials  */
+  .testimonials .card {
+    margin: 30px 0;
+  }
+  /*  steps  */
+  .step-text {
+    height: auto;
+  }
+  .step-text span {
+    right: 42%;
+  }
+  /*  map  */
+  #map {
+    height: 500px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 80%;
+  }
+}
+
+
+/*************************************** 
+Tablet Portrait     
+/**************************************/
+
+@media (max-width:767px) {
+  /*  base styles  */
+  h1 {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 2.7em;
+  }
+  /*  Nav  */
+  .header-default {
+    position: relative;
+  }
+  /* The Overlay (background) */
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  .overlay-content li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+  }
+  .overlay-content a {
+    padding: 8px;
+    color: #818181;
+    font-size: 2.5em;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .overlay-content .nav-active {
+    color: #CB242D;
+  }
+  .overlay-content a:hover,
+  .overlay-content a:focus {
+    color: #f1f1f1;
+  }
+  .overlay a::after {
+    border: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .nav--open {
+    position: absolute;
+    display: block;
+    top: 25%;
+    right: 5%;
+    color: #444;
+    font-size: 1.6em;
+  }
+  a.nav--close {
+    position: absolute;
+    right: 2%;
+    top: 0%;
+    display: block;
+    padding: 10px 20px;
+    color: #818181;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+  .nav--close:hover,
+  .nav--close:focus {
+    color: #f1f1f1;
+  }
+  /*  Home hero  */
+  .hero h2 {
+    font-size: 1.2em;
+  }
+  /*  benefits  */
+  .benefits p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  /*  social proof  */
+  .social-proof img {
+    margin-bottom: 70px;
+  }
+  /*  newsletter  */
+  .newsletter {
+    line-height: 1.5;
+  }
+  .newsletter input[type=submit] {
+    width: 25em;
+  }
+  .newsletter .form-control {
+    margin-bottom: 1px;
+  }
+  /*  footer  */
+  footer {
+    text-align: center;
+  }
+  /*  About: how it works  */
+  .step {
+    text-align: center;
+  }
+  .step-text span {
+    position: initial;
+    width: 70px;
+  }
+  /*  map  */
+  #map {
+    height: 400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 90%;
+  }
+}
+
+
+/*************************************** 
+Landscape phone         
+/**************************************/
+
+@media (max-width: 480px) {
+  /*  base styles  */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  /*  button  */
+  .button {
+    font-size: 0.9em;
+  }
+  /*  card  */
+  .card-container {
+    padding: 0;
+  }
+  .card {
+    padding: 40px 15px;
+  }
+  /*  hero  */
+  .hero h2 {
+    font-size: 1em;
+  }
+  /*  about home  */
+  .about-home-text p {
+    margin-bottom: 30px;
+  }
+  /*  newsletter  */
+  .newsletter .form-control {
+    width: 15em;
+    font-size: 0.9em;
+  }
+  .newsletter input[type=submit] {
+    width: 15em;
+  }
+  /*  footer  */
+  footer p {
+    font-size: 0.9em;
+  }
+  /*  About page banner  */
+  .banner-about h1 {
+    line-height: 1.5;
+  }
+  /*  About: how it works  */
+  .step-icon {
+    font-size: 10em;
+  }
+  /*  About: Price plan  */
+  .price-plan a.button {
+    font-size: 0.9em;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 95%;
+  }
+}
+
+
+/*************************************** 
+old iphone     
+/**************************************/
+
+@media (max-height: 560px) {
+  /*  hero  */
+  .hero .container-fluid {
+    position: relative;
+    bottom: 70px;
+  }
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  /*  about home  */
+  .about-home-text {
+    padding-top: 0;
+  }
+}
