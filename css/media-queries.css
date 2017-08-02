@@ -1,28 +1,4 @@
 /*************************************** 
-      Ipad Pro        
-/**************************************/
-
-@media only screen and (min-device-width:1366px) and (max-device-width:1366px) and (min-device-height:1024px) and (max-device-height:1024px) and (max-width:1366px) and (min-width:1366px) {
-  .banner-about {
-    background-position: center;
-    background-attachment: scroll;
-  }
-  /*  hero  */
-  .hero {
-    background-attachment: scroll;
-  }
-  /*  about-home  */
-  .about-home-box {
-    background-attachment: scroll;
-  }
-  /*  Contact: banner  */
-  .banner-contact {
-    background-attachment: scroll;
-  }
-}
-
-
-/*************************************** 
     Desktop         
 /**************************************/
 
