@@ -1,4 +1,28 @@
 /*************************************** 
+      Ipad Pro        
+/**************************************/
+
+@media only screen and (min-device-width:1366px) and (max-device-width:1366px) and (min-device-height:1024px) and (max-device-height:1024px) and (max-width:1366px) and (min-width:1366px) {
+  .banner-about {
+    background-position: center;
+    background-attachment: scroll;
+  }
+  /*  hero  */
+  .hero {
+    background-attachment: scroll;
+  }
+  /*  about-home  */
+  .about-home-box {
+    background-attachment: scroll;
+  }
+  /*  Contact: banner  */
+  .banner-contact {
+    background-attachment: scroll;
+  }
+}
+
+
+/*************************************** 
     Desktop         
 /**************************************/
 
@@ -6,6 +30,19 @@
   /*  about page banner  */
   .banner-about {
     background-position: center;
+    background-attachment: scroll;
+  }
+  /*  hero  */
+  .hero {
+    background-attachment: scroll;
+  }
+  /*  about-home  */
+  .about-home-box {
+    background-attachment: scroll;
+  }
+  /*  Contact: banner  */
+  .banner-contact {
+    background-attachment: scroll;
   }
 }
 
@@ -23,73 +60,6 @@ Tablet Landscape
   /*  button  */
   .scroll-btn {
     padding: 11px 8px;
-  }
-  /*  Nav  */
-  nav li {
-    padding: 0;
-  }
-  /*  hero  */
-  .hero {
-    background-attachment: scroll;
-  }
-  .hero h2 {
-    font-size: 1.3em;
-  }
-  /*  benefits  */
-  .benefits i {
-    margin-top: 90px;
-  }
-  /*  about-home  */
-  .about-home-box {
-    background-attachment: scroll;
-  }
-  /*  testimonials  */
-  .testimonials .card {
-    margin: 30px 0;
-  }
-  /*  About: banner  */
-  .banner-about {
-    background-attachment: scroll;
-  }
-  /*  How it works  */
-  section.how-it-works.bg-white {
-    padding-bottom: 0;
-  }
-  /*  steps  */
-  .step-text {
-    height: auto;
-  }
-  .step-text span {
-    right: 42%;
-  }
-  /*  Contact: banner  */
-  .banner-contact {
-    background-attachment: scroll;
-  }
-  /*  map  */
-  #map {
-    height: 500px;
-    margin: 0 auto;
-    width: 90%;
-  }
-  /*  contact form  */
-  .contact-form .card {
-    margin: 30px auto;
-    width: 80%;
-  }
-}
-
-
-/*************************************** 
-Tablet Portrait     
-/**************************************/
-
-@media (max-width:767px) {
-  /*  base styles  */
-  h1 {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-size: 2.7em;
   }
   /*  Nav  */
   .header-default {
@@ -163,6 +133,53 @@ Tablet Portrait
   .nav--close:hover,
   .nav--close:focus {
     color: #f1f1f1;
+  }
+  .hero h2 {
+    font-size: 1.3em;
+  }
+  /*  benefits  */
+  .benefits i {
+    margin-top: 90px;
+  }
+  /*  testimonials  */
+  .testimonials .card {
+    margin: 30px 0;
+  }
+  /*  How it works  */
+  section.how-it-works.bg-white {
+    padding-bottom: 0;
+  }
+  /*  steps  */
+  .step-text {
+    height: auto;
+  }
+  .step-text span {
+    right: 42%;
+  }
+  /*  map  */
+  #map {
+    height: 500px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  /*  contact form  */
+  .contact-form .card {
+    margin: 30px auto;
+    width: 80%;
+  }
+}
+
+
+/*************************************** 
+Tablet Portrait     
+/**************************************/
+
+@media (max-width:767px) {
+  /*  base styles  */
+  h1 {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    font-size: 2.7em;
   }
   /*  Home hero  */
   .hero h2 {

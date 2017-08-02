@@ -708,41 +708,41 @@ ul.footer-social {
 /**************************************/
 
 
-/*  carousel  */
+/*  carousell  */
 
-.carousel {
+.carousell {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.carousel.ta-center {
+.carousell.ta-center {
   margin: 0;
 }
 
-.carousel-img {
+.carousell-img {
   height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.carousel-img-1 {
+.carousell-img-1 {
   background-image: url(../img/services/slider-beach-compressor.jpg);
   background-position: center 100%;
 }
 
-.carousel-img-2 {
+.carousell-img-2 {
   background-image: url(../img/services/slider-safari-compressor.jpeg);
   background-position: center 70%;
 }
 
-.carousel-img-3 {
+.carousell-img-3 {
   background-image: url(../img/services/slider-japan-compressor.jpeg);
 }
 
-.carousel-img-4 {
+.carousell-img-4 {
   background-image: url(../img/services/slider-venice-compressor.jpg);
 }
 
