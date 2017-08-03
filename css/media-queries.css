@@ -117,6 +117,10 @@ Tablet Landscape
   .benefits i {
     margin-top: 90px;
   }
+  /*  about-home  */
+  .about-home-box {
+    height: 80vh;
+  }
   /*  testimonials  */
   .testimonials .card {
     margin: 30px 0;
@@ -238,6 +242,9 @@ Landscape phone
     font-size: 1em;
   }
   /*  about home  */
+  .about-home-box {
+    height: 100vh;
+  }
   .about-home-text p {
     margin-bottom: 30px;
   }
