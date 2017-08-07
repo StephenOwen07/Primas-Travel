@@ -1,6 +1,3 @@
-var buttonOpen = document.querySelector('.nav--open');
-var buttonClose = document.querySelector('.nav--close');
-var overlay = document.querySelector('.overlay');
 var preloader = document.getElementById('preload');
 
 // Preloader 
@@ -15,6 +12,10 @@ $(window).on('load', function () { // makes sure the whole site is loaded
 });
 
 // Mobile Overlay Nav
+var buttonOpen = document.querySelector('.nav--open');
+var buttonClose = document.querySelector('.nav--close');
+var overlay = document.querySelector('.overlay');
+
 buttonOpen.addEventListener('click', function () {
   overlay.style.height = '100%';
   buttonOpen.style.display = 'none';
@@ -24,6 +25,7 @@ buttonClose.addEventListener('click', function () {
   overlay.style.height = '0%';
   buttonOpen.style.display = 'initial';
 });
+
 
 $(document).ready(function () {
 

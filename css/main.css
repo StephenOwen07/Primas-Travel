@@ -534,7 +534,7 @@ nav a:hover::after {
 /*  About-home  */
 
 .about-home-box {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   padding-top: 10%;
   background-attachment: fixed;
