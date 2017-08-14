@@ -1040,8 +1040,9 @@
     }
 
     span.sort {
+      margin-right: 30px;
       color: #fff;
-      margin-right: 50px;
+      font-weight: 500;
     }
 
     .room-sort-menu>li {
@@ -1114,6 +1115,12 @@
       margin-top: 20px;
       border: 1px solid #ccc;
       background: #E9EAEA;
+      transition: box-shadow .2s ease-in-out;
+      outline: none;
+    }
+
+    .hotel-card:hover {
+      box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93);
     }
 
     .hotel-img,
