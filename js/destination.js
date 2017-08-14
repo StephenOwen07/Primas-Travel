@@ -1,8 +1,22 @@
 $(function () {
 
   // datepicker 
-  $('.datepicker').datepicker();
+  var $tomorrowsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
+  $('#check-in').datepicker({
+    showOtherMonths: true,
+    minDate: 0
+  });
+
+  $('#check-out').datepicker({
+    showOtherMonths: true,
+    minDate: $tomorrowsDate
+  });
+
+  // set checkout placeholder = current date
+  $('#check-in').attr('placeholder', Date());
+  // set checkout placeholder = tomorrows date
+  $('#check-out').attr('placeholder', $tomorrowsDate);
 
   // Price slider
   $('#slider-range').slider({
