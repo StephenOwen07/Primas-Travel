@@ -1,5 +1,9 @@
 $(function () {
 
+  // datepicker 
+  $('.datepicker').datepicker();
+
+
   // Price slider
   $('#slider-range').slider({
     range: true,
