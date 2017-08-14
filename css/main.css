@@ -1104,10 +1104,6 @@
     .dropMenu li a:hover {
       background: #2e333a;
     }
-
-    .show {
-      display: block;
-    }
     /*  hotel results  */
 
     .hotel-card {

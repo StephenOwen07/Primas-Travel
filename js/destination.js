@@ -15,27 +15,42 @@ $(function () {
     }
   });
 
+  // Sort dropdown menus 
+  var $dropBtns = $('.dropdown');
+
+  $dropBtns.on('click', function (e) {
+
+    $('li > ul').not($(this).children("ul")).hide();
+    $(this).children("ul").toggle();
+    // prevent event bubbling
+    e.stopPropagation();
+  });
+  // hide drop menue when clicking outside of element
+  $('body').on('click', function () {
+    $('.dropMenu').hide();
+  });
+
 });
 
-(function () {
+// (function () {
 
-  var dropBtns = document.querySelectorAll('.dropdown');
-  for (var i = 0; i < dropBtns.length; i++) {
-    dropBtns[i].addEventListener('click', menus);
-  }
+//   var dropBtns = document.querySelectorAll('.dropdown');
+//   for (var i = 0; i < dropBtns.length; i++) {
+//     dropBtns[i].addEventListener('click', menus);
+//   }
 
-  function menus() {
+//   function menus() {
 
-    var menu = this.querySelector('.dropMenu');
-    menu.classList.add('show');
+//     var menu = this.querySelector('.dropMenu');
+//     menu.classList.add('show');
 
-    window.addEventListener('mouseup', function (event) {
-      if (event.target != dropBtns && event.target.parentNode != dropBtns) {
-        menu.classList.remove('show');
-      }
-    });
+//     window.addEventListener('mouseup', function (event) {
+//       if (event.target != dropBtns && event.target.parentNode != dropBtns) {
+//         menu.classList.remove('show');
+//       }
+//     });
 
 
-  }
+//   }
 
-})();
+// })();
