@@ -392,31 +392,36 @@ Landscape phone
   /* destination page */
   .hotel-info-location {
     display: block;
-    margin-top: 100px;
+    margin-top: 10px;
+  }
+  .hotel-img {
+    width: 50%;
+  }
+  .property-info>h4 {
+    font-size: 1em;
   }
   .hotel-info-directions,
   .hotel-features {
     display: none;
   }
+  .property-info {
+    position: relative;
+  }
+  .property-stars a {
+    font-size: 0.8em;
+  }
   .hotel-promo {
-    text-align: center;
-  }
-  .hotel-promo h4>span {
     display: none;
   }
-  .review>span {
-    display: none;
-  }
-  .promo-price {
-    top: 10px;
-    font-size: 0.7em;
-  }
-  .hotel-promo a.promo-button {
+  .promo-btn-mobile {
+    display: block;
     position: absolute;
-    left: 20%;
-    top: 60%;
-    width: 40px;
-    font-size: 0.7em;
+    top: 180px;
+    /* margin-top: 50px; */
+    padding: 12px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.8em;
   }
 }
 
