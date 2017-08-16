@@ -1045,6 +1045,10 @@
       font-weight: 500;
     }
 
+    .sort-mobile {
+      display: none;
+    }
+
     .room-sort-menu>li {
       display: inline-block;
       color: #fff;
@@ -1104,6 +1108,11 @@
 
     .dropMenu li a:hover {
       background: #2e333a;
+    }
+    /* search nav */
+
+    .sidebar-hamburger {
+      display: none;
     }
     /*  hotel results  */
 
@@ -1234,8 +1243,9 @@
     }
 
     .hotel-promo {
-      text-align: right;
+      position: relative;
       padding: 20px 15px;
+      text-align: right;
     }
 
     .review span {
@@ -1244,7 +1254,6 @@
     }
 
     .promo-price {
-      position: relative;
       margin-top: 90px;
     }
 

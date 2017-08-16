@@ -36,12 +36,16 @@ $(function () {
   // Sort dropdown menus 
   var $dropBtns = $('.dropdown');
 
-  $dropBtns.on('click', function (e) {
+  $dropBtns.on('click', function (event) {
 
-    $('li > ul').not($(this).children("ul")).hide();
+    // hide dropdown content as default
+    $('.dropMenu').not($(this).children("ul")).hide();
+    // toggle dropdown content when clicked
     $(this).children("ul").toggle();
     // prevent event bubbling
-    e.stopPropagation();
+    event.stopPropagation();
+    // prevent default browser button behaviour
+    event.preventDefault();
   });
   // hide drop menue when clicking outside of element
   $('body').on('click', function () {
@@ -49,6 +53,8 @@ $(function () {
   });
 
 });
+
+
 
 // (function () {
 
@@ -60,7 +66,8 @@ $(function () {
 //   function menus() {
 
 //     var menu = this.querySelector('.dropMenu');
-//     menu.classList.add('show');
+//     menu.classList.toggle('show');
+//     e.stopPropagation();
 
 //     window.addEventListener('mouseup', function (event) {
 //       if (event.target != dropBtns && event.target.parentNode != dropBtns) {

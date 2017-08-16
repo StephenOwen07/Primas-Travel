@@ -58,7 +58,7 @@
           <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
         </button>
           <!--  sidebar  -->
-          <div class="col-sm-3">
+          <div class="col-xs-3 sidebar-mobile">
             <div class="sidebar">
 
               <!--  sidebar search  -->
@@ -80,7 +80,6 @@
                       <label for=""><span>Check-out date:</span>
                       <input class="datepicker" id="check-out" type="text" name="" value="" placeholder="">
                     </label>
-
 
                       <div class="sb-select clearfix">
                         <div class="sb-select-item">
@@ -134,7 +133,6 @@
                         <option value="lorem">20 adults</option>
                       </select></div>
 
-
                         <div class="sb-select-item">
                           <label for="">Children</label>
                           <select class="sb-select-3">
@@ -155,7 +153,7 @@
                       </div>
 
                       <div class="sb-select-submit">
-                        <input type="submit" class="float-right button button-primary button-submit">
+                        <input type="submit" value="Search" class="float-right button button-primary button-submit">
                       </div>
 
                     </div>
@@ -243,38 +241,44 @@
                       <input type="text" id="amount">
                     </div>
                   </div>
-
-
                   <!--  /Price  -->
 
                 </form>
               </div>
-
 
             </div>
           </div>
           <!-- /sidebar  -->
 
           <!--  rooms sort  -->
-          <div class="col-sm-9">
+          <div class="col-lg-9 col-xs-12">
 
             <div class="room-sort">
+
               <ul class="room-sort-menu">
+                <!-- sidebar mobile  -->
+                <div class="sidebar-hamburger">
+                  <i class="fa fa-bars" aria-hidden="true"></i> <span>    Filter</span>
+                </div>
+                <!-- sort mobile -->
+                <div class="sort-mobile">
+                  <i class="fa fa-bars" aria-hidden="true"></i> <span>    Sort</span>
+                </div>
                 <span class="sort">Sort by :</span>
-                <li class="dropdown" data-drop="drop"><a href="#">Price <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <li class="dropdown"><a href="#">Price <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                   <ul class="dropMenu">
                     <li><a href="">Price (hi to low)</a></li>
                     <li><a href="">Price (low to hi)</a></li>
                   </ul>
                 </li>
-                <li class="dropdown" data-drop="drop"><a href="#">Stars <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <li class="dropdown"><a href="#">Stars <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                   <ul class="dropMenu">
                     <li><a href="">Stars (hi to low)</a></li>
                     <li><a href="">Stars (low to hi)</a></li>
                   </ul>
                 </li>
 
-                <li class="dropdown" data-drop="drop"><a href="#">Review score <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                <li class="dropdown"><a href="#">Review score <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                   <ul class="dropMenu">
                     <li><a href="">Score (hi to low)</a></li>
                     <li><a href="">Score (low to hi)</a></li>
@@ -283,13 +287,11 @@
               </ul>
             </div>
 
-
           </div>
-
           <!-- /room-sort  -->
 
           <!--  hotels card -->
-          <div class="col-sm-9">
+          <div class="col-lg-9 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-marina"></div>
 
@@ -323,20 +325,19 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Excellent 8.8</h4>
+                  <h4><span>Excellent</span> 8.8</h4>
                   <span>22,882 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>14,399</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
-          <div class="col-sm-9">
+          <div class="col-lg-9 col-xs-12">
             <div class="hotel-card">
 
               <div class="hotel-img hotel-img-studioM"></div>
@@ -371,22 +372,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Good 7.5</h4>
+                  <h4><span>Good</span> 7.5</h4>
                   <span>3,432 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>4,052</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9">
+          <div class="col-lg-9 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-sentosa"></div>
 
@@ -418,22 +418,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Very Good 8.5</h4>
+                  <h4><span>Very Good</span> 8.5</h4>
                   <span>106 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>26,399</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9">
+          <div class="col-lg-9 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-indigo"></div>
 
@@ -467,22 +466,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Superb 9.1</h4>
+                  <h4><span>Superb</span> 9.1</h4>
                   <span>595 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>4,539</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-hop"></div>
 
@@ -509,22 +507,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Very Good 8.2</h4>
+                  <h4><span>Very Good</span> 8.2</h4>
                   <span>544 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>1,319</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-mini"></div>
 
@@ -552,22 +549,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Good 7.0</h4>
+                  <h4><span>Good</span> 7.0</h4>
                   <span>953 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>2,543</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-ICON"></div>
 
@@ -601,22 +597,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Superb 9.3</h4>
+                  <h4><span>Superb</span> 9.3</h4>
                   <span>4,133 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>9,504</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-dreamhouse"></div>
 
@@ -646,22 +641,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Good 7.8</h4>
+                  <h4><span>Good</span> 7.8</h4>
                   <span>882 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>1,504</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-laMaison"></div>
 
@@ -692,22 +686,21 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Fabulous 8.6</h4>
+                  <h4><span>Fabulous</span> 8.6</h4>
                   <span>637 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>3,000</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
 
           <!--  hotels card-->
-          <div class="col-sm-9 col-sm-offset-3">
+          <div class="col-lg-9 col-lg-offset-3 col-xs-12">
             <div class="hotel-card">
               <div class="hotel-img hotel-img-fairytale"></div>
 
@@ -737,28 +730,24 @@
 
               <div class="hotel-promo">
                 <div class="review">
-                  <h4>Very Good 8.5</h4>
+                  <h4><span>Very Good</span> 8.5</h4>
                   <span>219 reviews</span>
                 </div>
                 <div class="promo-price">
                   <h3>TWD <span>2,040</span></h3>
                 </div>
-                <a href="#" class="button button-secondary button-primary promo-button">Available rooms</a>
+                <a href="#" class="button button-secondary button-primary promo-button">View</a>
               </div>
-
 
             </div>
           </div>
           <!--  hotels card  -->
-
 
         </div>
       </div>
     </section>
 
   </main>
-
-
 
   <!--  Footer  -->
   <footer>
@@ -770,7 +759,6 @@
             <li><a href="index.html "><strong>Home</strong></a></li>
             <li><a href="index.html ">Tesimonials</a></li>
             <li><a href="index.html ">Newsletter</a></li>
-
           </ul>
         </div>
 
@@ -814,7 +802,6 @@
           </ul>
         </div>
       </div>
-
 
       <div class="row">
         <p class="ta-center">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
