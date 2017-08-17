@@ -1124,11 +1124,15 @@
       margin-top: 20px;
       border: 1px solid #ccc;
       background: #E9EAEA;
+      -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+      transition: -webkit-box-shadow .2s ease-in-out;
       transition: box-shadow .2s ease-in-out;
+      transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
       outline: none;
     }
 
     .hotel-card:hover {
+      -webkit-box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93);
       box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93);
     }
 
@@ -1166,7 +1170,7 @@
     }
 
     .hotel-img-mini {
-      background-image: url('../img/destinations/mini.jpg');
+      background-image: url('../img/destinations/hop.jpg');
     }
 
     .hotel-img-ICON {
