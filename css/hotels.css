@@ -1,0 +1,283 @@
+/*************************************** 
+    Marina bay sands      
+/**************************************/
+
+
+/* Masonry */
+
+.masonry-item {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.masonry-grid>div>img {
+  padding: 0;
+  margin: 0;
+}
+
+.masonry-1st {
+  height: 400px;
+  width: 60%;
+  float: left;
+}
+
+.masonry-1st img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-2nd {
+  float: right;
+  height: 315px;
+  width: 39.5%;
+  margin-left: .5%;
+}
+
+.masonry-2nd img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-3rd {
+  float: left;
+  width: 19%;
+  margin: .5% 0 0;
+  height: 180px;
+  clear: both;
+}
+
+.masonry-3rd img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-4th {
+  float: left;
+  width: 40.5%;
+  margin: .5% 0 0 .5%;
+  height: 180px;
+}
+
+.masonry-4th img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-5th {
+  float: left;
+  width: 19.5%;
+  height: 266px;
+  margin-top: -80px;
+  margin-left: .5%;
+}
+
+.masonry-5th img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-6th {
+  float: left;
+  width: 19.5%;
+  height: 151px;
+  margin-top: -80px;
+  margin-left: .5%;
+}
+
+.masonry-6th img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  /* box-sizing: initial; */
+}
+
+.masonry-7th {
+  float: left;
+  width: 19.5%;
+  height: 110px;
+  margin-top: 5px;
+  margin-left: .5%;
+}
+
+.masonry-7th img {
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.mansonry-overlay-alt {
+  background-color: rgba(1, 1, 1, 0.5);
+}
+
+.masonry-overlay:hover,
+.masonry-overlay:focus {
+  background-color: rgba(1, 1, 1, 0.8);
+}
+
+.see-map {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  bottom: -10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  transition: color 250ms ease-in-out;
+}
+
+.ms-overlay-info-title {
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+  font-size: 1.6em;
+  font-weight: 400;
+  transition: all 250ms ease-in-out;
+}
+
+.ms-overlay-info-caption {
+  color: #84b5fe;
+  opacity: 0;
+  width: 100%;
+  height: 49px;
+  position: absolute;
+  left: 5%;
+  bottom: 0%;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  transition: color 250ms ease-in-out;
+  z-index: 1;
+}
+
+.ms-overlay-info-title-2 {
+  bottom: 20%;
+}
+
+.ms-overlay-info-title-3 {
+  bottom: 35%;
+}
+
+.ms-overlay-info-title-4 {
+  bottom: 35%;
+}
+
+.ms-overlay-info-title-5 {
+  bottom: 25%;
+}
+
+.see-map-overlay-title {
+  bottom: 80px;
+  left: 20px;
+}
+
+.see-map-overlay-caption {
+  text-align: center;
+  left: 0;
+  bottom: -10px;
+}
+
+.masonry-overlay:hover .see-map,
+.masonry-overlay:focus .see-map {
+  opacity: 0;
+}
+
+.masonry-overlay:hover .ms-overlay-info-caption,
+.masonry-overlay:hover .ms-overlay-info-title,
+.masonry-overlay:focus .ms-overlay-info-caption,
+.masonry-overlay:focus .ms-overlay-info-title {
+  opacity: 1;
+}
+
+.ms-review-snippet {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1.4px;
+  font-size: 0.9em;
+}
+
+.mansonry-overlay-alt:hover .ms-review-snippet,
+.mansonry-overlay-alt:focus .ms-review-snippet {
+  visibility: hidden;
+}
+
+.review span {
+  display: block;
+  font-size: 1.5em;
+}
+
+.ms-review-text {
+  margin: 10px 0 20px 0;
+}
+
+.author-name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ms-engagement {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  color: #fff;
+  font-size: 0.9em;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.ms-engagement span {
+  display: block;
+  font-size: 1.5em;
+}
+
+.ms-engagement-text {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.mansonry-overlay-alt:hover .ms-engagement,
+.mansonry-overlay-alt:focus .ms-engagement {
+  visibility: hidden;
+}
+
+.mansonry-7th-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  transition: color 250ms ease-in-out;
+}
+
+.mansonry-7th-caption:hover {
+  color: #84b5fe;
+}
