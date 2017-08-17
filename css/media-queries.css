@@ -57,6 +57,7 @@
     padding: 7px 18px;
     color: #fff;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   .sidebar-hamburger i,
@@ -296,6 +297,7 @@ Tablet Portrait
     color: #fff;
     text-align: center;
     cursor: pointer;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   .sort-mobile i,

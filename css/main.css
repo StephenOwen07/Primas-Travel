@@ -1143,8 +1143,9 @@
     }
 
     .hotel-img {
+      background-color: transparent;
       background-size: cover;
-      background-position: 80% center;
+      background-position: center;
       background-repeat: no-repeat;
       width: 30%;
     }
@@ -1170,7 +1171,7 @@
     }
 
     .hotel-img-mini {
-      background-image: url('../img/destinations/hop.jpg');
+      background-image: url('../img/destinations/mini.jpg');
     }
 
     .hotel-img-ICON {
@@ -1192,10 +1193,6 @@
     .hotel-info {
       padding: 10px;
       width: 50%;
-    }
-
-    .hotel-card a.hotel-wrap {
-      visibility: none!important;
     }
 
     .hotel-card h4 {
@@ -1256,7 +1253,7 @@
       text-align: right;
     }
 
-    .review span {
+    .review>span {
       font-size: 0.8em;
       margin-top: 5px;
     }
@@ -1277,6 +1274,7 @@
     .hotel-promo a.promo-button {
       position: relative;
       left: 7%;
+      bottom: 2%;
       width: auto;
       padding: 9% 4%;
       text-align: center;
