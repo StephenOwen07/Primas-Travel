@@ -2,6 +2,71 @@
     Marina bay sands      
 /**************************************/
 
+.hotel-intro {
+  padding-top: 80px;
+}
+
+
+/* Hotel header */
+
+.hotel-header {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hotel-header-info {
+  padding: 0;
+  position: relative;
+  bottom: 10px;
+}
+
+.hotel-header-info-name h1 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  font-size: 1.8em;
+  font-weight: 500;
+  word-spacing: initial;
+  letter-spacing: initial;
+}
+
+.hotel-header-info-name-stars {
+  position: relative;
+  bottom: 5px;
+  display: inline-block;
+}
+
+.hotel-header-info-name-stars>img {
+  display: inherit;
+}
+
+.hotel-header-info-address {
+  font-size: 0.9em;
+}
+
+.hotel--header-info-address a {
+  display: inline-block;
+}
+
+.hotel-header-rating-review {
+  position: relative;
+  bottom: -5px;
+  padding: 0;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+.hotel-header-rating-score {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.hotel-header-rating-score-number {
+  margin-left: 5px;
+  color: #488BF8;
+  font-size: 1.8em;
+}
+
 
 /* Masonry */
 
@@ -80,7 +145,7 @@
 .masonry-6th {
   float: left;
   width: 19.5%;
-  height: 151px;
+  height: 149px;
   margin-top: -80px;
   margin-left: .5%;
 }
@@ -89,14 +154,14 @@
   width: 100%;
   height: 100%;
   border: 1px solid #ccc;
-  /* box-sizing: initial; */
+  box-sizing: initial;
 }
 
 .masonry-7th {
   float: left;
   width: 19.5%;
   height: 110px;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-left: .5%;
 }
 
@@ -111,7 +176,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  transition: all 300ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .mansonry-overlay-alt {
@@ -280,4 +345,223 @@
 
 .mansonry-7th-caption:hover {
   color: #84b5fe;
+}
+
+
+/* room choices */
+
+.room-choices {
+  padding-top: 0;
+}
+
+.room-choices-heading>h2 {
+  padding: 0 5px 20px;
+  font-weight: 500;
+  font-size: 1.4em;
+  text-transform: initial;
+}
+
+.room-choices-card {
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.room-choices-card-heading {
+  padding: 15px;
+  background: rgba(227, 227, 227, 0.65);
+}
+
+.room-choices-card-heading>h4 {
+  margin: 0;
+}
+
+.room-choices-card-content {
+  display: flex;
+  padding: 0;
+}
+
+.room-choices-card-content h5 {
+  margin: 0;
+  padding: 10px 0 20px;
+  font-weight: 500;
+}
+
+.room-choices-card-content-space {
+  display: inline-block;
+  width: 25%;
+  padding: 0 10px;
+  border-right: 1px solid #ccc;
+}
+
+.room-choices-card-content-space-img {
+  height: 150px;
+  width: 95%;
+  background-image: url('../img/hotels/Marina-bay-sands/premiere-twin-garden-view.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span.room-choices-card-content-space-img-tagline {
+  margin: 15px 0 15px 5px;
+  display: block;
+  font-size: 0.8em;
+}
+
+.room-choices-card-content-specification {
+  width: 20%;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.room-choices-card-content-specification ul {
+  margin: 5px 0;
+  padding: 0;
+}
+
+.room-choices-card-content-specification li {
+  padding: 5px 0;
+  font-size: 0.9em;
+}
+
+.room-choices-card-content-specification i {
+  margin-right: 15px;
+}
+
+.room-choices-card-content-capacity {
+  display: inline-block;
+  width: 10%;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.room-choices-card-content-capacity-text {
+  margin-top: 50px;
+  font-size: 1.2em;
+}
+
+.room-choices-card-content-capacity-text i {
+  margin-left: 5px;
+  font-size: 1.5em;
+}
+
+.room-choices-card-content-price {
+  display: inline-block;
+  width: 20%;
+  border-right: 1px solid #ccc;
+  text-align: center;
+}
+
+.room-choices-card-content-price-text {
+  margin-top: 38px;
+}
+
+.room-choices-card-content-price-text p {
+  margin: 0;
+  color: #CB242D;
+}
+
+.room-choices-card-content-price-text span {
+  font-size: 1.8em;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.room-choices-card-content-rooms {
+  display: inline-block;
+  width: 10%;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.room-choices-card-content-rooms select {
+  padding: 10px 20px;
+  margin-top: 50px;
+  text-align: right;
+}
+
+.room-choices-card-content-book {
+  position: relative;
+  display: inline-block;
+  width: 15%;
+  padding: 0 10px;
+}
+
+.room-choices-card-content-book span {
+  display: block;
+  margin-top: 100px;
+  color: #CB242D;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.room-choices-card-content-book input {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  width: 90%;
+}
+
+.premiere-king-garden-view-img {
+  background-image: url('../img/hotels/Marina-bay-sands/premiere-king-garden-view.jpg');
+}
+
+.sande-suite-img {
+  background-image: url('../img/hotels/Marina-bay-sands/sande-suite.jpg');
+}
+
+.orchard-suite-img {
+  background-image: url('../img/hotels/Marina-bay-sands/orchard-suite.jpg');
+}
+
+
+/* hotel overview */
+
+.hotel-overview {
+  padding-top: 0;
+}
+
+.hotel-overview-heading h2 {
+  padding: 0 5px 20px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-transform: initial;
+}
+
+.hotel-overview-title {
+  border-top: 1px solid #ccc;
+}
+
+.hotel-overview-title h3 {
+  padding: 0 5px 20px;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: initial;
+}
+
+.hotel-overview-description {
+  border-top: 1px solid #ccc;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.hotel-overview-description {
+  font-size: 0.9em;
+}
+
+.show-more {
+  display: inline-block;
+  padding: 5px 0;
+  color: #488BF8;
+  cursor: pointer;
+}
+
+.show-more i {
+  margin-left: 5px;
+}
+
+.hotel-overview-description-open {
+  max-height: 600px
 }

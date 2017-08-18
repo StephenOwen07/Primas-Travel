@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/media-queries.css">
 </head>
 
-<body id="destination">
+<body>
 
   <header class="header-default ">
     <div class="container-fluid">
@@ -39,7 +39,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a class="nav-active" href="destination.html">Destination</a></li>
+          <li><a href="destination.html">Destination</a></li>
           <li><a href="contact.html">Contact</a>
           </li>
         </ul>
@@ -52,9 +52,53 @@
 
   <main>
 
-    <!-- masonry -->
-    <section class="hotel-masonry bg-white">
+    <!-- hotel intro -->
+    <section class="hotel-intro bg-white">
 
+      <!-- hotel header -->
+      <div class="hotel-header">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="col-xs-8">
+              <div class="hotel-header-info">
+                <div class="hotel-header-info-name">
+                  <h1>Marina Bay Sands</h1>
+                  <span class="hotel-header-info-name-stars">
+                    <img src="/img/destinations/star.png" alt="stars">
+                    <img src="/img/destinations/star.png" alt="stars">
+                    <img src="/img/destinations/star.png" alt="stars">
+                    <img src="/img/destinations/star.png" alt="stars">
+                    <img src="/img/destinations/star.png" alt="stars">
+                  </span>
+                </div>
+                <div class="hotel-header-info-address"><a class="info-link-blue" href="#">10 Bayfront Avenue, Marina Bay, Singapore, Singapore, 018956</a></div>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="hotel-header-rating-review">
+                <div class="hotel-header-rating-score">
+                  <span>Excellent</span> <span class="hotel-header-rating-score-number">8.8</span>
+                </div>
+                <div class="hotel-header-rating-reviews">
+                  <span>
+                    <a class="info-link-blue" href="#">Based on 22,882 reviews</a>
+                  </span>
+                </div>
+                <div class="hotel-header-rating-recommendation-score">
+                  <span><strong>87%</strong> Would recommend to a friend</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /hotel header -->
+
+      <!-- masonry -->
       <div class="container masonry-grid clearfix">
         <div class="masonry-item masonry-1st">
           <img src="img/hotels/Marina-bay-sands/Marina-main.jpg" alt="">
@@ -120,9 +164,314 @@
           </div>
         </div>
       </div>
+      <!-- /masonry -->
 
     </section>
-    <section style="height:300px;"></section>
+    <!-- /hotel intro -->
+
+    <!-- room choices -->
+    <section class="room-choices bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="room-choices-heading">
+              <h2>Room choices</h2>
+            </div>
+
+            <!-- room choices card -->
+            <div class="room-choices-card">
+
+              <div class="room-choices-card-heading bg-white">
+                <h4>Premier Twin Garden View</h4>
+              </div>
+
+              <div class="room-choices-card-content">
+                <div class="room-choices-card-content-space">
+                  <h5>The space</h5>
+                  <div class="room-choices-card-content-space-img"></div>
+                  <span class="room-choices-card-content-space-img-tagline"><a class="info-link-blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="room-choices-card-content-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-leaf" aria-hidden="true"></i><span>Garden View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>47 m²/506ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-bath" aria-hidden="true"></i><span>Shower and bathtub</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 single beds</span></li>
+                  </ul>
+                </div>
+
+                <div class="room-choices-card-content-capacity">
+                  <h5>Capacity</h5>
+                  <div class="room-choices-card-content-capacity-text">
+                    <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="room-choices-card-content-price">
+                  <h5>Price per night</h5>
+                  <div class="room-choices-card-content-price-text">
+                    <p>TWD <span>10,548</span></p>
+                  </div>
+                </div>
+                <div class="room-choices-card-content-rooms">
+                  <h5>Rooms</h5>
+                  <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                  </select>
+                </div>
+
+                <div class="room-choices-card-content-book">
+                  <span>Limited availability</span>
+                  <input type="submit" value="Book now" class="button button-primary button-submit">
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+            <!-- room choices card -->
+            <div class="room-choices-card">
+
+              <div class="room-choices-card-heading bg-white">
+                <h4>Premier King Garden View</h4>
+              </div>
+
+              <div class="room-choices-card-content">
+                <div class="room-choices-card-content-space">
+                  <h5>The space</h5>
+                  <div class="room-choices-card-content-space-img premiere-king-garden-view-img"></div>
+                  <span class="room-choices-card-content-space-img-tagline"><a class="info-link-blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="room-choices-card-content-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-leaf" aria-hidden="true"></i><span>Garden View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>47 m²/506ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-bath" aria-hidden="true"></i><span>Shower and bathtub</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 1 King bed</span></li>
+                  </ul>
+                </div>
+
+                <div class="room-choices-card-content-capacity">
+                  <h5>Capacity</h5>
+                  <div class="room-choices-card-content-capacity-text">
+                    <span>3 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="room-choices-card-content-price">
+                  <h5>Price per night</h5>
+                  <div class="room-choices-card-content-price-text">
+                    <p>TWD <span>10,548</span></p>
+                  </div>
+                </div>
+                <div class="room-choices-card-content-rooms">
+                  <h5>Rooms</h5>
+                  <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                  </select>
+                </div>
+
+                <div class="room-choices-card-content-book">
+                  <span>Limited availability</span>
+                  <input type="submit" value="Book now" class="button button-primary button-submit">
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+            <!-- room choices card -->
+            <div class="room-choices-card">
+
+              <div class="room-choices-card-heading bg-white">
+                <h4>Orchard Suite</h4>
+              </div>
+
+              <div class="room-choices-card-content">
+                <div class="room-choices-card-content-space">
+                  <h5>The space</h5>
+                  <div class="room-choices-card-content-space-img orchard-suite-img"></div>
+                  <span class="room-choices-card-content-space-img-tagline"><a class="info-link-blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="room-choices-card-content-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-leaf" aria-hidden="true"></i><span>Garden View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>97 m²/1044ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-bath" aria-hidden="true"></i><span>Shower and bathtub</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 1 King bed</span></li>
+                  </ul>
+                </div>
+
+                <div class="room-choices-card-content-capacity">
+                  <h5>Capacity</h5>
+                  <div class="room-choices-card-content-capacity-text">
+                    <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="room-choices-card-content-price">
+                  <h5>Price per night</h5>
+                  <div class="room-choices-card-content-price-text">
+                    <p>TWD <span>16,935</span></p>
+                  </div>
+                </div>
+                <div class="room-choices-card-content-rooms">
+                  <h5>Rooms</h5>
+                  <select>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                          <option value="">5</option>
+                          <option value="">6</option>
+                          <option value="">7</option>
+                          <option value="">8</option>
+                          <option value="">9</option>
+                        </select>
+                </div>
+
+                <div class="room-choices-card-content-book">
+                  <span>Limited availability</span>
+                  <input type="submit" value="Book now" class="button button-primary button-submit">
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+            <!-- room choices card -->
+            <div class="room-choices-card">
+
+              <div class="room-choices-card-heading bg-white">
+                <h4>Sande Suite</h4>
+              </div>
+
+              <div class="room-choices-card-content">
+                <div class="room-choices-card-content-space">
+                  <h5>The space</h5>
+                  <div class="room-choices-card-content-space-img sande-suite-img"></div>
+                  <span class="room-choices-card-content-space-img-tagline"><a class="info-link-blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="room-choices-card-content-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-leaf" aria-hidden="true"></i><span>Garden View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>145 m²/1561ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-bath" aria-hidden="true"></i><span>Shower and bathtub</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>2 1 King bed</span></li>
+                  </ul>
+                </div>
+
+                <div class="room-choices-card-content-capacity">
+                  <h5>Capacity</h5>
+                  <div class="room-choices-card-content-capacity-text">
+                    <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="room-choices-card-content-price">
+                  <h5>Price per night</h5>
+                  <div class="room-choices-card-content-price-text">
+                    <p>TWD <span>26,844</span></p>
+                  </div>
+                </div>
+                <div class="room-choices-card-content-rooms">
+                  <h5>Rooms</h5>
+                  <select>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                  </select>
+                </div>
+
+                <div class="room-choices-card-content-book">
+                  <span>Limited availability</span>
+                  <input type="submit" value="Book now" class="button button-primary button-submit">
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /room choices -->
+
+    <!-- hotel overview -->
+    <section class="hotel-overview bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="hotel-overview-heading">
+            <h2>More about Marina Bay Sands</h2>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="hotel-overview-title">
+              <h3>Marina Bay Sands overview</h3>
+            </div>
+          </div>
+
+          <div class="col-xs-8">
+            <div id="overview-content" class="hotel-overview-description">
+              <p>Marina Bay Sands is located in one of the world’s most iconic landmarks and premier lifestyle destinations.
+                Emerge from the elegant comfort of your own room to relax in the utmost luxury at the world's largest rooftop
+                Infinity Pool, while enjoying the panoramic view of the city’s skyline, or soar 57 levels above the heart
+                of the city at the stunning Sands SkyPark Observation Deck.</p>
+              <br>
+              <p>Savor exclusive culinary creations by the world’s best celebrity chefs: Tetsuya Wakuda, Wolfgang Puck, Gordon
+                Ramsay, Mario Batali, David Thompson, Justin Quek, Daniel Boulud, and David Myers. Alternatively, let your
+                imagination inspires you at Future World, the new exhibition at ArtScience Museum, where a spectacular interactive
+                world is brought to life. Discover a curated collection of seasonal trends and a refreshing mix of international
+                luxury brands at one of Singapore’s largest luxury shopping malls.</p>
+              <br>
+              <p>Capture the breathtaking and memorable moments at Marina Bay Sands, where entertainment, dining, and retail
+                offerings are set above and beyond the level of excellence.</p>
+            </div>
+            <div id="show-more-btn" class="show-more">
+              <span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- hotel overview -->
 
   </main>
 
@@ -189,9 +538,31 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin=" anonymous "></script>
-  <script src="jquery-ui/jquery-ui.min.js "></script>
+
   <script src="js/main.js "></script>
-  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+  <script>
+    (function () {
+
+      // show more button
+      var overviewContent = document.getElementById('overview-content');
+      var showMoreBtn = document.getElementById('show-more-btn');
+
+      showMoreBtn.addEventListener('click', function () {
+
+        if (overviewContent.classList.contains('hotel-overview-description-open')) {
+
+          overviewContent.classList.remove('hotel-overview-description-open');
+          showMoreBtn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
+        } else {
+
+          overviewContent.classList.add('hotel-overview-description-open');
+          showMoreBtn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
+        }
+
+      });
+
+    })();
+  </script>
 
 </body>
 
