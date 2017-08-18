@@ -393,6 +393,10 @@
   border-right: 1px solid #ccc;
 }
 
+.room-choices-card-content-space-container-img {
+  overflow: hidden;
+}
+
 .room-choices-card-content-space-img {
   height: 150px;
   width: 95%;
@@ -400,6 +404,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all .3s ease-in-out;
+}
+
+.room-choices-card-content-space-img:hover {
+  transform: scale(1.3);
 }
 
 span.room-choices-card-content-space-img-tagline {
@@ -551,14 +560,14 @@ span.room-choices-card-content-space-img-tagline {
   font-size: 0.9em;
 }
 
-.show-more {
+.show-more-btn {
   display: inline-block;
   padding: 5px 0;
   color: #488BF8;
   cursor: pointer;
 }
 
-.show-more i {
+.show-more-btn i {
   margin-left: 5px;
 }
 
