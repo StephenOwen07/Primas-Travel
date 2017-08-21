@@ -1,5 +1,5 @@
 /*************************************** 
-    Wide screen       
+Wide screen       
 /**************************************/
 
 @media (min-width: 1656px) {
@@ -11,7 +11,7 @@
 
 
 /*************************************** 
-    Desktop         
+Desktop         
 /**************************************/
 
 @media (max-width:1200px) {
@@ -276,6 +276,91 @@ Tablet Portrait
   .promo-price h3 {
     font-size: 1em;
   }
+  /* Hotels pages */
+  .hotel-header-info {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .hotel-header-info-name-stars {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .hotel-header-rating-review {
+    text-align: center;
+  }
+  /* .masonry-item.masonry-2nd, */
+  .masonry-item.masonry-3rd,
+  .masonry-item.masonry-4th,
+  .masonry-item.masonry-5th,
+  .masonry-item.masonry-6th,
+  .masonry-item.masonry-7th {
+    display: none;
+  }
+  .masonry-item {
+    margin: 10% 10%;
+    float: none;
+    height: auto;
+    width: auto;
+  }
+  .ms-overlay-info-title {
+    bottom: 50%;
+  }
+  .ms-overlay-info-caption {
+    bottom: 25%;
+  }
+  .room-choices {
+    text-align: center;
+  }
+  .room-choices-card {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 80%;
+  }
+  .room-choices-card-content {
+    display: block;
+  }
+  .room-choices-card-content-space,
+  .room-choices-card-content-specification,
+  .room-choices-card-content-capacity,
+  .room-choices-card-content-price,
+  .room-choices-card-content-rooms {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+  .room-choices-card-content-space-img {
+    margin: 0 auto;
+    width: 80%;
+    height: 250px;
+    transition: none;
+  }
+  .room-choices-card-content-space-img:hover {
+    transform: none;
+  }
+  .room-choices-card-content-rooms {
+    border-bottom: none;
+  }
+  .room-choices-card-content-rooms .button-submit {
+    position: initial;
+    width: auto;
+    margin-top: 15px;
+  }
+  .hotel-overview-title,
+  .hotel-overview-description {
+    border: none;
+  }
+  .guest-review-card {
+    border: none;
+    margin-bottom: 0;
+  }
+  .guest-review-info {
+    margin-bottom: 30px;
+  }
+  .guest-review-comment {
+    padding: 20px;
+  }
 }
 
 
@@ -380,6 +465,24 @@ Landscape phone
     width: 100px;
     text-align: center;
     font-size: 0.8em;
+  }
+  /* hotel pages */
+  .masonry-item {
+    margin: 10% 0%;
+  }
+  .ms-overlay-info-title {
+    top: 20%;
+  }
+  .ms-overlay-info-caption {
+    bottom: 20%;
+  }
+  .room-choices-card {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+  .room-choices-card-content-space-img {
+    width: 90%;
+    height: 250px;
   }
 }
 

@@ -76,6 +76,11 @@
   cursor: pointer;
 }
 
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+}
+
 .masonry-grid>div>img {
   padding: 0;
   margin: 0;
@@ -87,21 +92,11 @@
   float: left;
 }
 
-.masonry-1st img {
-  width: 100%;
-  height: 100%;
-}
-
 .masonry-2nd {
   float: right;
   height: 315px;
   width: 39.5%;
   margin-left: .5%;
-}
-
-.masonry-2nd img {
-  width: 100%;
-  height: 100%;
 }
 
 .masonry-3rd {
@@ -112,21 +107,11 @@
   clear: both;
 }
 
-.masonry-3rd img {
-  width: 100%;
-  height: 100%;
-}
-
 .masonry-4th {
   float: left;
   width: 40.5%;
   margin: .5% 0 0 .5%;
   height: 180px;
-}
-
-.masonry-4th img {
-  width: 100%;
-  height: 100%;
 }
 
 .masonry-5th {
@@ -137,24 +122,13 @@
   margin-left: .5%;
 }
 
-.masonry-5th img {
-  width: 100%;
-  height: 100%;
-}
-
 .masonry-6th {
   float: left;
   width: 19.5%;
   height: 149px;
+  border: 1px solid #ccc;
   margin-top: -80px;
   margin-left: .5%;
-}
-
-.masonry-6th img {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ccc;
-  box-sizing: initial;
 }
 
 .masonry-7th {
@@ -163,11 +137,6 @@
   height: 110px;
   margin-top: 6px;
   margin-left: .5%;
-}
-
-.masonry-7th img {
-  width: 100%;
-  height: 100%;
 }
 
 .masonry-overlay {
@@ -405,10 +374,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   transition: all .3s ease-in-out;
+  cursor: pointer;
 }
 
 .room-choices-card-content-space-img:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 span.room-choices-card-content-space-img-tagline {
@@ -431,6 +401,7 @@ span.room-choices-card-content-space-img-tagline {
 .room-choices-card-content-specification li {
   padding: 5px 0;
   font-size: 0.9em;
+  line-height: 1.4;
 }
 
 .room-choices-card-content-specification i {
@@ -477,40 +448,36 @@ span.room-choices-card-content-space-img-tagline {
 }
 
 .room-choices-card-content-rooms {
+  position: relative;
   display: inline-block;
-  width: 10%;
-  border-right: 1px solid #ccc;
+  width: 25%;
   padding: 0 10px;
 }
 
 .room-choices-card-content-rooms select {
   padding: 10px 20px;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: right;
 }
 
-.room-choices-card-content-book {
-  position: relative;
-  display: inline-block;
-  width: 15%;
-  padding: 0 10px;
-}
-
-.room-choices-card-content-book span {
+.room-choices-card-content-rooms span {
   display: block;
-  margin-top: 100px;
+  margin-top: 30px;
   color: #CB242D;
   font-weight: 500;
   font-size: 0.9em;
   text-align: center;
 }
 
-.room-choices-card-content-book input {
+.room-choices-card-content-rooms .button-submit {
   position: absolute;
   top: 75%;
   left: 5%;
   width: 90%;
 }
+
+
+/* marina bay rooms */
 
 .premiere-king-garden-view-img {
   background-image: url('../img/hotels/Marina-bay-sands/premiere-king-garden-view.jpg');
@@ -522,6 +489,127 @@ span.room-choices-card-content-space-img-tagline {
 
 .orchard-suite-img {
   background-image: url('../img/hotels/Marina-bay-sands/orchard-suite.jpg');
+}
+
+
+/* studio M rooms */
+
+.studio-loft-img {
+  background-image: url('../img/hotels/studioM/studio-loft.jpg');
+}
+
+.premiere-loft-img {
+  background-image: url('../img/hotels/studioM/premiere-loft.jpg');
+}
+
+.executive-loft-img {
+  background-image: url('../img/hotels/studioM/executive-loft.jpg');
+}
+
+
+/* sentosa rooms */
+
+.one-bedroom-villa-img {
+  background-image: url('../img/hotels/sentosa/1-bedroom-villa.jpg');
+}
+
+.ocean-suite-img {
+  background-image: url('../img/hotels/sentosa/ocean-suite.jpg');
+}
+
+.two-bedroom-villa-img {
+  background-image: url('../img/hotels/sentosa/2-bedroom-villa.jpg');
+}
+
+.three-bedroom-villa-img {
+  background-image: url('../img/hotels/sentosa/3-bedroom-villa.jpg');
+}
+
+
+/* indigo rooms */
+
+.deluxe-king-room-img {
+  background-image: url('../img/hotels/indigo-hotel/deluxe-king-room.png');
+}
+
+.deluxe-twin-room-img {
+  background-image: url('../img/hotels/indigo-hotel/deluxe-twin.jpg');
+}
+
+.premier-king-room-img {
+  background-image: url('../img/hotels/indigo-hotel/premiere-king.png');
+}
+
+.premier-executive-1-king-bath-img {
+  background-image: url('../img/hotels/indigo-hotel/premiere-executive.png');
+}
+
+
+/* hop inn rooms */
+
+.hop-double-room-img {
+  background-image: url('../img/hotels/hop-inn/double-room.jpg');
+}
+
+.hop-twin-room-img {
+  background-image: url('../img/hotels/hop-inn/twin-room.jpg');
+}
+
+.hop-triple-room-img {
+  background-image: url('../img/hotels/hop-inn/triple-room.jpg');
+}
+
+
+/* mini hotel rooms */
+
+.mini-double-img {
+  background-image: url('../img/hotels/mini-hotel/basic-double-twin.jpg');
+}
+
+.smart-room-img {
+  background-image: url('../img/hotels/mini-hotel/smart-room.jpg');
+}
+
+.solo-room-img {
+  background-image: url('../img/hotels/mini-hotel/solo-room.jpg');
+}
+
+
+/* ICON rooms */
+
+.icon-36-city-view-img {
+  background-image: url('../img/hotels/hotel-icon/icon-city-view.jpg');
+}
+
+.icon-36-harbour-view-img {
+  background-image: url('../img/hotels/hotel-icon/icon-harbour-view.jpg');
+}
+
+.icon-club-65-studio-img {
+  background-image: url('../img/hotels/hotel-icon/icon-club-65.jpg');
+}
+
+.icon-club-80-harbour-img {
+  background-image: url('../img/hotels/hotel-icon/icon-club-80.jpg');
+}
+
+
+/* dreamHouse rooms */
+
+.dream-double-img {
+  background-image: url('../img/hotels/dreamHouse/dream-double.jpg');
+}
+
+.dream-twin-img {
+  background-image: url('../img/hotels/dreamHouse/dream-twin.jpg');
+}
+
+.dream-triple-img {
+  background-image: url('../img/hotels/dreamHouse/dream-triple.jpg');
+}
+
+.dream-noWindow-img {
+  background-image: url('../img/hotels/dreamHouse/dream-no-window.jpg');
 }
 
 
@@ -552,16 +640,15 @@ span.room-choices-card-content-space-img-tagline {
 
 .hotel-overview-description {
   border-top: 1px solid #ccc;
-  max-height: 150px;
-  overflow: hidden;
-}
-
-.hotel-overview-description {
+  max-height: 90px;
+  margin-bottom: 30px;
   font-size: 0.9em;
+  overflow: hidden;
 }
 
 .show-more-btn {
   display: inline-block;
+  margin-bottom: 50px;
   padding: 5px 0;
   color: #488BF8;
   cursor: pointer;
@@ -571,6 +658,86 @@ span.room-choices-card-content-space-img-tagline {
   margin-left: 5px;
 }
 
-.hotel-overview-description-open {
-  max-height: 600px
+.show-more-open {
+  max-height: 2000px;
+}
+
+
+/* guest reviews */
+
+.guest-reviews {
+  padding-top: 0;
+}
+
+.guest-review-card {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 0.9em;
+  height: auto;
+}
+
+.guest-review-info-score {
+  color: #488BF8;
+  font-size: 2.5em;
+}
+
+.flag {
+  background-image: url('../img/hotels/flags.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  border: none;
+}
+
+.flag-us {
+  background-position: -16px -11px;
+}
+
+.flag-it {
+  background-position: -16px 0;
+}
+
+.flag-id {
+  background-position: 0 0;
+}
+
+.flag-za {
+  background-position: 0 -11px;
+}
+
+.guest-review-info-traveler-type i {
+  margin-right: 7px;
+}
+
+.guest-review-info-room-type i {
+  margin-right: 5px;
+}
+
+.guest-review-info-stay-detail i {
+  margin-right: 8px;
+}
+
+.guest-review-comment {
+  background: #e3e3e3;
+  border-radius: 10px;
+  padding: 25px 50px;
+}
+
+.guest-review-comment-title {
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.guest-review-comment-text {
+  margin-bottom: 15px;
+}
+
+.guest-review-comment-date {
+  color: #7B838D;
 }
