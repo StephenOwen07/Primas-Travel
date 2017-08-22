@@ -438,6 +438,12 @@ Landscape phone
   .room-sort-menu>li>a {
     width: 100%;
   }
+  .dropMenu {
+    width: 100%;
+  }
+  .room-sort-menu li:last-of-type ul.dropMenu {
+    width: 100%;
+  }
   .hotel-img {
     width: 50%;
   }

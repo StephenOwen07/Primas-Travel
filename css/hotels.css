@@ -613,6 +613,40 @@ span.room-choices-card-content-space-img-tagline {
 }
 
 
+/* la Maison rooms */
+
+.laMaison-DeluxeDouble-img {
+  background-image: url('../img/hotels/laMaison/laMaison-deluxeDouble.jpg');
+}
+
+.laMaison-DeluxeTwin-img {
+  background-image: url('../img/hotels/laMaison/laMaison-deluxeTwin.jpg');
+}
+
+.laMaison-DeluxeFamily-img {
+  background-image: url('../img/hotels/laMaison/laMaison-deluxeFamily.jpg');
+}
+
+
+/* fairytale hotel rooms */
+
+.fairytale-budgetDouble-img {
+  background-image: url('../img/hotels/fairytale/fairytale-budgetDouble.jpg');
+}
+
+.fairytale-deluxeDouble-img {
+  background-image: url('../img/hotels/fairytale/fairytale-deluxeDouble.jpg');
+}
+
+.fairytale-premierQuad-img {
+  background-image: url('../img/hotels/fairytale/fairytale-premierQuad.jpg');
+}
+
+.fairytale-familySuite-img {
+  background-image: url('../img/hotels/fairytale/fairytale-familySuite.jpg');
+}
+
+
 /* hotel overview */
 
 .hotel-overview {
@@ -740,4 +774,83 @@ span.room-choices-card-content-space-img-tagline {
 
 .guest-review-comment-date {
   color: #7B838D;
+}
+
+
+/* booking form */
+
+.booking {
+  padding-top: 50px;
+}
+
+.booking h1 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 1.8em;
+  font-weight: 500;
+  word-spacing: initial;
+  letter-spacing: initial;
+}
+
+.booking-form-card {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.booking-form-card label {
+  font-weight: 500;
+}
+
+.ui-widget label {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.booking-form-card input[type="text"],
+.booking-form-card input[type="tel"],
+.booking-form-card input[type="email"] {
+  display: block;
+  margin: 5px 0 30px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  outline-color: #0283DF;
+}
+
+.booking-form-card span {
+  font-weight: 500;
+}
+
+.booking-form-card-room-details {
+  margin-bottom: 30px;
+}
+
+.booking-form-card-room-details>div {
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+.booking-form-card-room-details>div>span {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.booking-form-card-room-details select {
+  padding: 10px 35px;
+}
+
+.booking-form-card-comment span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.booking-form-card-comment textarea {
+  width: 100%;
+  margin-bottom: 30px;
 }

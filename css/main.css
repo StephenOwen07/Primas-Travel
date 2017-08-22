@@ -1143,7 +1143,7 @@ span.sort {
   left: 0px;
   border: 1px solid color;
   width: 109px;
-  background: #434A54;
+  background: #CB242D;
   font-size: 0.8em;
   z-index: 1;
 }
@@ -1158,7 +1158,7 @@ span.sort {
 }
 
 .dropMenu li a:hover {
-  background: #2e333a;
+  background: #a0080d;
 }
 
 
@@ -1252,6 +1252,18 @@ span.sort {
 }
 
 .hotel-card h4:hover {
+  color: #CB242D;
+}
+
+.hotel-card .property-info>h4>a {
+  padding: 0;
+  margin: 0;
+  color: #0283DF;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.hotel-card .property-info>h4>a:hover {
   color: #CB242D;
 }
 
