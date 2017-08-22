@@ -334,9 +334,11 @@ Tablet Portrait
     margin: 0 auto;
     width: 80%;
     height: 250px;
+    -webkit-transition: none;
     transition: none;
   }
   .room-choices-card-content-space-img:hover {
+    -webkit-transform: none;
     transform: none;
   }
   .room-choices-card-content-rooms {

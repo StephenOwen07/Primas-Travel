@@ -52,11 +52,6 @@ $(function () {
     $('.dropMenu').hide();
   });
 
-  // sidebar responsive
-  $('.sidebar-hamburger').on('click', function () {
-
-
-  });
 
 });
 
