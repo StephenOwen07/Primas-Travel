@@ -33,50 +33,50 @@ $(function () {
     }
   });
 
-  // Sort dropdown menus 
-  var $dropBtns = $('.dropdown');
-
-  $dropBtns.on('click', function (event) {
-
-    // hide dropdown content as default
-    $('.dropMenu').not($(this).children("ul")).hide();
-    // toggle dropdown content when clicked
-    $(this).children("ul").toggle();
-    // prevent event bubbling
-    event.stopPropagation();
-    // prevent default browser button behaviour
-    event.preventDefault();
-  });
-  // hide drop menue when clicking outside of element
-  $('body').on('click', function () {
-    $('.dropMenu').hide();
-  });
-
-
 });
 
 
+/*************************************
+          DROP DOWN MENU 
+ *************************************/
+(function () {
 
-// (function () {
+  var dropBtns = document.querySelectorAll('.dropdown');
 
-//   var dropBtns = document.querySelectorAll('.dropdown');
-//   for (var i = 0; i < dropBtns.length; i++) {
-//     dropBtns[i].addEventListener('click', menus);
-//   }
+  function closeOpenItems() {
+    var openMenus = document.querySelectorAll('.dropMenu');
+    openMenus.forEach(function (menus) {
+      menus.classList.remove('show');
+    });
+  }
 
-//   function menus() {
+  dropBtns.forEach(function (btn) {
 
-//     var menu = this.querySelector('.dropMenu');
-//     menu.classList.toggle('show');
-//     e.stopPropagation();
+    btn.addEventListener('click', function (e) {
+      var
+        dropContent = btn.querySelector('.dropMenu'),
+        shouldOpen = !dropContent.classList.contains('show');
+      e.preventDefault();
 
-//     window.addEventListener('mouseup', function (event) {
-//       if (event.target != dropBtns && event.target.parentNode != dropBtns) {
-//         menu.classList.remove('show');
-//       }
-//     });
+      // First close all open items.
+      closeOpenItems();
+      // Check if the clicked item should be opened. It is already closed at this point so no further action is required if it should be closed.
+      if (shouldOpen) {
+        // Open the clicked item.
+        dropContent.classList.add('show');
+      }
+      e.stopPropagation();
+    });
 
 
-//   }
+  });
 
-// })();
+  //   close menus when clicking outside of them
+  window.addEventListener('click', function (event) {
+    if (event.target != dropBtns) {
+      // Moved the code here to its own function.
+      closeOpenItems();
+    }
+  });
+
+})();

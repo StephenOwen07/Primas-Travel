@@ -746,19 +746,29 @@
     crossorigin=" anonymous "></script>
   <script src="js/main.js "></script>
   <script>
-    // Show more button
-    var $showMoreBtns = $('.show-more-btn');
+    // Show more Button
+    (function () {
 
-    $showMoreBtns.on('click', function () {
+      var showMoreBtns = document.querySelectorAll('.show-more-btn');
 
-      if ($(this).siblings().hasClass('show-more-open')) {
-        $(this).siblings().removeClass('show-more-open');
-        $(this).html('<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>');
-      } else {
-        $(this).siblings().addClass('show-more-open');
-        $(this).html('<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>');
-      }
-    });
+      showMoreBtns.forEach(function (btn) {
+
+        btn.addEventListener('click', function () {
+          var showMoreContent = btn.previousElementSibling;
+          var shouldOpen = !showMoreContent.classList.contains('show-more-open');
+
+          if (shouldOpen) {
+            showMoreContent.classList.add('show-more-open');
+            btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
+          } else {
+            showMoreContent.classList.remove('show-more-open');
+            btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
+          }
+        });
+
+      });
+
+    })();
   </script>
 
 </body>

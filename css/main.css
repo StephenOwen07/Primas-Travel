@@ -1144,10 +1144,14 @@ span.sort {
   top: 46px;
   left: 0px;
   border: 1px solid color;
-  width: 109px;
+  width: inherit;
   background: #CB242D;
   font-size: 0.8em;
   z-index: 1;
+}
+
+.show {
+  display: block;
 }
 
 .room-sort-menu li:last-of-type ul.dropMenu {
