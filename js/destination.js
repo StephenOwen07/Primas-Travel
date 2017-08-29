@@ -65,6 +65,7 @@ $(function () {
         // Open the clicked item.
         dropContent.classList.add('show');
       }
+      // prevent event bubbling
       e.stopPropagation();
     });
 
