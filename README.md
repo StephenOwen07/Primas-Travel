@@ -1,5 +1,5 @@
 # Primas Travel
 
-Business travel website using HTML, CSS, Boostrap grid, javaScript and jQuery
+Travel agency website using HTML, CSS, Boostrap grid, Javacript and jQuery
 
 https://stephenowen07.github.io/PrimasTravel/
