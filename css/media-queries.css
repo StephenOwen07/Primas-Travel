@@ -224,9 +224,12 @@ Tablet Portrait
   }
 
   /* About */
+  .banner-about {
+    height:50vh;
+  }
 
   .banner-about-title {
-    margin-top: 25%;
+    margin-top: 20%;
   }
 
   /*  About: leadership  */
@@ -235,8 +238,11 @@ Tablet Portrait
   }
 
   /* servcices  */
+  .carousell-img {
+    height:50vh;
+  }
   .carousell-img-text {
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 1.2em;
   }
   /*  Services: how it works  */
@@ -421,7 +427,7 @@ Landscape phone
 
   /* services */
   .carousell-img-text {
-    margin-top: 40%;
+    margin-top: 20%;
 
   }
   /*  contact form  */
