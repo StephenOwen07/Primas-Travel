@@ -783,7 +783,7 @@ About Page
 
 .banner-about {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/about/banner-about-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-attachment: fixed;
@@ -792,7 +792,7 @@ About Page
 }
 
 .banner-about-title {
-  margin-top: 20%;
+  margin-top: 15%;
   text-align: center;
 }
 
@@ -846,7 +846,7 @@ Services Page
 }
 
 .carousell-img {
-  height: 80vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

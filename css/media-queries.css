@@ -222,6 +222,13 @@ Tablet Portrait
   footer {
     text-align: center;
   }
+
+  /* About */
+
+  .banner-about-title {
+    margin-top: 25%;
+  }
+
   /*  About: leadership  */
   .leader {
     margin-bottom: 50px;
