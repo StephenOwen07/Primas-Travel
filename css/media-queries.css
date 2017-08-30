@@ -402,8 +402,8 @@ Landscape phone
     font-size: 0.9em;
   }
   /*  About page banner  */
-  .banner-about h1 {
-    line-height: 1.5;
+  .banner-about-title {
+    margin-top: 40%;
   }
   /*  About: how it works  */
   .step-icon {
