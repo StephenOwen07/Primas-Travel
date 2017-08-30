@@ -229,7 +229,8 @@ Tablet Portrait
 
   /* servcices  */
   .carousell-img-text {
-    font-size: 1.8em;
+    margin-top: 20%;
+    font-size: 1.2em;
   }
   /*  Services: how it works  */
   .step {
@@ -409,6 +410,12 @@ Landscape phone
   /*  About: Price plan  */
   .price-plan a.button {
     font-size: 0.9em;
+  }
+
+  /* services */
+  .carousell-img-text {
+    margin-top: 40%;
+
   }
   /*  contact form  */
   .contact-form .card {
