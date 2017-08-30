@@ -172,12 +172,6 @@ Tablet Landscape
   .step-text span {
     right: 42%;
   }
-  /*  map  */
-  #map {
-    height: 500px;
-    margin: 0 auto;
-    width: 90%;
-  }
   /*  contact form  */
   .contact-form .card {
     margin: 30px auto;
@@ -239,12 +233,6 @@ Tablet Portrait
   .step-text span {
     position: initial;
     width: 70px;
-  }
-  /*  map  */
-  #map {
-    height: 400px;
-    margin: 0 auto;
-    width: 100%;
   }
   /*  contact form  */
   .contact-form .card {

@@ -49,18 +49,9 @@
 
   <main>
 
-    <!--  banner  -->
-    <section class="banner-contact text-white">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4 col-sm-8 col-xs-10">
-            <h1>Contact us</h1>
-            <p>We're friendly and available to chat. Reach out to us anytime and we'll happily answer your questions.</p>
+    <div id="map">
+    </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!--  location  -->
     <section class="location bg-white ">
@@ -70,6 +61,8 @@
         </button>
 
         <div class="row">
+          <h1 class="ta-center">Contact us</h1>
+          <span class="line"></span>
           <div class="col-md-3 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-2">
             <h4>General Contact</h4>
             <p>Phone: +65 7461 6556<br> Fax: +65 9899 6269<br>Email: info@primastravel.com<br>
@@ -90,10 +83,8 @@
           </div>
         </div>
 
-        <div id="map">
-        </div>
-      </div>
 
+      </div>
     </section>
 
     <!--contact form  -->
@@ -219,7 +210,7 @@
     function initMap() {
       // Map Options
       var options = {
-        zoom: 3,
+        zoom: 4,
         center: {
           lat: 22.3964,
           lng: 114.1095

@@ -575,6 +575,7 @@ Sections
   background: rgba(0, 0, 0, 0.3);
   text-align: center;
   z-index: 1;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -612,8 +613,13 @@ Sections
 }
 
 .img-gallery-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -645,6 +651,7 @@ Sections
   padding: 10px;
   background: rgba(0, 0, 0, .7);
   text-align: initial;
+  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   z-index: 1;
 }
@@ -1470,36 +1477,6 @@ Contact Page
 /**************************************/
 
 
-/*  banner  */
-
-.banner-contact {
-  position: relative;
-  height: 80vh;
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(0, 0, 0, 0.6)), color-stop(60%, rgba(0, 0, 0, 0))), url(../img/contact/banner-contact-compressor.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0)60%), url(../img/contact/banner-contact-compressor.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner-contact h1 {
-  font-size: 3em;
-}
-
-.banner-contact p {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-
-/* .banner-contact .container {
-  position: absolute;
-  left: 2%;
-  top: 20%;
-} */
-
-
 /*  location  */
 
 .location .row {
@@ -1507,8 +1484,12 @@ Contact Page
   margin-left: 2%;
 }
 
-.location h2 {
-  margin-bottom: 80px;
+.location .line {
+  margin-bottom: 100px;
+}
+
+.location h1 {
+  font-size: 2.2em;
 }
 
 .location h4 {
@@ -1528,9 +1509,9 @@ Contact Page
 /*  Google map  */
 
 #map {
-  height: 500px;
+  height: 75vh;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .info-window p {
