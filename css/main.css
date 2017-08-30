@@ -863,6 +863,12 @@ Services Page
   background-image: url(../img/services/slider-venice-compressor.jpg);
 }
 
+.carousell-img-text {
+  margin-top: 10%;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 10px #000;
+}
+
 .slick-dots {
   bottom: 5%;
 }
@@ -1486,11 +1492,12 @@ Contact Page
   line-height: 1.5;
 }
 
-.banner-contact .container {
+
+/* .banner-contact .container {
   position: absolute;
   left: 2%;
   top: 20%;
-}
+} */
 
 
 /*  location  */
