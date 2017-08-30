@@ -24,10 +24,6 @@ Desktop
   .hero {
     background-attachment: scroll;
   }
-  /*  about-home  */
-  .about-home-box {
-    background-attachment: scroll;
-  }
   /*  Contact: banner  */
   .banner-contact {
     background-attachment: scroll;
@@ -157,9 +153,9 @@ Tablet Landscape
   .benefits i {
     margin-top: 90px;
   }
-  /*  about-home  */
-  .about-home-box {
-    height: 80vh;
+  /* find destination */
+  .find-dest-img {
+    margin-bottom: 100px;
   }
   /*  testimonials  */
   .testimonials .card {
@@ -393,13 +389,6 @@ Landscape phone
   .hero h2 {
     font-size: 1em;
   }
-  /*  about home  */
-  .about-home-box {
-    height: 100vh;
-  }
-  .about-home-text p {
-    margin-bottom: 30px;
-  }
   /*  newsletter  */
   .newsletter .form-control {
     width: 15em;
@@ -508,14 +497,37 @@ old iphone
   .hero h2 {
     margin-bottom: 20px;
   }
-  /*  about home  */
-  .about-home-text {
-    padding-top: 0;
-  }
   /*  Contact: banner  */
   .banner-contact h1,
   .banner-contact p {
     position: relative;
     bottom: 50px;
+  }
+}
+
+
+/*************************************** 
+      Img Gallery    
+/**************************************/
+
+@media (max-width: 850px) {
+  .img-gallery-cell {
+    position: relative;
+    margin: 30px 1px;
+    height: 350px;
+    width: 400px;
+  }
+  .img-gallery-cell-empty {
+    display: none;
+  }
+}
+
+@media (max-width:430px) {
+  .img-gallery-caption-container {
+    font-size: 0.9em;
+  }
+  .img-gallery-caption-hotel,
+  .img-gallery-caption-price {
+    margin-top: 10px;
   }
 }
