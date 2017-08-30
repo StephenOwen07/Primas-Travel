@@ -871,9 +871,10 @@ Services Page
 }
 
 .carousell-img-text {
-  margin-top: 10%;
+  margin: 10% 4% 0;
   font-size: 2.2em;
   text-shadow: 1px 1px 10px #000;
+  line-height: 1.2;
 }
 
 .slick-dots {

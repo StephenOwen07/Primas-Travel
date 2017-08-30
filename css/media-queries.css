@@ -226,6 +226,11 @@ Tablet Portrait
   .leader {
     margin-bottom: 50px;
   }
+
+  /* servcices  */
+  .carousell-img-text {
+    font-size: 1.8em;
+  }
   /*  Services: how it works  */
   .step {
     text-align: center;
@@ -374,6 +379,10 @@ Landscape phone
     padding: 40px 15px;
   }
   /*  hero  */
+  .hero .container-fluid {
+    position: relative;
+    bottom: 100px;
+  }
   .hero h2 {
     font-size: 1em;
   }
@@ -480,7 +489,7 @@ old iphone
   /*  hero  */
   .hero .container-fluid {
     position: relative;
-    bottom: 70px;
+    bottom: 150px;
   }
   .hero h2 {
     margin-bottom: 20px;
