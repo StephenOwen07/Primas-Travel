@@ -163,11 +163,7 @@ Tablet Landscape
   }
   /* about */
   .banner-about {
-    height:50vh;
-  }
-  /* Carousell */
-  .carousell-img {
-    height:60vh;
+    height: 50vh;
   }
   /*  How it works  */
   section.how-it-works.bg-white {
@@ -230,23 +226,21 @@ Tablet Portrait
   footer {
     text-align: center;
   }
-
   /* About */
- 
-
   .banner-about-title {
     margin-top: 20%;
   }
-
   /*  About: leadership  */
   .leader {
     margin-bottom: 50px;
   }
-
   /* servcices  */
-  
+  /* Carousell */
+  .carousell-img {
+    height: 50vh;
+  }
   .carousell-img-text {
-    margin-top: 10%;
+    margin-top: 20%;
     font-size: 1.2em;
   }
   /*  Services: how it works  */
@@ -418,7 +412,7 @@ Landscape phone
   }
   /*  About page banner  */
   .banner-about-title {
-    margin-top: 25%;
+    margin-top: 35%;
   }
   /*  About: how it works  */
   .step-icon {
@@ -428,11 +422,9 @@ Landscape phone
   .price-plan a.button {
     font-size: 0.9em;
   }
-
   /* services */
   .carousell-img-text {
-    margin-top: 20%;
-
+    margin-top: 50%;
   }
   /*  contact form  */
   .contact-form .card {

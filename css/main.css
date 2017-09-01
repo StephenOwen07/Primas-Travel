@@ -788,12 +788,13 @@ About Page
 
 .banner-about {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/about/banner-about-compressor.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
   background-attachment: fixed;
-  background-position: center -120px;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner-about-title {
@@ -850,7 +851,7 @@ Services Page
 }
 
 .carousell-img {
-  height: 70vh;
+  height: 60vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1513,7 +1514,7 @@ Contact Page
 /*  Google map  */
 
 #map {
-  height: 75vh;
+  height: 60vh;
   margin: 0 auto;
   width: 100%;
 }
