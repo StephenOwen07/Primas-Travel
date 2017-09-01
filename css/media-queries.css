@@ -498,23 +498,51 @@ Landscape phone
 
 
 /*************************************** 
-old iphone     
+Iphone landscape height
 /**************************************/
 
-@media (max-height: 560px) {
-  /*  hero  */
+@media (max-height: 700px) {
+  /*  Home hero  */
   .hero .container-fluid {
-    position: relative;
-    bottom: 150px;
+    padding: 0;
+  }
+  .hero h1 {
+    margin-top: 0;
+    font-size: 2em;
   }
   .hero h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1.1em;
   }
-  /*  Contact: banner  */
-  .banner-contact h1,
-  .banner-contact p {
-    position: relative;
-    bottom: 50px;
+  /* about */
+  .banner-about-title {
+    margin-top: 10%;
+  }
+  /* services */
+  .carousell-img-text {
+    margin-top: 10%;
+  }
+}
+
+@media(max-height:400px) {
+  section.hero {
+    padding-top: 15%;
+  }
+  .hero .button {
+    padding: 10px;
+  }
+  /* Mobile menu */
+  .overlay-content {
+    top: 5%;
+    font-size: 0.9em;
+  }
+  /* about */
+  .banner-about-title {
+    margin-top: 5%;
+    font-size: 0.8em;
+  }
+  .carousell-img-text {
+    margin-top: 5%;
   }
 }
 
