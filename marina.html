@@ -173,7 +173,57 @@
       <!-- map overlay -->
       <div class="directions-map-overlay">
         <div class="directions-map-close"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <div id="directionsMap"></div>
+        <div class="directions-map-sights">
+          <div class="directions-map-sights-current">
+
+            <div class="sights-title">
+              <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="google maps icon">
+              <h4>Current Selection</h4>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Marina-bay-sands</div>
+            </div>
+            <div class="sights-title">
+              <img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" alt="google maps icon">
+              <h4>Sights</h4>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+            <div class="sights-locations">
+              <div class="sigths-locations-title">Gardens By the Bay</div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div id="directionsMap">
+        </div>
       </div>
 
 
@@ -815,10 +865,12 @@
 
 
     function initMap() {
+
       // Map options
       var options = {
         zoom: 12,
-        center: { lat: 1.2836, lng: 103.8604 }
+        center: { lat: 1.2836, lng: 103.8604 },
+        mapTypeControl: false
       }
 
       // New map
@@ -925,7 +977,6 @@
           });
 
           marker.addListener('click', function () {
-
             infoWindow.open(map, marker);
             map.setZoom(15);
             map.setCenter(marker.getPosition());

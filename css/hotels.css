@@ -912,12 +912,62 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
 */
 
 #directionsMap {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 80%;
+  position: absolute;
+  top: 10%;
+  transform: translateX(-50%);
+  height: 90%;
   width: 95%;
-  margin: 0 auto;
+  left: 50%;
+
+}
+
+.directions-map-sights {
+  position: absolute;
+  height: 90%;
+  width: 20%;
+  left:32px;
+  top:71px;
+  background: rgba(255, 255,255, 1);
+  z-index: 1;
+  overflow: scroll;
+}
+
+.sights-title {
+  display: block;
+  background: #e3e3e3;
+  padding-bottom: 10px;
+}
+
+.sights-title h4, .sights-title img {
+ display: inline-block;
+ margin: 0;
+}
+
+.sights-title img {
+  position: relative;
+  top:5px;
+  margin-left: 10px;
+}
+
+.sights-locations {
+  position: relative;
+  text-align: center;
+  height: 50px;
+ 
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0;
+}
+
+.sights-locations:hover {
+  background: #CB242D;
+  color:#fff;
+}
+
+.sigths-locations-title {
+  position: relative;
+  top:50%;
+  transform: translateY(-50%)
 }
 
 .info-window{
