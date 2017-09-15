@@ -877,6 +877,64 @@ span.room-choices-card-content-space-img-tagline {
   padding: 10px;
 }
 
+/* nearby attractions */
+
+.directions-map-overlay {
+  visibility: hidden;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 9999;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.directions-map-close {
+  color: #fff;
+  position: absolute;
+  font-size: 2.3em;
+  cursor: pointer;
+  top:2%;
+  right: 2%;
+}
+/* blue map icon
+http://maps.google.com/mapfiles/ms/icons/blue-dot.png
+*/
+
+#directionsMap {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.info-window{
+  line-height: 0;
+}
+.info-window p {
+  color: #434A54;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.info-window h3 {
+  color: #000;
+  font-size: 1.1em;
+}
+
+
 
 /* booking form validation */
 

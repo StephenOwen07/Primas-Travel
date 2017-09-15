@@ -154,7 +154,7 @@
             </div>
           </div>
         </div>
-        <div class="masonry-item masonry-6th">
+        <div class="masonry-item masonry-6th" id="seeMap">
           <img src="img/hotels/see-map.png" alt="">
           <div class="masonry-overlay">
             <div class="ms-overlay-info-title see-map-overlay-title">Excellent location</div>
@@ -169,6 +169,14 @@
           </div>
         </div>
       </div>
+
+      <!-- map overlay -->
+      <div class="directions-map-overlay">
+        <div class="directions-map-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div id="directionsMap"></div>
+      </div>
+
+
       <!-- /masonry -->
 
     </section>
@@ -679,6 +687,9 @@
       </div>
     </section>
     <!-- /guest reviews -->
+
+    <!-- Nearby attractions -->
+
   </main>
 
   <!--  Footer  -->
@@ -742,8 +753,10 @@
     </div>
   </footer>
 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfA4kDCyNzNLJJFanuaWlbwWzPSxMAXL4&callback=initMap"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin=" anonymous "></script>
+
   <script src="js/main.js "></script>
   <script>
     // Show more Button
@@ -769,7 +782,159 @@
       });
 
     })();
+
+    // Map overlay
+    var mapTrigger = document.getElementById('seeMap');
+    var mapOverlay = document.querySelector('.directions-map-overlay');
+    var mapClose = document.querySelector('.directions-map-close i');
+    var body = window.document.body;
+
+
+    mapTrigger.addEventListener('click', openMap);
+    mapClose.addEventListener('click', closeMap);
+    body.addEventListener('keyup', keyCloseMap);
+
+
+    function openMap() {
+      mapOverlay.style.visibility = "visible";
+      body.style.overflow = "hidden";
+    }
+
+    function closeMap() {
+      mapOverlay.style.visibility = "hidden";
+      body.style.overflow = "initial";
+      initMap();
+    }
+
+    // Close map with esc key
+    function keyCloseMap(e) {
+      if (e.keyCode === 27) {
+        closeMap()
+      }
+    }
+
+
+    function initMap() {
+      // Map options
+      var options = {
+        zoom: 12,
+        center: { lat: 1.2836, lng: 103.8604 }
+      }
+
+      // New map
+      var map = new google.maps.Map(document.getElementById('directionsMap'), options);
+
+      // array of markers
+      var markers = [{
+        coords: {
+          lat: 1.2836,
+          lng: 103.8604
+        },
+        content: '<div class="info-window"><h3>Marina Bay Sands</h3><p>10 Bayfront Ave<br>2 Singapore 018956</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2816,
+          lng: 103.8636
+        },
+        content: '<div class="info-window"><h3>Gardens by the Bay</h3><p>18 Marina Gardens Dr<br>Singapore 018953</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2494,
+          lng: 103.8303
+        },
+        content: '<div class="info-window"><h3>Sentosa</h3><p>Sentosa Island</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2540,
+          lng: 103.8238
+        },
+        content: '<div class="info-window"><h3>Universal Studios Singapore</h3><p>8 Sentosa Gateway<br>Singapore 098269</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.4043,
+          lng: 103.7930
+        },
+        content: '<div class="info-window"><h3>Singapore Zoo</h3><p>80 Mandai Lake Rd<br>Singapore 729826</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.3138,
+          lng: 103.8159
+        },
+        content: '<div class="info-window"><h3>Singapore Botanic Gardens</h3><p>1 Cluny Rd<br>Singapore 259569</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2893,
+          lng: 103.8631
+        },
+        content: '<div class="info-window"><h3>Singapore Flyer</h3><p>30 Raffles Ave<br>Singapore 039803</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2868,
+          lng: 103.8545
+        },
+        content: '<div class="info-window"><h3>Merlion Park</h3><p>Singapore</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.3187,
+          lng: 103.7064
+        },
+        content: '<div class="info-window"><h3>Jurong Bird Park</h3><p>2 Jurong Hill<br>Singapore 628925</p></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.3008,
+          lng: 103.9122
+        },
+        content: '<div class="info-window"><h3>East Coast Park</h3><p> E Coast Park Service Rd<br> Singapore 449876</p></div>'
+      }];
+
+      // loop through markers
+      for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+      }
+
+      //  Add marker function
+      function addMarker(props) {
+        var marker = new google.maps.Marker({
+          position: props.coords,
+          map: map,
+          icon: props.icon
+        });
+
+        // check content 
+        if (props.content) {
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+          marker.addListener('click', function () {
+
+            infoWindow.open(map, marker);
+            map.setZoom(15);
+            map.setCenter(marker.getPosition());
+          });
+        }
+      }
+    }
   </script>
+
 
 </body>
 
