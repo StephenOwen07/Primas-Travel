@@ -65,13 +65,13 @@
           <div class="col-sm-8 col-sm-offset-2">
             <h1>Booking & contact</h1>
             <div class="booking-form-card">
-              <form action="" class="form-group" id="bookingForm" name="bookingForm">
+              <form action="" method="POST" class="form-group" id="bookingForm" name="bookingForm">
 
                 <label>First name
-                  <input class="required" type="text" name="firstname" placeholder="first name">
+                  <input class="required" type="text" name="firstname" placeholder="first name" id="firstName">
                 </label>
                 <label>Last name
-                  <input class="required" type="text" name="lastname" placeholder="last name"> 
+                  <input class="required" type="text" name="lastname" placeholder="last name" id="lastName"> 
                 </label>
 
                 <label>Email
@@ -79,11 +79,11 @@
                 </label>
 
                 <label>Re-enter email
-                  <input class="required email" type="email" name="reEnterEmail" placeholder="email">
+                  <input class="required email" type="email" name="reEnterEmail" placeholder="email" id="emailConfirmation">
                 </label>
 
                 <label for="">Phone
-                  <input class="required" type="tel" placeholder="phone" name="phone">
+                  <input class="required" type="tel" placeholder="phone" name="phone" id="phone">
                 </label>
 
                 <div class="ui-widget">
@@ -101,7 +101,7 @@
                 <div class="booking-form-card-room-details">
                   <div class="booking-form-card-room-details-guests">
                     <span> <i class="fa fa-male" aria-hidden="true"></i> Guests</span>
-                    <select name="">
+                    <select name="" id="guests">
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
@@ -113,7 +113,7 @@
                   <div class="booking-form-card-room-details-rooms">
                     <span><i class="fa fa-bed" aria-hidden="true"></i>
                       Rooms</span>
-                    <select name="">
+                    <select name="" id="rooms">
                       <option value="">1</option>
                       <option value="">2</option>
                       <option value="">3</option>
@@ -282,7 +282,6 @@
         unhighlight: function (element) {
           $(element).closest('.required').removeClass('has-error').addClass('valid');
         },
-
       })
 
       $('#bookingForm').validate({
@@ -315,33 +314,11 @@
         }
       });
 
-      // modal
+    });
 
-      // // Get the modal
-      // var modal = document.getElementById('myModal');
+    $("form").on("submit", function (event) {
 
-      // // Get the button that opens the modal
-      // var btn = document.getElementById("myBtn");
-
-      // // Get the <span> element that closes the modal
-      // var span = document.getElementsByClassName("close")[0];
-
-      // // When the user clicks on the button, open the modal 
-      // btn.onclick = function () {
-      //   modal.style.display = "block";
-      // }
-
-      // // When the user clicks on <span> (x), close the modal
-      // span.onclick = function () {
-      //   modal.style.display = "none";
-      // }
-
-      // // When the user clicks anywhere outside of the modal, close it
-      // window.onclick = function (event) {
-      //   if (event.target == modal) {
-      //     modal.style.display = "none";
-      //   }
-      // }
+      alert($(this).serialize());
     });
   </script>
 </body>

@@ -173,52 +173,11 @@
       <!-- map overlay -->
       <div class="directions-map-overlay">
         <div class="directions-map-close"><i class="fa fa-times" aria-hidden="true"></i></div>
-        <div class="directions-map-sights">
-          <div class="directions-map-sights-current">
 
-            <div class="sights-title">
-              <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="google maps icon">
-              <h4>Current Selection</h4>
-            </div>
-            <div class="sights-locations" id="marinaBaySands">
-              <div class="sights-locations-title">Marina-bay-sands</div>
-            </div>
-            <div class="sights-title">
-              <img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png" alt="google maps icon">
-              <h4>Sights</h4>
-            </div>
-            <div class="sights-locations" id="gardensByTheBay">
-              <div class="sights-locations-title">Gardens By the Bay</div>
-            </div>
-            <div class="sights-locations" id="sentosa">
-              <div class="sights-locations-title">Sentosa</div>
-            </div>
-            <div class="sights-locations" id="universalStudios">
-              <div class="sights-locations-title">Universal Studios</div>
-            </div>
-            <div class="sights-locations" id="singaporeZoo">
-              <div class="sights-locations-title">Singapore Zoo</div>
-            </div>
-            <div class="sights-locations" id="singaporeBotanicGardens">
-              <div class="sights-locations-title">Singapore Botanic Gardens</div>
-            </div>
-            <div class="sights-locations" id="singaporeFlyer">
-              <div class="sights-locations-title">Singapore Flyer</div>
-            </div>
-            <div class="sights-locations" id="merlion">
-              <div class="sights-locations-title">Merlion</div>
-            </div>
-            <div class="sights-locations" id="juronBirdPark">
-              <div class="sights-locations-title">Jurong Bird Park</div>
-            </div>
-            <div class="sights-locations" id="eastCoastPark">
-              <div class="sights-locations-title">East Coast Park</div>
-            </div>
-
-          </div>
-        </div>
         <div id="directionsMap">
         </div>
+        <div class="directions-map-content"></div>
+
       </div>
 
 
@@ -860,125 +819,193 @@
 
 
     function initMap() {
-
-      // Map options
-      var options = {
-        zoom: 12,
+      var directionsDisplay = new google.maps.DirectionsRenderer();
+      var directionsService = new google.maps.DirectionsService();
+      var map = new google.maps.Map(document.getElementById('directionsMap'), {
+        zoom: 14,
         center: { lat: 1.2836, lng: 103.8604 },
-        mapTypeControl: false
-      }
-
-      // New map
-      var map = new google.maps.Map(document.getElementById('directionsMap'), options);
-
-      // array of markers
-      var markers = [{
-        coords: {
-          lat: 1.2836,
-          lng: 103.8604
-        },
-        content: '<div class="info-window"><h3>Marina Bay Sands</h3><p>10 Bayfront Ave<br>2 Singapore 018956</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.2816,
-          lng: 103.8636
-        },
-        content: '<div class="info-window"><h3>Gardens by the Bay</h3><p>18 Marina Gardens Dr<br>Singapore 018953</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.2494,
-          lng: 103.8303
-        },
-        content: '<div class="info-window"><h3>Sentosa</h3><p>Sentosa Island</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.2540,
-          lng: 103.8238
-        },
-        content: '<div class="info-window"><h3>Universal Studios Singapore</h3><p>8 Sentosa Gateway<br>Singapore 098269</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.4043,
-          lng: 103.7930
-        },
-        content: '<div class="info-window"><h3>Singapore Zoo</h3><p>80 Mandai Lake Rd<br>Singapore 729826</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.3138,
-          lng: 103.8159
-        },
-        content: '<div class="info-window"><h3>Singapore Botanic Gardens</h3><p>1 Cluny Rd<br>Singapore 259569</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.2893,
-          lng: 103.8631
-        },
-        content: '<div class="info-window"><h3>Singapore Flyer</h3><p>30 Raffles Ave<br>Singapore 039803</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.2868,
-          lng: 103.8545
-        },
-        content: '<div class="info-window"><h3>Merlion Park</h3><p>Singapore</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.3187,
-          lng: 103.7064
-        },
-        content: '<div class="info-window"><h3>Jurong Bird Park</h3><p>2 Jurong Hill<br>Singapore 628925</p></div>'
-      },
-      {
-        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
-        coords: {
-          lat: 1.3008,
-          lng: 103.9122
-        },
-        content: '<div class="info-window"><h3>East Coast Park</h3><p> E Coast Park Service Rd<br> Singapore 449876</p></div>'
-      }];
-
-      // loop through markers
-      for (var i = 0; i < markers.length; i++) {
-        addMarker(markers[i]);
-      }
-
-      //  Add marker function
-      function addMarker(props) {
-        var marker = new google.maps.Marker({
-          position: props.coords,
-          map: map,
-          icon: props.icon
-        });
-
-        // check content 
-        if (props.content) {
-          var infoWindow = new google.maps.InfoWindow({
-            content: props.content
-          });
-
-          marker.addListener('click', function () {
-            infoWindow.open(map, marker);
-            map.setZoom(15);
-            map.setCenter(marker.getPosition());
-          });
-        }
-      }
+      });
+      directionsDisplay.setMap(map);
+      calcAndDisplayRoute(directionsService, directionsDisplay);
     }
+
+
+
+
+    function calcAndDisplayRoute(directionsService, directionsDisplay) {
+      directionsService.route({
+        origin: { lat: 1.2836, lng: 103.8604 },
+        destination: { lat: 1.3008, lng: 103.9122 },
+        travelMode: "DRIVING"
+      }, function (response, status) {
+        if (status == "OK") {
+          directionsDisplay.setDirections(response);
+        } else {
+          window.alert('Directions request failed due to ' + status);
+        }
+      });
+    }
+
+
+
+      // var directionsDisplay,
+      //   directionsService = new google.maps.DirectionsService(),
+      //   map,
+      //   start,
+      //   end;
+
+      // function initMap() {
+
+      //   directionsDisplay = new google.maps.DirectionsRenderer();
+      //   start = new google.maps.LatLng(1.2836, 103.8604);
+      //   end = new google.maps.LatLng(1.3008, 103.9122);
+
+      //   var options = {
+      //     zoom: 16,
+      //     center: start
+      //   };
+
+      //   map = new google.maps.Map(document.getElementById('directionsMap'), options);
+      //   directionsDisplay.setMap(map);
+
+      //   function calcRoute() {
+
+      //     var request = {
+      //       origin: start,
+      //       destination: end,
+      //       travelMode: google.maps.DirectionsTravelMode.DRIVING
+      //     };
+
+      //     directionsService.route(request, function (result, status) {
+      //       if (status == google.maps.DirectionsStatus.OK) {
+      //         directionsDisplay.setDirections(result);
+      //       }
+      //     });
+
+      //   }
+
+
+
+
+      // // Map options
+      // var options = {
+      //   zoom: 12,
+      //   center: { lat: 1.2836, lng: 103.8604 },
+      //   mapTypeControl: false
+      // }
+
+
+      // // New map
+      // var map = new google.maps.Map(document.getElementById('directionsMap'), options);
+
+
+      // // array of markers
+      // var markers = [{
+      //   coords: {
+      //     lat: 1.2836,
+      //     lng: 103.8604
+      //   },
+      //   content: '<div class="info-window"><h3>Marina Bay Sands</h3><p>10 Bayfront Ave<br>2 Singapore 018956</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.2816,
+      //     lng: 103.8636
+      //   },
+      //   content: '<div class="info-window"><h3>Gardens by the Bay</h3><p>18 Marina Gardens Dr<br>Singapore 018953</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.2494,
+      //     lng: 103.8303
+      //   },
+      //   content: '<div class="info-window"><h3>Sentosa</h3><p>Sentosa Island</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.2540,
+      //     lng: 103.8238
+      //   },
+      //   content: '<div class="info-window"><h3>Universal Studios Singapore</h3><p>8 Sentosa Gateway<br>Singapore 098269</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.4043,
+      //     lng: 103.7930
+      //   },
+      //   content: '<div class="info-window"><h3>Singapore Zoo</h3><p>80 Mandai Lake Rd<br>Singapore 729826</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.3138,
+      //     lng: 103.8159
+      //   },
+      //   content: '<div class="info-window"><h3>Singapore Botanic Gardens</h3><p>1 Cluny Rd<br>Singapore 259569</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.2893,
+      //     lng: 103.8631
+      //   },
+      //   content: '<div class="info-window"><h3>Singapore Flyer</h3><p>30 Raffles Ave<br>Singapore 039803</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.2868,
+      //     lng: 103.8545
+      //   },
+      //   content: '<div class="info-window"><h3>Merlion Park</h3><p>Singapore</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.3187,
+      //     lng: 103.7064
+      //   },
+      //   content: '<div class="info-window"><h3>Jurong Bird Park</h3><p>2 Jurong Hill<br>Singapore 628925</p></div>'
+      // },
+      // {
+      //   icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+      //   coords: {
+      //     lat: 1.3008,
+      //     lng: 103.9122
+      //   },
+      //   content: '<div class="info-window"><h3>East Coast Park</h3><p> E Coast Park Service Rd<br> Singapore 449876</p></div>'
+      // }];
+
+      // // loop through markers
+      // for (var i = 0; i < markers.length; i++) {
+      //   addMarker(markers[i]);
+      // }
+
+      // //  Add marker function
+      // function addMarker(props) {
+      //   var marker = new google.maps.Marker({
+      //     position: props.coords,
+      //     map: map,
+      //     icon: props.icon
+      //   });
+
+      //   // check content 
+      //   if (props.content) {
+      //     var infoWindow = new google.maps.InfoWindow({
+      //       content: props.content
+      //     });
+
+      //     marker.addListener('click', function () {
+      //       infoWindow.open(map, marker);
+      //       map.setZoom(15);
+      //       map.setCenter(marker.getPosition());
+      //     });
+      //   }
+      // }
   </script>
 
 
