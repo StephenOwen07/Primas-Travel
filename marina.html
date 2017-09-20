@@ -977,11 +977,15 @@
             }
           });
 
-
+          var dropDown = document.getElementById('end');
+          end.addEventListener('change', closeWindows);
+          // Close infowindows when route is chosen
+          function closeWindows() {
+            infoWindow.close();
+          }
 
           var hotelBtn = document.getElementById('hotelMapBtn');
           hotelBtn.addEventListener('click', goToHotel);
-
           // Center on hotel and open infowindow when clicked
           function goToHotel(e) {
             e.preventDefault();
@@ -990,7 +994,6 @@
           }
         }
       }
-
 
     }
 
