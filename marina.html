@@ -985,6 +985,7 @@
           // Center on hotel and open infowindow when clicked
           function goToHotel(e) {
             e.preventDefault();
+            infoWindow.close();
             map.setZoom(16);
             map.setCenter(markers[0].coords);
           }
