@@ -958,6 +958,7 @@
             content: props.content
           });
 
+
           marker.addListener('click', function (e) {
             // check if infoWindow is open
             if (currWindow) {
@@ -968,6 +969,15 @@
             map.setZoom(17);
             map.setCenter(marker.getPosition());
           });
+
+          // close infowindows if the map is clicked
+          map.addListener('click', function (e) {
+            if (e.target !== marker) {
+              infoWindow.close();
+            }
+          });
+
+
 
           var hotelBtn = document.getElementById('hotelMapBtn');
           hotelBtn.addEventListener('click', goToHotel);
