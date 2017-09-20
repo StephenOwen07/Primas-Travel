@@ -921,9 +921,22 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
 }
 
 
-
+#floating-panel {
+  position: absolute;
+  top: 2%;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
 
 .info-window{
+  display:relative;
   line-height: 0;
 }
 .info-window p {
@@ -937,6 +950,11 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   font-size: 1.1em;
 }
 
+.info-window img {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
 
 
 /* booking form validation */
