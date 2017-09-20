@@ -179,7 +179,6 @@
         <div id="floating-panel">
           <b>Nearby attractions: </b>
           <select id="end">
-            <option value="" id="disableOption">Please select</option>
              <option value="18 Marina Gardens Dr, Singapore">Gardens by the Bay</option>
             <option value="Sentosa, Singapore">Sentosa</option>
             <option value="8 Sentosa Gateway, Singapore">Universal Studios Singapore</option>
@@ -192,6 +191,16 @@
             <option value="E Coast Park Service Rd, Singapore">East Coast Park</option>
           </select>
         </div>
+
+        <div id="travel-mode-panel">
+          <b>Travel mode: </b>
+          <select id="mode">
+              <option value="DRIVING">Driving</option>
+              <option value="WALKING">Walking</option>
+              <option value="TRANSIT">Public transport</option>
+            </select>
+        </div>
+
 
         <div id="floating-panel-distance">
           <b>Distance:</b> <span id="distance"></span>
@@ -847,6 +856,8 @@
         center: { lat: 1.2836, lng: 103.8604 }
       });
       directionsDisplay.setMap(map);
+      // Display drving and gardens by the bay as default
+      calculateAndDisplayRoute(directionsService, directionsDisplay);
 
       var onChangeHandler = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
@@ -854,6 +865,11 @@
         disableOption.setAttribute('disabled', true);
       };
       document.getElementById('end').addEventListener('change', onChangeHandler);
+
+      var travelMode = function () {
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+      };
+      document.getElementById('mode').addEventListener('change', travelMode);
 
       // array of markers
       var markers = [{
@@ -977,12 +993,18 @@
             }
           });
 
+          // Close infowindows when route is chosen
           var dropDown = document.getElementById('end');
           end.addEventListener('change', closeWindows);
-          // Close infowindows when route is chosen
+          // Close infowindows if travel mode is selected
+          var travelDropDown = document.getElementById('mode');
+          travelDropDown.addEventListener('change', closeWindows);
+
           function closeWindows() {
             infoWindow.close();
           }
+
+
 
           var hotelBtn = document.getElementById('hotelMapBtn');
           hotelBtn.addEventListener('click', goToHotel);
@@ -997,12 +1019,12 @@
 
     }
 
-
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+      var selectedMode = document.getElementById('mode').value;
       directionsService.route({
         origin: { lat: 1.2836, lng: 103.8604 },
         destination: document.getElementById('end').value,
-        travelMode: 'DRIVING'
+        travelMode: google.maps.TravelMode[selectedMode]
       }, function (response, status) {
         if (status === 'OK') {
           directionsDisplay.setDirections(response);

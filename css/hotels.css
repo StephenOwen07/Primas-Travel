@@ -924,7 +924,7 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
 #floating-panel {
   position: absolute;
   top: 2%;
-  left: 25%;
+  left: 10.5%;
   z-index: 5;
   background-color: #fff;
   padding: 5px;
@@ -938,7 +938,7 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
 #floating-panel-distance {
   position: absolute;
   top: 2%;
-  right: 20%;
+  right: 21%;
   /* height:50px; */
   width: 200px;
   z-index: 5;
@@ -951,11 +951,24 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   padding-left: 10px;
 }
 
+#travel-mode-panel {
+  position: absolute;
+  top: 2%;
+  left: 42%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
 #hotelMapBtn {
   text-align: center;
   width: 100px;
   position: absolute;
-  left: 17%;
+  left: 2.5%;
   top:2%;
   padding: 0.73em;
 }
