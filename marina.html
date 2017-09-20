@@ -852,6 +852,7 @@
         calculateAndDisplayRoute(directionsService, directionsDisplay);
         var disableOption = document.getElementById('disableOption');
         disableOption.setAttribute('disabled', true);
+        infoWindow.close();
       };
       document.getElementById('end').addEventListener('change', onChangeHandler);
 
@@ -941,6 +942,7 @@
         addMarker(markers[i]);
       }
 
+      var infoWindow;
       var currWindow = false;
 
       //  Add marker function
@@ -954,7 +956,7 @@
 
         // check content 
         if (props.content) {
-          var infoWindow = new google.maps.InfoWindow({
+          infoWindow = new google.maps.InfoWindow({
             content: props.content
           });
 
@@ -977,8 +979,6 @@
             }
           });
 
-
-
           var hotelBtn = document.getElementById('hotelMapBtn');
           hotelBtn.addEventListener('click', goToHotel);
 
@@ -989,6 +989,7 @@
             map.setCenter(markers[0].coords);
           }
         }
+
       }
 
 
