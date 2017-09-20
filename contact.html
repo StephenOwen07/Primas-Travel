@@ -250,6 +250,8 @@
         addMarker(markers[i]);
       }
 
+      var currWindow = false;
+
       //  Add marker function
       function addMarker(props) {
         var marker = new google.maps.Marker({
@@ -264,6 +266,10 @@
           });
 
           marker.addListener('click', function () {
+            if (currWindow) {
+              currWindow.close();
+            }
+            currWindow = infoWindow;
             infoWindow.open(map, marker);
             map.setZoom(17);
             map.setCenter(marker.getPosition());

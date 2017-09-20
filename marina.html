@@ -193,6 +193,12 @@
           </select>
         </div>
 
+        <div id="floating-panel-distance">
+          <b>Distance:</b> <span id="distance"></span>
+        </div>
+
+        <a href="#" id="hotelMapBtn" class="button button-primary button-submit">Hotel</a>
+
       </div>
 
 
@@ -945,6 +951,7 @@
           map: map,
           icon: props.icon
         });
+
         // check content 
         if (props.content) {
           var infoWindow = new google.maps.InfoWindow({
@@ -958,11 +965,22 @@
             }
             currWindow = infoWindow;
             infoWindow.open(map, marker);
-            map.setZoom(16);
+            map.setZoom(17);
             map.setCenter(marker.getPosition());
           });
+
+          var hotelBtn = document.getElementById('hotelMapBtn');
+          hotelBtn.addEventListener('click', goToHotel);
+
+          // Center on hotel and open infowindow when clicked
+          function goToHotel(e) {
+            e.preventDefault();
+            map.setZoom(16);
+            map.setCenter(markers[0].coords);
+          }
         }
       }
+
 
     }
 
@@ -975,10 +993,12 @@
       }, function (response, status) {
         if (status === 'OK') {
           directionsDisplay.setDirections(response);
+          document.getElementById('distance').innerHTML = response.routes[0].legs[0].distance.text;
         } else {
           window.alert('Directions request failed due to ' + status);
         }
       });
+
     }
   </script>
 

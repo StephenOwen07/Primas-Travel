@@ -935,6 +935,35 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   padding-left: 10px;
 }
 
+#floating-panel-distance {
+  position: absolute;
+  top: 2%;
+  right: 20%;
+  /* height:50px; */
+  width: 200px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  /* text-align: center; */
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#hotelMapBtn {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  left: 17%;
+  top:2%;
+  padding: 0.73em;
+}
+#distance {
+  color: #F80C20;
+  font-weight: 500;
+  margin-left: 10px;
+}
 .info-window{
   display:relative;
   line-height: 0;
