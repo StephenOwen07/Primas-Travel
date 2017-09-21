@@ -177,9 +177,8 @@
         <div id="directionsMap">
         </div>
         <div id="floating-panel">
-          <b>Nearby attractions: </b>
           <select id="end">
-            <option  value="default" data-disabled="attractions">Please select</option>
+            <option  value="default" data-disabled="attractions">Nearby attractions</option>
              <option value="18 Marina Gardens Dr, Singapore">Gardens by the Bay</option>
             <option value="Sentosa, Singapore">Sentosa</option>
             <option value="8 Sentosa Gateway, Singapore">Universal Studios Singapore</option>
@@ -194,8 +193,8 @@
         </div>
 
         <div id="travel-mode-panel">
-          <b>Travel mode: </b>
           <select id="mode">
+              <option value="default" data-disabled="mode">Travel mode</option>
               <option value="DRIVING">Driving</option>
               <option value="WALKING">Walking</option>
               <option value="TRANSIT">Public transport</option>
@@ -840,6 +839,7 @@
       body.style.overflow = "initial";
       document.getElementById('distance').innerHTML = "";
       document.querySelector('[data-disabled="attractions"]').removeAttribute('disabled');
+      document.querySelector('[data-disabled="mode"]').removeAttribute('disabled');
       document.getElementById('end').selectedIndex = "0";
       document.getElementById('mode').selectedIndex = "0";
       initMap();
@@ -872,6 +872,8 @@
 
       var travelMode = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
+        var disableOption = document.querySelector('[data-disabled="mode"]');
+        disableOption.setAttribute('disabled', true);
       };
       document.getElementById('mode').addEventListener('change', travelMode);
 

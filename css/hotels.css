@@ -899,6 +899,13 @@ span.room-choices-card-content-space-img-tagline {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.directions-map-overlay select {
+  border: none;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .directions-map-close {
   color: #fff;
   position: absolute;
@@ -907,9 +914,6 @@ span.room-choices-card-content-space-img-tagline {
   top:2%;
   right: 2%;
 }
-/* blue map icon
-http://maps.google.com/mapfiles/ms/icons/blue-dot.png
-*/
 
 #directionsMap {
   position: absolute;
@@ -924,7 +928,7 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
 #floating-panel {
   position: absolute;
   top: 2%;
-  left: 10.5%;
+  left: 11%;
   z-index: 5;
   background-color: #fff;
   padding: 5px;
@@ -933,12 +937,13 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+  border-radius: 5px;
 }
 
 #floating-panel-distance {
   position: absolute;
   top: 2%;
-  right: 21%;
+  right: 33%;
   /* height:50px; */
   width: 200px;
   z-index: 5;
@@ -949,12 +954,13 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+  border-radius: 5px;
 }
 
 #travel-mode-panel {
   position: absolute;
   top: 2%;
-  left: 42%;
+  left: 35%;
   z-index: 5;
   background-color: #fff;
   padding: 5px;
@@ -963,6 +969,7 @@ http://maps.google.com/mapfiles/ms/icons/blue-dot.png
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
   padding-left: 10px;
+  border-radius: 5px;
 }
 #hotelMapBtn {
   text-align: center;
