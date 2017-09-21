@@ -179,6 +179,7 @@
         <div id="floating-panel">
           <b>Nearby attractions: </b>
           <select id="end">
+            <option  value="default" data-disabled="attractions">Please select</option>
              <option value="18 Marina Gardens Dr, Singapore">Gardens by the Bay</option>
             <option value="Sentosa, Singapore">Sentosa</option>
             <option value="8 Sentosa Gateway, Singapore">Universal Studios Singapore</option>
@@ -837,6 +838,10 @@
     function closeMap() {
       mapOverlay.style.visibility = "hidden";
       body.style.overflow = "initial";
+      document.getElementById('distance').innerHTML = "";
+      document.querySelector('[data-disabled="attractions"]').removeAttribute('disabled');
+      document.getElementById('end').selectedIndex = "0";
+      document.getElementById('mode').selectedIndex = "0";
       initMap();
     }
 
@@ -856,12 +861,11 @@
         center: { lat: 1.2836, lng: 103.8604 }
       });
       directionsDisplay.setMap(map);
-      // Display drving and gardens by the bay as default
-      calculateAndDisplayRoute(directionsService, directionsDisplay);
+
 
       var onChangeHandler = function () {
         calculateAndDisplayRoute(directionsService, directionsDisplay);
-        var disableOption = document.getElementById('disableOption');
+        var disableOption = document.querySelector('[data-disabled="attractions"]');
         disableOption.setAttribute('disabled', true);
       };
       document.getElementById('end').addEventListener('change', onChangeHandler);
@@ -871,7 +875,7 @@
       };
       document.getElementById('mode').addEventListener('change', travelMode);
 
-      // array of markers
+      // array of markers 
       var markers = [{
         coords: {
           lat: 1.283559,
@@ -995,7 +999,7 @@
 
           // Close infowindows when route is chosen
           var dropDown = document.getElementById('end');
-          end.addEventListener('change', closeWindows);
+          dropDown.addEventListener('change', closeWindows);
           // Close infowindows if travel mode is selected
           var travelDropDown = document.getElementById('mode');
           travelDropDown.addEventListener('change', closeWindows);
@@ -1030,7 +1034,7 @@
           directionsDisplay.setDirections(response);
           document.getElementById('distance').innerHTML = response.routes[0].legs[0].distance.text;
         } else {
-          window.alert('Directions request failed due to ' + status);
+          console.log('Directions request failed due to ' + status);
         }
       });
 
