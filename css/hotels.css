@@ -875,6 +875,7 @@ span.room-choices-card-content-space-img-tagline {
   width: 100%;
   margin-bottom: 30px;
   padding: 10px;
+  line-height: 1.6;
 }
 
 /* nearby attractions */
@@ -918,7 +919,8 @@ span.room-choices-card-content-space-img-tagline {
 #directionsMap {
   position: absolute;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   height: 90%;
   width: 95%;
   left: 50%;
@@ -1030,15 +1032,25 @@ span.room-choices-card-content-space-img-tagline {
 
 /* form modal */
 
+#formDisplay {
+  margin: 80px 0 20px 20px;
+  padding-right: 30px;
+  width: 100%;
+  line-height: 2;
+}
 
+
+#formDisplay strong {
+  margin-right: 5px;
+}
 /* The Modal (background) */
 
 .modal {
-  display: none;
+  visibility: hidden;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 9999;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -1050,7 +1062,7 @@ span.room-choices-card-content-space-img-tagline {
   /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   /* Black w/ opacity */
 }
 
@@ -1059,19 +1071,20 @@ span.room-choices-card-content-space-img-tagline {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 5% auto;
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   border-radius: 10px;
-  width: 80%;
+  width: 70%;
   /* Could be more or less, depending on screen size */
 }
 
 .modal-content h2 {
+  text-align: center;
   margin-bottom: 10px;
   margin-left: 10px;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 400;
   word-spacing: initial;
   letter-spacing: initial;
@@ -1084,7 +1097,7 @@ span.room-choices-card-content-space-img-tagline {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
 }
 

@@ -65,7 +65,7 @@
           <div class="col-sm-8 col-sm-offset-2">
             <h1>Booking & contact</h1>
             <div class="booking-form-card">
-              <form action="" method="POST" class="form-group" id="bookingForm" name="bookingForm">
+              <form class="form-group" id="bookingForm" name="bookingForm">
 
                 <label>First name
                   <input class="required" type="text" name="firstname" placeholder="first name" id="firstName">
@@ -102,34 +102,34 @@
                   <div class="booking-form-card-room-details-guests">
                     <span> <i class="fa fa-male" aria-hidden="true"></i> Guests</span>
                     <select name="" id="guests">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
                   </select>
                   </div>
                   <div class="booking-form-card-room-details-rooms">
                     <span><i class="fa fa-bed" aria-hidden="true"></i>
                       Rooms</span>
                     <select name="" id="rooms">
-                      <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
                   </select>
                   </div>
                 </div>
 
                 <div class="booking-form-card-comment">
                   <span class="booking-form-comment">Please describe any extra needs</span>
-                  <textarea rows="10" placeholder="Comments"></textarea>
+                  <textarea id="extraNeeds" rows="10" placeholder="Comments"></textarea>
                 </div>
                 <input id="myBtn" type="submit" value="Book" class="button button-primary button-submit">
               </form>
@@ -140,6 +140,7 @@
       </div>
 
       <!-- form modal -->
+
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
@@ -150,6 +151,7 @@
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2>Thank you for your booking</h2>
+                <div id="formDisplay"></div>
               </div>
             </div>
 
@@ -311,15 +313,71 @@
           verifyEmail: "Please enter a matching email",
           phone: "Please enter your phone number",
           country: "Please enter your country"
+        },
+        submitHandler: function (form) {
+          formModal.style.visibility = "visible";
+          body.style.overflow = "hidden";
+
+          var firstName = document.getElementById('firstName').value;
+          var lastName = document.getElementById('lastName').value;
+          var email = document.getElementById('email').value;
+          var phone = document.getElementById('phone').value;
+          var country = document.getElementById('tags').value;
+          var checkIn = document.getElementById('check-in').value;
+          var checkOut = document.getElementById('check-out').value;
+          var guests = document.getElementById('guests').value;
+          var rooms = document.getElementById('rooms').value;
+          var extraNeeds = document.getElementById('extraNeeds').value;
+
+
+
+          document.getElementById('formDisplay').innerHTML =
+            "<strong>First name: </strong>" + firstName +
+            "<br><strong>Last name: </strong>" + lastName +
+            "<br><strong>Email: </strong>" + email +
+            "<br><strong>Phone: </strong>" + phone +
+            "<br><strong>Country: </strong>" + country +
+            "<br><br><strong>Check-in date: </strong>" + checkIn +
+            "<br><strong>Check-out date: </strong>" + checkOut +
+            "<br><strong>Guests: </strong>" + guests +
+            "<br><strong>Rooms: </strong>" + rooms +
+            "<br><br><strong>Extra Needs: </strong>" + extraNeeds;
+
+          return false;
+
         }
       });
 
     });
 
-    $("form").on("submit", function (event) {
+    var formModal = document.getElementById('myModal');
+    var modalContent = document.querySelector('.modal-content');
+    var closeModalBtn = document.querySelector('span.close');
+    var bookingSummary = document.getElementById('formDisplay');
+    var body = window.document.body;
 
-      alert($(this).serialize());
+    closeModalBtn.addEventListener('click', function () {
+      closeBookingModal();
     });
+
+    formModal.addEventListener('click', function (e) {
+      if (e.target !== modalContent && e.target !== bookingSummary) {
+        closeBookingModal();
+      }
+    });
+
+
+    body.addEventListener('keyup', function (e) {
+      if (e.keyCode === 27) {
+        closeBookingModal();
+      }
+    });
+
+    function closeBookingModal() {
+      formModal.style.visibility = "hidden";
+      body.style.overflow = "initial";
+      body.scrollTop = 0;
+    }
   </script>
 </body>
 
