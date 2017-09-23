@@ -1,0 +1,32 @@
+{
+  "name": "primas-travel",
+  "version": "1.0.0",
+  "description": "Travel agency website using HTML, CSS, Boostrap grid, Javacript and jQuery",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenOwen07/Primas-Travel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenOwen07/Primas-Travel/issues"
+  },
+  "homepage": "https://github.com/StephenOwen07/Primas-Travel#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "jquery": "^3.2.1"
+  }
+}
