@@ -374,21 +374,8 @@ Landscape phone
   .button {
     font-size: 0.9em;
   }
-  /*  card  */
-  .card-container {
-    padding: 0;
-  }
-  .card {
-    padding: 40px 15px;
-  }
-  /*  hero  */
-  .hero .container-fluid {
-    position: relative;
-    bottom: 100px;
-  }
-  .hero h2 {
-    font-size: 1em;
-  }
+  
+
   /*  newsletter  */
   .newsletter .form-control {
     width: 15em;

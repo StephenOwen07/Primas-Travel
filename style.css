@@ -17,16 +17,6 @@ img {
 Componenets                    
 /**************************************/
 
-
-/*  layout  */
-
-
-
-.bottom-buffer {
-  margin-bottom: 50px;
-}
-
-
 .col-centered {
   float: none;
   margin: 0 auto;
@@ -35,20 +25,8 @@ Componenets
 
 /*  style  */
 
-.text-white {
-  color: #fff;
-}
-
 .text-dark {
   color: #262521;
-}
-
-.summary {
-  display: block;
-  margin-top: 0;
-  padding-bottom: 30px;
-  padding-top: 0;
-  color: #848383;
 }
 
 .info-link {
@@ -194,42 +172,6 @@ Componenets
 .scroll-btn__icon {
   color: #ffffff;
 }
-
-
-/*  form  */
-
-input[type=submit] {
-  border: none;
-  margin: 0;
-}
-
-.form-control {
-  margin: 0;
-  padding: 0 10px;
-  height: 3.1em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #F5F7F8;
-  color: #2e333a;
-  font-size: 1em;
-  line-height: 1.4;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-}
-
-.form-control:focus {
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-}
-
-
-
 
 /*************************************** 
 Header                    

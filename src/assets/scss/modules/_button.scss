@@ -10,4 +10,8 @@
   &:hover, &:focus {
     background: $redDark;
   }
+
+  &--large {
+    padding: 15px 161px;
+  }
 }

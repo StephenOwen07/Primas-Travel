@@ -53,6 +53,9 @@ hr {
   color: #6C6E70;
   background: #6C6E70; }
 
+input[type="submit"] {
+  border: none; }
+
 .home-hero {
   position: relative;
   height: 100vh;
@@ -196,6 +199,8 @@ hr {
   transition: all 0.3s; }
   .button:hover, .button:focus {
     background: #a31d24; }
+  .button--large {
+    padding: 15px 161px; }
 
 .page-section {
   padding: 100px 0; }
@@ -381,3 +386,34 @@ hr {
   .card hr {
     width: 80%;
     background: #ccc; }
+
+.form {
+  margin: 0;
+  padding: 0 10px;
+  height: 3.2em;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #F5F7F8;
+  color: #2e333a;
+  font-size: 1em;
+  line-height: 1.4;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out; }
+  .form:focus {
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.newsletter {
+  text-align: center; }
+  .newsletter__subtitle {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    color: #848383; }
+  .newsletter__email {
+    width: 400px; }

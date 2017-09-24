@@ -1,0 +1,16 @@
+.newsletter {
+text-align: center;
+
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    color: #848383;
+  }
+
+  &__email {
+    width: 400px;
+  }
+
+}
