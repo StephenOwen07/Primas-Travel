@@ -1,0 +1,22 @@
+.home-intro {
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    margin:0 10px 0 10px;
+    
+  }
+
+  
+
+  &__benefits {
+    text-align: center;
+
+    i {
+      margin-top: 90px;
+      font-size: 5em;
+    }
+  }
+}

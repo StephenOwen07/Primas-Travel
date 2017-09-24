@@ -1,0 +1,6 @@
+.page-section {
+padding: 100px 0;
+  &:--grey {
+    background: $greyLight;
+  }
+}

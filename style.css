@@ -42,10 +42,6 @@ Componenets
 
 /*  style  */
 
-.bg-white {
-  background: #fff;
-}
-
 .bg-dark {
   background: #252528;
 }
@@ -60,14 +56,6 @@ Componenets
 
 .text-dark {
   color: #262521;
-}
-
-.line {
-  background: #CB242D;
-  height: 2px;
-  width: 70px;
-  display: block;
-  margin: 40px auto;
 }
 
 .summary {
@@ -151,23 +139,6 @@ Componenets
 
 
 /* button */
-
-.button {
-
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.button:hover,
-.button:focus {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.button-primary {
-  background: #CB242D;
-  color: #fff;
-}
 
 .button-secondary {
   display: block;
@@ -319,40 +290,6 @@ Header
 
 nav a {
   color: #434A54;
-}
-
-
-
-/*************************************** 
-  Hero                    
-/**************************************/
-
-.hero {
-  height: 100vh;
-  padding: 160px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(33, 120, 140, 0.3))), url(../img/home/hero-compressor.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url(../img/home/hero-compressor.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero .container-fluid {
-  padding: 100px 0 30px;
-}
-
-.hero h1 {
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  width: 80%;
-  margin: 10px auto 100px;
-  font-size: 1.4em;
-  font-weight: 300;
-  line-height: 30px;
-  text-transform: none;
 }
 
 
