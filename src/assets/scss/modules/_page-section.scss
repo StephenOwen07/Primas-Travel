@@ -12,4 +12,16 @@ padding: 100px 0;
   &--red {
     background: $red;
   }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__line {
+    background:$red;
+    height: 2px;
+    width: 70px;
+    display: block;
+    margin: 40px auto;
+  }
 }

@@ -1,0 +1,35 @@
+ .testimonials {
+
+   &__image {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+   }
+
+   &__user-title {
+     text-align: center;
+   }
+
+   &__text {
+    font-style: italic;
+   }
+
+   &__social-proof {
+    padding-top: 40px;
+
+   }
+
+   &__social-proof__title {
+     margin-bottom: 50px;
+     text-align: center;
+   }
+
+   &__social-proof__image {
+      margin-top: 50px;
+
+      @include medium {
+        margin-top: 0;
+      }
+   }
+
+ }

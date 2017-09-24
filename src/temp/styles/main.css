@@ -46,6 +46,13 @@ img {
   max-width: 100%;
   height: auto; }
 
+hr {
+  border: none;
+  margin-bottom: 20px;
+  height: 1px;
+  color: #6C6E70;
+  background: #6C6E70; }
+
 .home-hero {
   position: relative;
   height: 100vh;
@@ -199,9 +206,14 @@ img {
     color: #fff; }
   .page-section--red {
     background: #CB242D; }
-
-.home-intro__title {
-  text-align: center; }
+  .page-section__title {
+    text-align: center; }
+  .page-section__line {
+    background: #CB242D;
+    height: 2px;
+    width: 70px;
+    display: block;
+    margin: 40px auto; }
 
 .home-intro__text {
   margin: 0 10px 0 10px; }
@@ -211,13 +223,6 @@ img {
   .home-intro__benefits i {
     margin-top: 90px;
     font-size: 5em; }
-
-.line-seperator {
-  background: #CB242D;
-  height: 2px;
-  width: 70px;
-  display: block;
-  margin: 40px auto; }
 
 .popular-destinations {
   text-align: center; }
@@ -253,9 +258,6 @@ img {
     color: #fff;
     font-size: 1.4em;
     font-weight: 500; }
-
-.best-offers__title {
-  text-align: center; }
 
 .best-offers__promo-text {
   position: relative;
@@ -341,3 +343,41 @@ img {
     float: right;
     text-align: right;
     letter-spacing: 1px; }
+
+.testimonials__image {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto; }
+
+.testimonials__user-title {
+  text-align: center; }
+
+.testimonials__text {
+  font-style: italic; }
+
+.testimonials__social-proof {
+  padding-top: 40px; }
+
+.testimonials__social-proof__title {
+  margin-bottom: 50px;
+  text-align: center; }
+
+.testimonials__social-proof__image {
+  margin-top: 50px; }
+  @media (min-width: 768px) {
+    .testimonials__social-proof__image {
+      margin-top: 0; } }
+
+.card {
+  margin: 30px -10px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  height: auto;
+  background: #fff; }
+  @media (min-width: 576px) {
+    .card {
+      margin: 30px 20px;
+      padding: 40px 30px; } }
+  .card hr {
+    width: 80%;
+    background: #ccc; }

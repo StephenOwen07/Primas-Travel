@@ -1,0 +1,17 @@
+.card {
+  margin: 30px -10px;
+  padding: 40px 20px;
+  border-radius: 5px;
+  height: auto;
+  background: #fff;
+
+  @include small {
+    margin: 30px 20px;
+    padding: 40px 30px;
+  }
+
+  hr {
+    width: 80%;
+    background: #ccc;
+  }
+}

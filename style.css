@@ -11,13 +11,6 @@ img {
   display: block;
 }
 
-hr {
-  border: none;
-  margin-bottom: 20px;
-  height: 1px;
-  color: #6C6E70;
-  background: #6C6E70;
-}
 
 
 /*************************************** 
@@ -236,15 +229,6 @@ input[type=submit] {
 }
 
 
-/*  card  */
-
-.card {
-  border-radius: 5px;
-  height: auto;
-  background: #fff;
-  margin: 30px 20px;
-  padding: 40px 30px;
-}
 
 
 /*************************************** 
@@ -288,54 +272,6 @@ nav a {
 /*************************************** 
 Sections                    
 /**************************************/
-
-
-/*  benefits */
-
-.benefits {
-  margin-top: 50px;
-}
-
-.benefits i {
-  font-size: 5em;
-}
-
-.benefits h4 {
-  font-size: 1.2em;
-}
-
-
-/* best offer */
-
-
-/*  Testimonials  */
-
-.testimonials>div {
-  margin-bottom: 50px;
-}
-
-.testimonials p {
-  font-style: italic;
-}
-
-.card img {
-  display: block;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.card hr {
-  width: 80%;
-  background: #ccc;
-}
-
-
-/*  social proof  */
-
-.social-proof {
-  padding-top: 40px;
-}
-
 
 /*  newsletter  */
 
