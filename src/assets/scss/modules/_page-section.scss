@@ -1,6 +1,15 @@
 .page-section {
 padding: 100px 0;
-  &:--grey {
+  &--grey {
     background: $greyLight;
+  }
+
+  &--dark {
+    background: #252528;
+    color: #fff;
+  }
+
+  &--red {
+    background: $red;
   }
 }

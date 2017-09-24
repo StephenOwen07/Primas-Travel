@@ -1,0 +1,47 @@
+.popular-destinations {
+  text-align: center;
+
+    &__image-container {
+      position: relative;
+      height: 300px;
+      width: 300px;
+      margin: 80px auto 0 auto;
+
+      @include large {
+     
+      margin: 50px auto 0 auto;
+    }
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  &__image-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: rgba(0,0,0, 0.2);
+    z-index: 1;
+    transition: 0.2s;
+
+    &:hover, &:focus {
+      background: initial;
+    }
+  }
+
+  &__image-caption {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right:25%;
+    top: 85%;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
+}

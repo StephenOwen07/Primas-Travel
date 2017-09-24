@@ -192,8 +192,13 @@ img {
 
 .page-section {
   padding: 100px 0; }
-  .page-section:--grey {
+  .page-section--grey {
     background: #E9EAEA; }
+  .page-section--dark {
+    background: #252528;
+    color: #fff; }
+  .page-section--red {
+    background: #CB242D; }
 
 .home-intro__title {
   text-align: center; }
@@ -213,3 +218,38 @@ img {
   width: 70px;
   display: block;
   margin: 40px auto; }
+
+.popular-destinations {
+  text-align: center; }
+  .popular-destinations__image-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 80px auto 0 auto; }
+    @media (min-width: 992px) {
+      .popular-destinations__image-container {
+        margin: 50px auto 0 auto; } }
+  .popular-destinations__image {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px; }
+  .popular-destinations__image-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+    .popular-destinations__image-overlay:hover, .popular-destinations__image-overlay:focus {
+      background: initial; }
+  .popular-destinations__image-caption {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 25%;
+    top: 85%;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500; }
