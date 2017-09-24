@@ -326,19 +326,6 @@ Header
 /*  logo  */
 
 
-
-.logo a {
-  padding: 10px;
-  letter-spacing: 0;
-}
-
-.logo span {
-  border: 2px solid #fff;
-  padding: 4px;
-  color: #CB242D;
-  font-weight: 700;
-}
-
 .header-default .logo {
   color: #CB242D;
 }
@@ -351,60 +338,11 @@ Header
 
 /* nav  */
 
-nav {
-  padding-right: 2%;
-}
-
-nav li {
-  padding: 0 10px;
-  display: inline-block;
-  line-height: 60px;
-}
-
-nav a {
-  position: relative;
-  padding: 15px;
-  font-size: 1em;
-  font-weight: 500;
-  -webkit-transition: 400ms;
-  transition: 400ms;
-}
 
 nav a {
   color: #434A54;
 }
 
-nav a:hover,
-nav a:focus {
-  color: #CB242D;
-}
-
-li a.nav-active {
-  color: #CB242D;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  width: 0%;
-  border-bottom: 2px solid #CB242D;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-nav a:hover::after {
-  width: 100%;
-}
-
-.nav--close {
-  display: none;
-}
-
-.nav--open {
-  display: none;
-}
 
 
 /*************************************** 

@@ -1,0 +1,82 @@
+.primary-nav {
+  &__close-btn {
+    position: absolute;
+    display: none !important;
+    right: 1%;
+    top: 0%;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 300;
+  }
+
+  @include large {
+    padding-right: 2%;
+  }
+
+  ul {
+    display: none;
+
+    @include large {
+      float: right;
+      display: inline-block;
+    }
+  }
+
+  li {
+    @include large {
+      padding: 0 10px;
+      display: inline-block;
+      line-height: 60px;
+    }
+  }
+
+  a{
+    
+    @include large {
+      position: relative;
+      padding: 15px;
+      font-size: 1em;
+      color:#fff;
+      transition: 400ms;
+
+      &:hover,&:focus {
+        color: $red;
+        text-decoration: none;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 0%;
+        border-bottom: 2px solid $red;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &--active {
+    color: $red !important;
+  }
+
+  &__open-btn {
+    position: absolute;
+    display: block;
+    top: 25%;
+    right: 5%;
+    color: #fff;
+    font-size: 1.6em;
+
+    @include large {
+      display:none;
+    }
+  }
+  
+}

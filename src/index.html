@@ -24,18 +24,14 @@
   <header class="header clearfix">
     <div class="container-fluid">
 
-      <a class="logo ta-center float-left" href="index.html"><span>PT</span> PrimasTravel</a>
+      <a class="header__logo" href="index.html"><span>PT</span> PrimasTravel</a>
 
-      <!--  preload spinner  -->
-      <!-- <div id="preload">
-        <div class="spinner"></div>
-      </div> -->
-      <nav class="overlay">
+      <nav class="primary-nav primary-nav__overlay">
+ 
+        <a class="primary-nav__close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-        <!-- <a class="nav--close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a> -->
-
-        <ul class="overlay-content ta-center float-right">
-          <li><a class="nav-active" href="index.html">Home</a></li>
+        <ul class="overlay-content">
+          <li><a class="primary-nav--active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="destination.html">Destination</a></li>
@@ -44,7 +40,7 @@
         </ul>
 
       </nav>
-      <a class="nav--open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <a class="primary-nav__open-btn" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
     </div>
   </header>
@@ -65,6 +61,12 @@
 
     <!--  Benefits  -->
     <section class="bg-white">
+
+
+      <!--  preload spinner  -->
+      <!-- <div id="preload">
+        <div class="spinner"></div>
+      </div> -->
 
       <div class="container-fluid">
         <button class="scroll-btn">
