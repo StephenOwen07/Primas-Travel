@@ -1,0 +1,90 @@
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__cell {
+    position: relative;
+    margin: 30px 1px;
+    height: 350px;
+    width: 400px;
+
+    @include large {
+      position: relative;
+      margin: 1px;
+      height: 350px;
+      width: 400px;
+    }
+    &:hover .image-gallery__caption-container {
+      background: rgba(203, 36, 45, 0.8);
+    }
+
+    
+    &--empty {
+      display: none;
+
+      @include large {
+        display: block;
+        height: 0;
+      }
+    }
+  }
+
+  &__caption-container {
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+    background: rgba(0, 0, 0, .7);
+    text-align: initial;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+
+    @include small {
+      font-size: 1em;
+    }
+    
+    span {
+      display: block;
+      color: #fff; 
+    }
+
+    @include clearfix;
+  }
+
+  &__caption-location {
+    display: block;
+    width: 70%;
+    float: left;
+    text-align: left;
+  }
+
+  &__caption-country, &__caption-night {
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  &__caption-hotel, &__caption-price {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1em;
+
+    @include small {
+      margin-top: 30px;
+    }
+  }
+
+  &__caption-pricing {
+    width: 30%;
+    float: right;
+    text-align: right;
+    letter-spacing: 1px;
+  }
+}

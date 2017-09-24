@@ -1,0 +1,18 @@
+.best-offers {
+
+  &__title {
+    text-align: center;
+  }
+
+  &__promo-text {
+    position: relative;
+    bottom: 10px;
+    display: block;
+    margin-bottom: 50px;
+    color: #CB242D;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.1em;
+    text-align: center;
+  }
+}

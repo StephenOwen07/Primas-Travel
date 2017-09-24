@@ -253,3 +253,91 @@ img {
     color: #fff;
     font-size: 1.4em;
     font-weight: 500; }
+
+.best-offers__title {
+  text-align: center; }
+
+.best-offers__promo-text {
+  position: relative;
+  bottom: 10px;
+  display: block;
+  margin-bottom: 50px;
+  color: #CB242D;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.1em;
+  text-align: center; }
+
+.image-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .image-gallery img {
+    height: 100%;
+    width: 100%; }
+  .image-gallery__cell {
+    position: relative;
+    margin: 30px 1px;
+    height: 350px;
+    width: 400px; }
+    @media (min-width: 992px) {
+      .image-gallery__cell {
+        position: relative;
+        margin: 1px;
+        height: 350px;
+        width: 400px; } }
+    .image-gallery__cell:hover .image-gallery__caption-container {
+      background: rgba(203, 36, 45, 0.8); }
+    .image-gallery__cell--empty {
+      display: none; }
+      @media (min-width: 992px) {
+        .image-gallery__cell--empty {
+          display: block;
+          height: 0; } }
+  .image-gallery__caption-container {
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: initial;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    z-index: 1; }
+    @media (min-width: 576px) {
+      .image-gallery__caption-container {
+        font-size: 1em; } }
+    .image-gallery__caption-container span {
+      display: block;
+      color: #fff; }
+    .image-gallery__caption-container:after {
+      content: '';
+      display: block;
+      clear: both; }
+  .image-gallery__caption-location {
+    display: block;
+    width: 70%;
+    float: left;
+    text-align: left; }
+  .image-gallery__caption-country, .image-gallery__caption-night {
+    font-style: italic;
+    font-size: 0.9em; }
+  .image-gallery__caption-hotel, .image-gallery__caption-price {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 1em; }
+    @media (min-width: 576px) {
+      .image-gallery__caption-hotel, .image-gallery__caption-price {
+        margin-top: 30px; } }
+  .image-gallery__caption-pricing {
+    width: 30%;
+    float: right;
+    text-align: right;
+    letter-spacing: 1px; }

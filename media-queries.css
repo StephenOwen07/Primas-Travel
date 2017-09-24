@@ -536,30 +536,3 @@ Iphone landscape height
     margin-top: 5%;
   }
 }
-
-
-/*************************************** 
-      Img Gallery    
-/**************************************/
-
-@media (max-width: 850px) {
-  .img-gallery-cell {
-    position: relative;
-    margin: 30px 1px;
-    height: 350px;
-    width: 400px;
-  }
-  .img-gallery-cell-empty {
-    display: none;
-  }
-}
-
-@media (max-width:430px) {
-  .img-gallery-caption-container {
-    font-size: 0.9em;
-  }
-  .img-gallery-caption-hotel,
-  .img-gallery-caption-price {
-    margin-top: 10px;
-  }
-}
