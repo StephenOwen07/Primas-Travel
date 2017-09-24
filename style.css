@@ -1,70 +1,4 @@
-/*************************************** 
-Base styles                    
-/**************************************/
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #E9EAEA;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 3.5em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  word-spacing: 15px;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.8em;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-h3 {
-  letter-spacing: 1px;
-  font-size: 1.4em;
-  font-weight: 500;
-}
-
-h4 {
-  font-size: 1em;
-  font-weight: 500;
-}
-
-p {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 2;
-}
-
-a {
-  color: #fff;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 section {
   padding: 100px 0;
@@ -376,15 +310,6 @@ input[type=submit] {
 Header                    
 /**************************************/
 
-header {
-  height: 60px;
-  width: 100%;
-  z-index: 10;
-}
-
-.header-primary {
-  position: absolute;
-}
 
 .header-primary a {
   color: #fff;
@@ -400,15 +325,7 @@ header {
 
 /*  logo  */
 
-.logo {
-  margin-top: 4px;
-  padding: 5px 0;
-  padding-left: 2%;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 500;
-  line-height: 40px;
-}
+
 
 .logo a {
   padding: 10px;

@@ -1,6 +1,6 @@
 var gulp = require("gulp"),
   sass = require("gulp-sass"),
-  autoprefixer = require("autoprefixer"),
+  autoprefixer = require("gulp-autoprefixer"),
   browserSync = require("browser-sync").create(),
   webpack = require("webpack");
 
@@ -10,7 +10,14 @@ var gulp = require("gulp"),
 gulp.task("sass", function() {
   return gulp.src("src/assets/scss/**/*.scss")
     .pipe(sass())
-    .pipe(gulp.dest("src/temp/styles"));
+    
+    .on("error", function(errorInfo) {
+      console.log(errorInfo.toString());
+      this.emit("end");
+    })
+    .pipe(autoprefixer("last 2 versions"))
+    .pipe(gulp.dest("src/temp/styles"))
+    .pipe(browserSync.stream());
 });
 
 
@@ -46,16 +53,11 @@ gulp.task("watch", function() {
     browserSync.reload();
   });
   // Watch styles
-  gulp.watch("src/assets/scss/**/*.scss", ["cssInject"]);
+  gulp.watch("src/assets/scss/**/*.scss", ["sass"]);
   // Watch js
   gulp.watch("src/assets/js/**/*.js", ["scriptsRefresh"]);
 });
 
-// Css Inject
-gulp.task("cssInject", ["sass"], function() {
-  return gulp.src("src/temp/styles/main.css")
-  .pipe(browserSync.stream());
-});
 
 
 
