@@ -27,31 +27,12 @@ Componenets
 
 /*  layout  */
 
-.float-left {
-  float: left;
-}
 
-.float-right {
-  float: right;
-}
-
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
 .bottom-buffer {
   margin-bottom: 50px;
 }
 
-.padding-0 {
-  padding: 0;
-}
-
-.ta-center {
-  text-align: center;
-}
 
 .col-centered {
   float: none;
@@ -172,10 +153,7 @@ Componenets
 /* button */
 
 .button {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 15px;
-  font-size: 1em;
+
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

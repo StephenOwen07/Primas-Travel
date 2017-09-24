@@ -40,10 +40,20 @@ p {
 
 a {
   text-decoration: none;
+
+  &:hover{
+     color: inherit;
+     text-decoration: inherit;
+  }
 }
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
