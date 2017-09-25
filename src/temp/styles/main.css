@@ -160,7 +160,7 @@ input[type="submit"] {
     @media (min-width: 576px) {
       .primary-nav ul {
         top: 20%;
-        font-size: 1em; } }
+        font-size: 1.1em; } }
     @media (min-width: 992px) {
       .primary-nav ul {
         position: static;
@@ -572,3 +572,31 @@ input[type="submit"] {
     outline: none; }
   .scroll-top-btn__icon {
     color: #fff; }
+
+.about-hero {
+  position: relative;
+  height: 70vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../assets/img/about/banner-about-compressor.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/img/about/banner-about-compressor.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .about-hero__text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center; }
+  .about-hero__title {
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 700; }
+    @media (min-width: 576px) {
+      .about-hero__title {
+        font-size: 2.5em; } }
+    @media (min-width: 768px) {
+      .about-hero__title {
+        font-size: 3.5em; } }
