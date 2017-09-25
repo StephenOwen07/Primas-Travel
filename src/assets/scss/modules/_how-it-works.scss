@@ -1,9 +1,5 @@
 .how-it-works {
 
-  &--mb-0 {
-    margin-bottom: 0;
-  }
-
   &__text-content {
     padding:0px 20px 100px;
     height: auto;
@@ -15,11 +11,7 @@
 
     @include large {
       padding:80px 20px 0;
-  
-    }
-  
-    @include large{
-      height: 550px;
+      height: 100px;
     }
   }
   

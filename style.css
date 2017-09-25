@@ -95,33 +95,6 @@ Componenets
 
 /* button */
 
-.button-secondary {
-  display: block;
-  width: 12em;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  background: #a31d24;
-  -webkit-transform: none;
-  transform: none;
-}
-
-.button-ghosted {
-  border: 1px solid #CB242D;
-  padding: 14px;
-  background: transparent;
-  color: #CB242D;
-}
-
-.button-ghosted:hover,
-.button-ghosted:focus {
-  background: #CB242D;
-  color: #fff;
-}
-
 .button-submit {
   width: 11em;
   cursor: pointer;
@@ -176,90 +149,6 @@ Services Page
 /**************************************/
 
 
-
-
-/*  How it works  */
-
-.how-it-works h1 {
-  font-size: 3em;
-}
-
-section.step {
-  padding: 0;
-}
-
-.step-text {
-  padding: 50px;
-  height: 550px;
-}
-
-.step-text span {
-  position: relative;
-  right: 38%;
-  margin-top: 10px;
-}
-
-.step-img {
-  position: relative;
-  height: 550px;
-  width: 50%;
-  overflow: hidden;
-}
-
-
-
-/*  Price plan  */
-
-.price-plan {
-  padding-top: 100px;
-}
-
-.price-plan .card {
-  margin: 30px 0 0;
-}
-
-.price-plan .card.card-primary {
-  background: #252528;
-}
-
-.price-plan h1 {
-  font-size: 2em;
-  font-weight: 700;
-}
-
-.price-plan h3 {
-  margin-bottom: 5px;
-  opacity: 0.8;
-  font-size: 0.9em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.price-plan h4 {
-  margin: 0 0 20px;
-  padding: 0;
-  font-size: 2.4em;
-  font-weight: 500;
-}
-
-.price-plan ul {
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-.price-plan li {
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.price-plan li i {
-  margin-right: 10px;
-  font-weight: 300;
-}
-
-.price-plan hr {
-  margin: 30px;
-}
 
 .price-plan .card p {
   font-size: 0.9em;

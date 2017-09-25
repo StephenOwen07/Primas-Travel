@@ -10,4 +10,16 @@
   &:hover, &:focus {
     background: $redDark;
   }
+
+  &--ghosted {
+    border: 1px solid $red;
+    padding: 14px;
+    background: transparent;
+    color: $red;
+
+    &:hover, &:focus {
+      background: $red;
+      color: #fff;
+    }
+  }
 }
