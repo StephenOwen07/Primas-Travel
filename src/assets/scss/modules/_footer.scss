@@ -1,0 +1,48 @@
+.footer {
+  padding: 30px 0 10px;
+  background: $dark;
+  color: $greyMedium;
+  font-size: 0.8em;
+  text-align: center;
+
+  @include medium {
+    text-align: left;
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+
+  &__list-title {
+    text-transform: uppercase;
+  }
+
+  ul {
+    line-height: 1.8;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover, &:focus {
+      color:#fff;
+      transition: .3s;
+    }
+  }
+
+  &__social-icons {
+    font-size: 3em;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+    &__copyright {
+      text-align: center;
+    }
+
+}

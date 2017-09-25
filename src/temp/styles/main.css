@@ -16,7 +16,8 @@ h1 {
 
 h2 {
   font-size: 1.8em;
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 0; }
 
 h3 {
   font-size: 1.4em;
@@ -76,13 +77,13 @@ input[type="submit"] {
     text-align: center; }
   .home-hero__title {
     font-size: 2em;
-    margin-bottom: 0px; }
+    margin-bottom: 10px; }
     @media (min-width: 576px) {
       .home-hero__title {
         font-size: 2.5em; } }
     @media (min-width: 768px) {
       .home-hero__title {
-        font-size: 3em; } }
+        font-size: 3.5em; } }
   .home-hero__subtitle {
     margin-bottom: 40px;
     font-size: 1.2em;
@@ -104,7 +105,7 @@ input[type="submit"] {
     padding-left: 2%;
     color: #fff;
     font-size: 1.2em;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 40px;
     text-align: center; }
     .header__logo:hover {
@@ -125,10 +126,9 @@ input[type="submit"] {
 
 .primary-nav__close-btn {
   position: absolute;
-  display: none !important;
+  display: none;
   right: 1%;
   top: 0%;
-  display: block;
   padding: 10px 20px;
   color: #fff;
   font-size: 2.5em;
@@ -152,19 +152,20 @@ input[type="submit"] {
     line-height: 60px; } }
 
 @media (min-width: 992px) {
-  .primary-nav a {
+  .primary-nav__link {
     position: relative;
     padding: 15px;
-    font-size: 1em;
     color: #fff;
+    font-size: 1em;
+    font-weight: 500;
     -webkit-transition: 400ms;
     transition: 400ms; }
-    .primary-nav a:hover, .primary-nav a:focus {
+    .primary-nav__link:hover, .primary-nav__link:focus {
       color: #CB242D;
       text-decoration: none; }
-    .primary-nav a:hover::after {
+    .primary-nav__link:hover::after {
       width: 100%; }
-    .primary-nav a::after {
+    .primary-nav__link::after {
       content: '';
       position: absolute;
       bottom: 3px;
@@ -175,7 +176,7 @@ input[type="submit"] {
       transition: 0.3s; } }
 
 .primary-nav--active {
-  color: #CB242D !important; }
+  color: #CB242D; }
 
 .primary-nav__open-btn {
   position: absolute;
@@ -184,6 +185,8 @@ input[type="submit"] {
   right: 5%;
   color: #fff;
   font-size: 1.6em; }
+  .primary-nav__open-btn:hover {
+    color: #fff; }
   @media (min-width: 992px) {
     .primary-nav__open-btn {
       display: none; } }
@@ -199,8 +202,6 @@ input[type="submit"] {
   transition: all 0.3s; }
   .button:hover, .button:focus {
     background: #a31d24; }
-  .button--large {
-    padding: 15px 161px; }
 
 .page-section {
   padding: 100px 0; }
@@ -390,7 +391,7 @@ input[type="submit"] {
 .form {
   margin: 0;
   padding: 0 10px;
-  height: 3.2em;
+  height: 3.3em;
   outline: 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -416,4 +417,45 @@ input[type="submit"] {
     padding-top: 0;
     color: #848383; }
   .newsletter__email {
-    width: 400px; }
+    width: 80%;
+    margin-bottom: 2px; }
+    @media (min-width: 768px) {
+      .newsletter__email {
+        width: 400px;
+        margin-bottom: 0; } }
+  .newsletter .button {
+    width: 80%; }
+    @media (min-width: 768px) {
+      .newsletter .button {
+        width: 150px; } }
+
+.footer {
+  padding: 30px 0 10px;
+  background: #252528;
+  color: #6C6E70;
+  font-size: 0.8em;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .footer {
+      text-align: left; } }
+  .footer__nav {
+    margin-bottom: 40px; }
+  .footer__list-title {
+    text-transform: uppercase; }
+  .footer ul {
+    line-height: 1.8; }
+  .footer a {
+    color: inherit; }
+    .footer a:hover, .footer a:focus {
+      color: #fff;
+      -webkit-transition: .3s;
+      transition: .3s; }
+  .footer__social-icons {
+    font-size: 3em;
+    text-align: center; }
+    .footer__social-icons li {
+      display: inline-block;
+      padding: 0 10px;
+      margin-bottom: 30px; }
+  .footer__copyright {
+    text-align: center; }

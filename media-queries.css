@@ -203,16 +203,7 @@ Tablet Portrait
   .social-proof img {
     margin-bottom: 70px;
   }
-  /*  newsletter  */
-  .newsletter {
-    line-height: 1.5;
-  }
-  .newsletter input[type=submit] {
-    width: 25em;
-  }
-  .newsletter .form-control {
-    margin-bottom: 1px;
-  }
+
   /*  footer  */
   footer {
     text-align: center;
@@ -376,14 +367,6 @@ Landscape phone
   }
   
 
-  /*  newsletter  */
-  .newsletter .form-control {
-    width: 15em;
-    font-size: 0.9em;
-  }
-  .newsletter input[type=submit] {
-    width: 15em;
-  }
   /*  footer  */
   footer p {
     font-size: 0.9em;

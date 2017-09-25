@@ -211,68 +211,7 @@ nav a {
 }
 
 
-/*************************************** 
-Sections                    
-/**************************************/
 
-/*  newsletter  */
-
-.newsletter .form-control {
-  width: 25em;
-}
-
-
-/*************************************** 
-Footer            
-/**************************************/
-
-footer {
-  padding: 30px 0 10px;
-  background: #252528;
-  color: #6C6E70;
-  font-size: 0.8em;
-}
-
-footer p {
-  font-size: 1em;
-}
-
-footer strong {
-  text-transform: uppercase;
-}
-
-footer a {
-  color: inherit;
-}
-
-footer ul {
-  font-weight: 400;
-  line-height: 1.8;
-}
-
-footer ul a:hover {
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-footer .footer-nav {
-  margin-bottom: 40px;
-  font-size: 1em;
-}
-
-
-/*  social icons  */
-
-ul.footer-social {
-  font-size: 3em;
-}
-
-.footer-social li {
-  display: inline-block;
-  padding: 0 10px;
-  margin-bottom: 30px;
-}
 
 
 /*************************************** 

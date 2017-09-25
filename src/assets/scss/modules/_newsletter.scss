@@ -10,7 +10,21 @@ text-align: center;
   }
 
   &__email {
-    width: 400px;
+    width: 80%;
+    margin-bottom: 2px;
+
+    @include medium {
+      width: 400px;
+      margin-bottom: 0;
+    }
+  }
+
+  .button {
+    width: 80%;
+
+    @include medium {
+      width:150px;  
+    }
   }
 
 }
