@@ -89,46 +89,46 @@
     </section>
 
     <!--contact form  -->
-    <section class="contact-form">
+    <section class="page-section page-section--grey contact-form">
       <div class="container-fluid">
 
         <div class="row">
-          <div class="card clearfix">
+          <div class="card">
             <h2>Have a question?</h2>
-            <p>Please leave your details below and we will be in contact shortly</p>
+            <p class="contact-form__subtitle">Please leave your details below and we will be in contact shortly</p>
 
             <form>
 
               <label>Name
-                <input class="form-control" type="text" name="name" placeholder="name" required>
+                <input class="form form--full-width" type="text" name="name" placeholder="name" required>
               </label>
               <label>Phone number
-                <input class="form-control" type="tel" placeholder="phone number" required>
+                <input class="form form--full-width" type="tel" placeholder="phone number" required>
               </label>
 
               <!--gender  -->
-              <div class="gender">
+              <div class="contact-form__gender">
                 <p>Gender</p>
                 <input type="radio" id="male" name="gender">
-                <label class="inline" for="male">Male</label>
+                <label class="contact-form--inline" for="male">Male</label>
                 <input type="radio" id="female" name="gender">
-                <label class="inline" for="female">Female</label>
+                <label class="contact-form--inline" for="female">Female</label>
                 <input type="radio" id="other" name="gender">
-                <label class="inline" for="other">Other</label>
+                <label class="contact-form--inline" for="other">Other</label>
               </div>
 
               <!--  email  -->
               <label>Email
-                <input class="form-control" type="email" name="email" placeholder="email" required>
+                <input class="form form--full-width" type="email" name="email" placeholder="email" required>
               </label>
               <label>Subject (optional but helpful)
-                <input class="form-control" type="text">
+                <input class="form form--full-width" type="text">
               </label>
               <label>How can we help?
-                <textarea class="form-control" required></textarea>
+                <textarea class="form form--full-width" required></textarea>
               </label>
 
-              <input class="button button-primary button-submit float-right" type="Submit" value="Submit" name="Submit">
+              <input class="button" type="Submit" value="Submit" name="Submit">
 
             </form>
 

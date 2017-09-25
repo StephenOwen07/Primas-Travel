@@ -5,11 +5,7 @@ Desktop
 /**************************************/
 
 @media (max-width:1200px) {
-  
-  /*  Contact: banner  */
-  .banner-contact {
-    background-attachment: scroll;
-  }
+
   /*   Destination page  */
   .sidebar {
     margin-bottom: 50px;
@@ -52,13 +48,7 @@ Tablet Landscape
   section.how-it-works.bg-white {
     padding-bottom: 0;
   }
-  
-  
-  /*  contact form  */
-  .contact-form .card {
-    margin: 30px auto;
-    width: 80%;
-  }
+
   /*   Destination page  */
   .promo-price {
     margin-top: 50px;
@@ -73,12 +63,6 @@ Tablet Portrait
 @media (max-width:767px) {
   /*  base styles  */
 
-
-  /*  contact form  */
-  .contact-form .card {
-    margin: 30px auto;
-    width: 90%;
-  }
   /* Destination: page */
   span.sort {
     display: none;
@@ -202,10 +186,6 @@ Landscape phone
     font-size: 0.9em;
   }
 
-  /*  contact form  */
-  .contact-form .card {
-    margin: 30px auto;
-    width: 95%;
   }
   /* destination page */
   .room-sort-menu>li {

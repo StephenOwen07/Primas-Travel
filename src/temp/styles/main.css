@@ -488,6 +488,8 @@ input[type="submit"] {
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
             box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  .form--full-width {
+    width: 100%; }
 
 .newsletter {
   text-align: center; }
@@ -812,7 +814,7 @@ input[type="submit"] {
       text-decoration: underline; }
 
 #map {
-  height: 60vh;
+  height: 70vh;
   margin: 0 auto;
   width: 100%; }
 
@@ -839,3 +841,63 @@ input[type="submit"] {
   padding-bottom: 20px;
   color: #848383;
   font-size: 0.9em; }
+
+.contact-form label {
+  display: block;
+  margin: 10px 20px 30px 0;
+  font-weight: 500; }
+
+.contact-form input {
+  margin-top: 10px; }
+
+.contact-form input[type=radio] {
+  position: relative;
+  bottom: 2px;
+  display: inline;
+  margin: 0;
+  margin-right: 2px;
+  padding: 0; }
+
+.contact-form .card {
+  margin: 0 auto;
+  width: 95%; }
+  @media (min-width: 576px) {
+    .contact-form .card {
+      width: 90%; } }
+  @media (min-width: 768px) {
+    .contact-form .card {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    .contact-form .card {
+      width: 60%; } }
+
+.contact-form__subtitle {
+  margin: 15px 0;
+  color: #848383; }
+
+.contact-form--inline {
+  display: inline !important; }
+
+.contact-form__gender {
+  margin: 50px 0; }
+  .contact-form__gender p {
+    font-weight: 500; }
+  .contact-form__gender label {
+    font-weight: 400; }
+
+.contact-form textarea {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: 150px; }
+
+.contact-form .button {
+  width: 180px; }
+  @media (min-width: 576px) {
+    .contact-form .button {
+      float: right; } }
+
+.contact-form form:after {
+  content: '';
+  display: block;
+  clear: both; }
