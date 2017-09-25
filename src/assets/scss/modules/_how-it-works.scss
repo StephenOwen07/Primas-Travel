@@ -1,0 +1,60 @@
+.how-it-works {
+
+  &--mb-0 {
+    margin-bottom: 0;
+  }
+
+  &__text-content {
+    padding:0px 20px 100px;
+    height: auto;
+    text-align: center;
+
+    @include small {
+      text-align: left;
+    }
+
+    @include large {
+      padding:80px 20px 0;
+  
+    }
+  
+    @include large{
+      height: 550px;
+    }
+  }
+  
+  &__line {
+      position: relative;
+      left:10px;
+      height: 2px;
+      width: 70px;
+      display: block;
+      margin: 30px auto;
+      background:$red;
+
+      @include small {
+        margin: 30px 0;
+      }
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 100%;
+    width: auto;
+    max-width: none;
+
+    @include wide-screen{
+      width: 100%;
+    }
+  }
+
+  &__img-container {
+    position: relative;
+    height: 550px;
+    width: 50%;
+    overflow: hidden;
+  }
+}

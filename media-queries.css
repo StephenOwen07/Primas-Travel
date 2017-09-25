@@ -62,13 +62,8 @@ Tablet Landscape
   section.how-it-works.bg-white {
     padding-bottom: 0;
   }
-  /*  steps  */
-  .step-text {
-    height: auto;
-  }
-  .step-text span {
-    right: 42%;
-  }
+  
+  
   /*  contact form  */
   .contact-form .card {
     margin: 30px auto;
@@ -88,15 +83,7 @@ Tablet Portrait
 @media (max-width:767px) {
   /*  base styles  */
 
-  
-  /*  Services: how it works  */
-  .step {
-    text-align: center;
-  }
-  .step-text span {
-    position: initial;
-    width: 70px;
-  }
+
   /*  contact form  */
   .contact-form .card {
     margin: 30px auto;
@@ -219,11 +206,7 @@ Landscape phone
 
 @media (max-width: 480px) {
 
-  
-  /*  About: how it works  */
-  .step-icon {
-    font-size: 10em;
-  }
+
   /*  About: Price plan  */
   .price-plan a.button {
     font-size: 0.9em;

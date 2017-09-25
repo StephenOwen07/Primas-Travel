@@ -82,16 +82,21 @@
     </div>
 
     <!--  how it works  -->
-    <section class="how-it-works bg-white">
+    <section class="page-section how-it-works">
+
+      <!--  preload spinner  -->
+      <div id="preloader">
+        <div class="spinner"></div>
+      </div>
 
       <div class="container-fluid">
-        <button class="scroll-btn">
-          <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
+        <button class="scroll-top-btn">
+          <i class="fa fa-chevron-up scroll-top-btn__icon" aria-hidden="true"></i>
         </button>
         <div class="row">
           <div class="col-md-12 bottom-buffer">
-            <h1 class="ta-center">How it works</h1>
-            <span class="line "></span>
+            <h1 class="page-section__title">How it works</h1>
+            <span class="page-section__line"></span>
           </div>
         </div>
       </div>
@@ -100,19 +105,20 @@
 
 
     <!-- step 1  -->
-    <section class="step bg-white">
+    <section class="">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 col-md-push-6 step-text col-sm-10 col-xs-12">
-            <h2>Step 1: Choose how many users</h2>
-            <span class="line"></span>
-            <p>Choose your specific plan based on how many users you want. Starter plan: up to 2 users, Family plan: up to 4
-              users and Premium plan: unlimited users.
-            </p>
-
+            <div class="how-it-works__text-content">
+              <h2>Step 1: Choose how many users</h2>
+              <span class="how-it-works__line"></span>
+              <p>Choose your specific plan based on how many users you want. Starter plan: up to 2 users, Family plan: up to
+                4 users and Premium plan: unlimited users.
+              </p>
+            </div>
           </div>
-          <div class="col-md-6 col-md-pull-6 step-img hidden-sm hidden-xs">
-            <img src="img/services/users-fin.jpg" alt="users">
+          <div class="col-md-6 col-md-pull-6 hidden-sm hidden-xs how-it-works__img-container">
+            <img class="how-it-works__img" src="assets/img/services/users-fin.jpg" alt="users">
           </div>
         </div>
       </div>
@@ -125,14 +131,18 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-md-6 step-text col-sm-10 col-xs-12">
-            <h2>Step 2: Choose your destinations</h2>
-            <span class="line"></span>
-            <p>Choose which counries and cities you desire to visit based on which price plan you choose. </p>
-            <p>Any destination you can think of is possible. Our team will help you to find the right destination for your trip</p>
+          <div class="col-md-6 col-sm-10 col-xs-12">
+            <div class="how-it-works__text-content">
+              <h2>Step 2: Choose your destinations</h2>
+              <span class="how-it-works__line"></span>
+              <p>Choose which counries and cities you desire to visit based on which price plan you choose. </p>
+              <p>Any destination you can think of is possible. Our team will help you to find the right destination for your
+                trip
+              </p>
+            </div>
           </div>
-          <div class="col-md-6 step-img hidden-sm hidden-xs">
-            <img src="img/services/destination-fin.jpg" alt="destination">
+          <div class="col-md-6 hidden-sm hidden-xs how-it-works__img-container">
+            <img class="how-it-works__img" src="assets/img/services/destination-fin.jpg" alt="destination">
           </div>
         </div>
       </div>
@@ -144,17 +154,19 @@
 
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 col-md-push-6 step-text col-sm-10 col-xs-12">
-            <h2>Step 3: Choose your accommodation and activites</h2>
-            <span class="line"></span>
-            <p>Choose which acommadation type you wish to stay in based upon your budget. From 5 star hotels, air bnb or even
-              hostels, we will find the right accomadation for your needs.
-            </p>
-            <p>Our team will help you choose and customise what activites you wish to do. From ziplining across Lake Tahoe to.
-              dining at the Marina Bay Sands hotel, we will find the activities which suite your trip the most.</p>
+          <div class="col-md-6 col-md-push-6 col-sm-10 col-xs-12">
+            <div class="how-it-works__text-content">
+              <h2>Step 3: Choose your accommodation and activites</h2>
+              <span class="how-it-works__line"></span>
+              <p>Choose which acommadation type you wish to stay in based upon your budget. From 5 star hotels, air bnb or even
+                hostels, we will find the right accomadation for your needs.
+              </p>
+              <p>Our team will help you choose and customise what activites you wish to do. From ziplining across Lake Tahoe
+                to. dining at the Marina Bay Sands hotel, we will find the activities which suite your trip the most.</p>
+            </div>
           </div>
-          <div class="col-md-6 col-md-pull-6 step-img hidden-sm hidden-xs">
-            <img src="img/services/accommodation-fin.jpg" alt="accomodation">
+          <div class="col-md-6 col-md-pull-6 hidden-sm hidden-xs how-it-works__img-container">
+            <img class="how-it-works__img" src="assets/img/services/accommodation-fin.jpg" alt="accomodation">
           </div>
         </div>
       </div>
@@ -167,16 +179,18 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-md-6 col-sm-10 col-xs-12 step-text">
-            <h2>Step 4: Digital documentation</h2>
-            <span class="line"></span>
-            <p>Once you are happy with your trips customization, we will organize all of your documentation for you, taking
-              the hassle away from you. </p>
-            <p>Your documentation will be digitally available so you can view it on whichever device suits you. No more thrifting
-              through tedius documentation. </p>
+          <div class="col-md-6 col-sm-10 col-xs-12">
+            <div class="how-it-works__text-content">
+              <h2>Step 4: Digital documentation</h2>
+              <span class="how-it-works__line"></span>
+              <p>Once you are happy with your trips customization, we will organize all of your documentation for you, taking
+                the hassle away from you. </p>
+              <p>Your documentation will be digitally available so you can view it on whichever device suits you. No more thrifting
+                through tedius documentation. </p>
+            </div>
           </div>
-          <div class="col-md-6 step-img hidden-sm hidden-xs">
-            <img src="img/services/digital-fin.jpg" alt="digital">
+          <div class="col-md-6 hidden-sm hidden-xs how-it-works__img-container">
+            <img class="how-it-works__img" src="assets/img/services/digital-fin.jpg" alt="digital">
           </div>
         </div>
       </div>
