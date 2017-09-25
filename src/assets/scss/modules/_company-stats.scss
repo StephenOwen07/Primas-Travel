@@ -1,0 +1,20 @@
+.company-stats {
+  text-align: center;
+
+  &__text {
+    margin: 10px 0 80px 0;
+    &--white {
+      color: #fff;
+    }
+
+    &--no-b-margin {
+      margin-bottom: 10px;
+    }
+
+    &--no-b-margin-medium {
+      @include medium {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
