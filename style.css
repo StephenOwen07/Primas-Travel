@@ -23,32 +23,6 @@ Componenets
 }
 
 
-/*  style  */
-
-.text-dark {
-  color: #262521;
-}
-
-.info-link {
-  color: #ed0914;
-}
-
-.info-link:hover,
-.info-link:focus {
-  color: #a0080d;
-  text-decoration: underline;
-}
-
-.info-link-blue {
-  color: #0283DF;
-}
-
-.info-link-blue:hover,
-.info-link-blue:focus {
-  color: #488BF8;
-  text-decoration: underline;
-}
-
 
 /*  preloader  */
 
@@ -143,32 +117,11 @@ nav a {
 }
 
 
-
-/*************************************** 
-Services Page         
-/**************************************/
-
-
-
-.price-plan .card p {
-  font-size: 0.9em;
-  font-weight: 300;
-}
-
-
 /*  FAQ  */
 
-.faq-text-block {
-  margin-bottom: 50px;
-}
-
-.faq-text-block h3 {
-  font-size: 1.1em;
-}
 
 .faq-text-block p {
-  color: #848383;
-  font-size: 0.9em;
+ 
 }
 
 

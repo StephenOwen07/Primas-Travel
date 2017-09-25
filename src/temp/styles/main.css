@@ -772,3 +772,24 @@ input[type="submit"] {
   .price-plan .card {
     height: 550px;
     margin: 50px 5px; }
+
+.faq__text-content {
+  margin-bottom: 50px; }
+
+.faq__subtitle {
+  font-size: 1.1em; }
+
+.faq__text {
+  color: #848383;
+  font-size: 0.9em; }
+
+.info-link {
+  color: #ed0914; }
+  .info-link:hover, .info-link:focus {
+    color: #a0080d;
+    text-decoration: underline; }
+  .info-link--blue {
+    color: #0283DF; }
+    .info-link--blue:hover, .info-link--blue:focus {
+      color: #488BF8;
+      text-decoration: underline; }

@@ -1,0 +1,17 @@
+.info-link {
+  color: #ed0914;
+
+  &:hover, &:focus {
+    color: #a0080d;
+    text-decoration: underline;
+  }
+
+  &--blue {
+    color: #0283DF;
+
+    &:hover, &:focus {
+      color: #488BF8;
+      text-decoration: underline;
+    }
+  }
+}
