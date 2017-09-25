@@ -1,0 +1,11 @@
+.leadership {
+  text-align: center;
+
+  &__img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    margin-top: 50px;
+  }
+}

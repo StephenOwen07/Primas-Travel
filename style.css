@@ -175,61 +175,6 @@ nav a {
 
 
 
-
-
-/*************************************** 
-About Page         
-/**************************************/
-
-
-/*  banner  */
-
-.banner-about {
-  position: relative;
-  height: 60vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/about/banner-about-compressor.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/about/banner-about-compressor.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.banner-about-title {
-  margin-top: 15%;
-  text-align: center;
-}
-
-
-/*  stats  */
-
-.stats .line {
-  background-color: #252528;
-}
-
-.stats .row h2 {
-  font-size: 2em;
-  padding: 0;
-}
-
-.stats .row p {
-  margin-bottom: 60px;
-  padding: 0;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-
-/*  leadership  */
-
-.leader img {
-  display: inline-block;
-  border-radius: 50%;
-  max-width: 50%;
-  height: auto;
-}
-
-
 /*************************************** 
 Services Page         
 /**************************************/

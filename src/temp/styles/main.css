@@ -271,6 +271,8 @@ input[type="submit"] {
     margin: 40px auto; }
   .page-section__line--dark {
     background: #262521; }
+  .page-section__text--centered {
+    text-align: center; }
 
 .home-intro__text {
   margin: 0 10px 0 10px; }
@@ -615,3 +617,12 @@ input[type="submit"] {
     @media (min-width: 768px) {
       .company-stats__text--no-b-margin-medium {
         margin-bottom: 0; } }
+
+.leadership {
+  text-align: center; }
+  .leadership__img {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
+    margin-top: 50px; }

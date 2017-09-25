@@ -15,15 +15,7 @@ Desktop
 /**************************************/
 
 @media (max-width:1200px) {
-  /*  about page banner  */
-  .banner-about {
-    background-position: center;
-    background-attachment: scroll;
-  }
-  /*  hero  */
-  .hero {
-    background-attachment: scroll;
-  }
+  
   /*  Contact: banner  */
   .banner-contact {
     background-attachment: scroll;
@@ -65,23 +57,7 @@ Tablet Landscape
 
 @media (max-width: 992px) {
 
-  /*  Nav  */
-  .header-default {
-    position: relative;
-  }
   
-  /* find destination */
-  .find-dest-img {
-    margin-bottom: 100px;
-  }
-  /*  testimonials  */
-  .testimonials .card {
-    margin: 30px 0;
-  }
-  /* about */
-  .banner-about {
-    height: 50vh;
-  }
   /*  How it works  */
   section.how-it-works.bg-white {
     padding-bottom: 0;
@@ -111,15 +87,7 @@ Tablet Portrait
 
 @media (max-width:767px) {
   /*  base styles  */
-  
-  /* About */
-  .banner-about-title {
-    margin-top: 20%;
-  }
-  /*  About: leadership  */
-  .leader {
-    margin-bottom: 50px;
-  }
+
   /* servcices  */
   /* Carousell */
   .carousell-img {
@@ -259,10 +227,7 @@ Landscape phone
 
 @media (max-width: 480px) {
 
-  /*  About page banner  */
-  .banner-about-title {
-    margin-top: 35%;
-  }
+  
   /*  About: how it works  */
   .step-icon {
     font-size: 10em;
@@ -363,10 +328,7 @@ Iphone landscape height
     margin-bottom: 30px;
     font-size: 1.1em;
   }
-  /* about */
-  .banner-about-title {
-    margin-top: 10%;
-  }
+  
   /* services */
   .carousell-img-text {
     margin-top: 10%;
@@ -380,12 +342,7 @@ Iphone landscape height
   .hero .button {
     padding: 10px;
   }
-  
-  /* about */
-  .banner-about-title {
-    margin-top: 5%;
-    font-size: 0.8em;
-  }
+
   .carousell-img-text {
     margin-top: 5%;
   }
