@@ -84,48 +84,6 @@ Componenets
 }
 
 /*************************************** 
-Header                    
-/**************************************/
-
-
-.header-default {
-  position: relative;
-  margin-top: 0;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
-}
-
-
-/*  logo  */
-
-
-.header-default .logo {
-  color: #CB242D;
-}
-
-.header-default .logo span {
-  border-color: #434A54;
-  color: #CB242D;
-}
-
-
-/* nav  */
-
-
-nav a {
-  color: #434A54;
-}
-
-
-/*  FAQ  */
-
-
-.faq-text-block p {
- 
-}
-
-
-/*************************************** 
 Destinations        
 /**************************************/
 
@@ -588,55 +546,6 @@ a.hotel-info-location {
 /*************************************** 
 Contact Page         
 /**************************************/
-
-
-/*  location  */
-
-.location .row {
-  margin-bottom: 30px;
-  margin-left: 2%;
-}
-
-.location .line {
-  margin-bottom: 100px;
-}
-
-.location h1 {
-  font-size: 2.2em;
-}
-
-.location h4 {
-  margin: 0;
-  margin-bottom: 5px;
-  padding: 0;
-}
-
-.location p {
-  margin: 0 0 20px;
-  padding-bottom: 20px;
-  color: #848383;
-  font-size: 0.9em;
-}
-
-
-/*  Google map  */
-
-#map {
-  height: 60vh;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.info-window p {
-  color: #434A54;
-  font-size: 1em;
-}
-
-.info-window h3 {
-  color: #000;
-  font-size: 1.1em;
-}
-
 
 /*  contact form  */
 

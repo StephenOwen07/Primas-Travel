@@ -5,7 +5,9 @@
   z-index: 10;
 
   &--solid {
-    position:static;
+    position: relative;
+    margin-top: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.20);
   }
 
   &__logo {
@@ -22,6 +24,18 @@
     &:hover {
       color: #fff;
       text-decoration: none;
+    }
+
+    &--inverse {
+      color: $red;
+
+      span {
+        border-color: $greyDark!important;
+      }
+
+      &:hover, &:focus {
+        color: $red;
+      }
     }
   
     a {

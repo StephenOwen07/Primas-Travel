@@ -101,7 +101,10 @@ input[type="submit"] {
   width: 100%;
   z-index: 10; }
   .header--solid {
-    position: static; }
+    position: relative;
+    margin-top: 0;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2); }
   .header__logo {
     float: left;
     margin-top: 4px;
@@ -115,6 +118,12 @@ input[type="submit"] {
     .header__logo:hover {
       color: #fff;
       text-decoration: none; }
+    .header__logo--inverse {
+      color: #CB242D; }
+      .header__logo--inverse span {
+        border-color: #434A54 !important; }
+      .header__logo--inverse:hover, .header__logo--inverse:focus {
+        color: #CB242D; }
     .header__logo a {
       padding: 10px;
       color: #fff; }
@@ -201,7 +210,11 @@ input[type="submit"] {
         transition: 400ms; }
         .primary-nav__link:hover, .primary-nav__link:focus {
           color: #CB242D;
-          text-decoration: none; }
+          text-decoration: none; } }
+  @media (min-width: 992px) and (min-width: 992px) {
+    .primary-nav__link--grey {
+      color: #434A54; } }
+    @media (min-width: 992px) {
         .primary-nav__link:hover::after {
           width: 100%; }
         .primary-nav__link::after {
@@ -224,6 +237,10 @@ input[type="submit"] {
     font-size: 1.6em; }
     .primary-nav__open-btn:hover {
       color: #fff; }
+    .primary-nav__open-btn--grey {
+      color: #434A54; }
+      .primary-nav__open-btn--grey:hover {
+        color: #434A54; }
     @media (min-width: 992px) {
       .primary-nav__open-btn {
         display: none; } }
@@ -793,3 +810,32 @@ input[type="submit"] {
     .info-link--blue:hover, .info-link--blue:focus {
       color: #488BF8;
       text-decoration: underline; }
+
+#map {
+  height: 60vh;
+  margin: 0 auto;
+  width: 100%; }
+
+.info-window p {
+  color: #434A54;
+  font-size: 1em; }
+
+.info-window h3 {
+  color: #000;
+  font-size: 1.1em; }
+
+.location .row {
+  margin-bottom: 30px;
+  margin-left: 2%; }
+
+.location__subtitle {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  padding: 0; }
+
+.location__details {
+  margin: 0 0 20px;
+  padding-bottom: 20px;
+  color: #848383;
+  font-size: 0.9em; }

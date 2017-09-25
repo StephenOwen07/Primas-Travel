@@ -1,0 +1,22 @@
+.location {
+  
+  .row {
+    margin-bottom: 30px;
+    margin-left: 2%;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    padding: 0;
+  }
+
+  &__details {
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    color: #848383;
+    font-size: 0.9em;
+  }
+
+}

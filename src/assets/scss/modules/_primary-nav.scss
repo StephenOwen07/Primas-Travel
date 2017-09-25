@@ -79,10 +79,17 @@
       font-size: 1em;
       font-weight: 500;
       transition: 400ms;
+      
 
       &:hover,&:focus {
         color: $red;
         text-decoration: none;
+      }
+
+      &--grey {
+        @include large {
+          color:$greyDark;
+        }
       }
 
       &:hover::after {
@@ -117,6 +124,14 @@
     
     &:hover {
       color: #fff;
+    }
+
+    &--grey {
+      color: $greyDark;
+
+      &:hover {
+        color: $greyDark;
+      }
     }
 
     @include large {
