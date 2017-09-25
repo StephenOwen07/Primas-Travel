@@ -1,1 +1,4 @@
-var Preloader = require("modules/Preloader");
+var Preloader = require("./modules/Preloader");
+
+var preloader = new Preloader();
+

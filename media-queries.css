@@ -185,29 +185,7 @@ Tablet Portrait
 
 @media (max-width:767px) {
   /*  base styles  */
-  h1 {
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    font-size: 2.7em;
-  }
-  /*  Home hero  */
-  .hero h2 {
-    font-size: 1.2em;
-  }
-  /*  benefits  */
-  .benefits p {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  /*  social proof  */
-  .social-proof img {
-    margin-bottom: 70px;
-  }
-
-  /*  footer  */
-  footer {
-    text-align: center;
-  }
+  
   /* About */
   .banner-about-title {
     margin-top: 20%;
@@ -354,23 +332,7 @@ Landscape phone
 /**************************************/
 
 @media (max-width: 480px) {
-  /*  base styles  */
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.6em;
-  }
-  /*  button  */
-  .button {
-    font-size: 0.9em;
-  }
-  
 
-  /*  footer  */
-  footer p {
-    font-size: 0.9em;
-  }
   /*  About page banner  */
   .banner-about-title {
     margin-top: 35%;

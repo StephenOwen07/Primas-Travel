@@ -76,8 +76,9 @@ input[type="submit"] {
             transform: translate(-50%, -50%);
     text-align: center; }
   .home-hero__title {
+    margin-bottom: 10px;
     font-size: 2em;
-    margin-bottom: 10px; }
+    font-weight: 700; }
     @media (min-width: 576px) {
       .home-hero__title {
         font-size: 2.5em; } }
@@ -459,3 +460,65 @@ input[type="submit"] {
       margin-bottom: 30px; }
   .footer__copyright {
     text-align: center; }
+
+#preloader {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000; }
+
+.spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #ccc;
+  border-top: 10px solid #CB242D;
+  border-radius: 100%;
+  margin: auto;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.scroll-top-btn {
+  display: none;
+  position: fixed;
+  padding: 15px 13px;
+  border-radius: 3px;
+  border: none;
+  right: 2%;
+  bottom: 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1001; }
+  .scroll-top-btn:hover {
+    background-color: black; }
+  .scroll-top-btn:focus {
+    outline: none; }
+  .scroll-top-btn__icon {
+    color: #fff; }

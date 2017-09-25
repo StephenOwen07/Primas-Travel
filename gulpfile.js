@@ -7,11 +7,11 @@ var gulp = require("gulp"),
 /******************************************** 
               Styles tasks
  *******************************************/
-gulp.task("sass", function() {
+gulp.task("sass", function () {
   return gulp.src("src/assets/scss/**/*.scss")
     .pipe(sass())
-    
-    .on("error", function(errorInfo) {
+
+    .on("error", function (errorInfo) {
       console.log(errorInfo.toString());
       this.emit("end");
     })
@@ -24,13 +24,13 @@ gulp.task("sass", function() {
 /******************************************** 
               HTML tasks 
  *******************************************/
-gulp.task("html", function() {});
+gulp.task("html", function () { });
 
 /******************************************** 
               JS tasks 
  *******************************************/
-gulp.task("scripts", function() {
-  webpack(require("webpack.config.js"), function(err, stats) {
+gulp.task("scripts", function (callback) {
+  webpack(require("./webpack.config.js"), function (err, stats) {
     if (err) {
       console.log(err.toString());
     }
@@ -42,26 +42,23 @@ gulp.task("scripts", function() {
 /******************************************** 
               Watch tasks 
  *******************************************/
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   browserSync.init({
     server: {
       baseDir: "src"
     }
   });
   // Watch html
-  gulp.watch("src/*.html", function() {
+  gulp.watch("src/*.html", function () {
     browserSync.reload();
   });
   // Watch styles
   gulp.watch("src/assets/scss/**/*.scss", ["sass"]);
+
   // Watch js
   gulp.watch("src/assets/js/**/*.js", ["scriptsRefresh"]);
 });
 
-
-
-
-
-gulp.task("scriptsRefresh", ["scripts"], function() {
+gulp.task("scriptsRefresh", ["scripts"], function () {
   browserSync.reload();
 });
