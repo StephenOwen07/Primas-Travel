@@ -1,0 +1,46 @@
+.hotel {
+
+  &__img {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+
+    &--marina {
+      background-image: url('../../assets/img/destinations/marina-bay.jpg');
+    }
+
+    &--studio-m {
+      background-image: url('../../assets/img/destinations/sentosa.jpg')
+    }
+
+    &--indigo {
+      background-image: url('../../assets/img/destinations/indigo.jpg');
+    }
+
+    &--hop {
+      background-image: url('../../assets/img/destinations/hop.jpg');
+    }
+
+    &--mini {
+      background-image: url('../../assets/img/destinations/mini.jpg');
+    }
+
+    &--icon {
+      background-image: url('../../assets/img/destinations/hotel-icon.jpg');
+    }
+
+    &--dream-house {
+      background-image: url('../../assets/img/destinations/dreamHouse.jpg');
+    }
+
+    &--la-maison {
+      background-image: url('../../assets/img/destinations/laMaison.jpg');
+    }
+
+    &--fairytale {
+      background-image: url('../../assets/img/destinations/fairytale.jpg');
+    }
+  }
+}

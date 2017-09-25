@@ -901,3 +901,127 @@ input[type="submit"] {
   content: '';
   display: block;
   clear: both; }
+
+.sidebar span {
+  font-size: 1em; }
+
+.sidebar label {
+  font-size: 0.9em; }
+
+.sidebar__form {
+  background: #E9EAEA;
+  border-radius: 5px;
+  padding: 0;
+  font-size: 0.9em; }
+  .sidebar__form input[type="text"] {
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 230px;
+    padding: 5px;
+    outline-color: #0283DF; }
+    .sidebar__form input[type="text"]:hover, .sidebar__form input[type="text"]:focus {
+      outline: 0;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.sidebar__wrapper {
+  padding: 5%; }
+  .sidebar__wrapper:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.sidebar__search-wrapper {
+  margin-bottom: 30px; }
+
+.sidebar__title {
+  color: #434A54; }
+  .sidebar__title h4 {
+    margin: 0;
+    padding: 15px;
+    padding-bottom: 5px; }
+
+.sidebar__title--primary {
+  padding-bottom: 10px;
+  color: #fff;
+  background: #434A54; }
+
+.sidebar__search span {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 1px;
+  margin-top: 20px; }
+
+.sidebar__select {
+  padding-top: 10px; }
+  .sidebar__select:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .sidebar__select::first-of-type {
+    margin-top: 30px; }
+  .sidebar__select-2 {
+    position: relative;
+    left: 4px; }
+  .sidebar__select-3 {
+    position: relative;
+    right: 11px; }
+  .sidebar__select--submit {
+    padding-top: 30px; }
+    .sidebar__select--submit input[type="submit"] {
+      width: 8em;
+      margin-bottom: 10px;
+      padding: 12px; }
+
+.sidebar__select-item {
+  display: inline-block;
+  margin-top: 10px; }
+  .sidebar__select-item label {
+    padding-right: 50px; }
+
+.sidebar .button {
+  float: right; }
+
+.filter__box {
+  padding-bottom: 5px; }
+  .filter__box input {
+    margin-right: 5px; }
+
+.filter__item {
+  display: block;
+  padding: 5px 0 5px 10px; }
+  .filter__item:hover {
+    background: #E9EAEA; }
+  .filter__item img {
+    display: inline; }
+  .filter__item label > span {
+    padding-left: 10px; }
+
+.filter__item, .filter__item input, .filter__item img, .filter__item span, .filter__item i {
+  cursor: pointer; }
+
+.hotel__img {
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30%; }
+  .hotel__img--marina {
+    background-image: url("../../assets/img/destinations/marina-bay.jpg"); }
+  .hotel__img--studio-m {
+    background-image: url("../../assets/img/destinations/sentosa.jpg"); }
+  .hotel__img--indigo {
+    background-image: url("../../assets/img/destinations/indigo.jpg"); }
+  .hotel__img--hop {
+    background-image: url("../../assets/img/destinations/hop.jpg"); }
+  .hotel__img--mini {
+    background-image: url("../../assets/img/destinations/mini.jpg"); }
+  .hotel__img--icon {
+    background-image: url("../../assets/img/destinations/hotel-icon.jpg"); }
+  .hotel__img--dream-house {
+    background-image: url("../../assets/img/destinations/dreamHouse.jpg"); }
+  .hotel__img--la-maison {
+    background-image: url("../../assets/img/destinations/laMaison.jpg"); }
+  .hotel__img--fairytale {
+    background-image: url("../../assets/img/destinations/fairytale.jpg"); }
