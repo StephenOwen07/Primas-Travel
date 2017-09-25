@@ -1,6 +1,6 @@
 var $ = require("jquery");
 
-(function Preloader() {
+function Preloader() {
   $(window).on('load', function () { // makes sure the whole site is loaded 
 
     $('#spinner').fadeOut(); // will first fade out the loading animation 
@@ -10,6 +10,6 @@ var $ = require("jquery");
     });
 
   });
-})();
+}
 
 module.exports = Preloader;

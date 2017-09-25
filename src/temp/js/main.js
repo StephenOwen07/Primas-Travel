@@ -60,42 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Preloader = __webpack_require__(1);
-
-var preloader = new Preloader();
-
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $ = __webpack_require__(2);
-
-(function Preloader() {
-  $(window).on('load', function () { // makes sure the whole site is loaded 
-
-    $('#spinner').fadeOut(); // will first fade out the loading animation 
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-    $('body').delay(350).css({
-      'overflow': 'visible'
-    });
-
-  });
-})();
-
-module.exports = Preloader;
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10352,6 +10321,100 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Preloader = __webpack_require__(2);
+var ScrollTopBtn = __webpack_require__(3);
+var MobileNav = __webpack_require__(4);
+
+var preloader = new Preloader();
+var scrollTopBtn = new ScrollTopBtn();
+var mobileNav = new MobileNav();
+
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(0);
+
+function Preloader() {
+  $(window).on('load', function () { // makes sure the whole site is loaded 
+
+    $('#spinner').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({
+      'overflow': 'visible'
+    });
+
+  });
+}
+
+module.exports = Preloader;
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(0);
+
+function ScrollTopBtn() {
+  $(document).ready(function () {
+
+    // scroll top button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 300) {
+        $(".scroll-top-btn").fadeIn(300);
+      } else {
+        $(".scroll-top-btn").fadeOut(300);
+      }
+    });
+
+
+    $(".scroll-top-btn").click(function (e) {
+      $("html, body").animate({
+        scrollTop: "0px"
+      },
+        500
+      );
+    });
+
+  });
+}
+
+module.exports = ScrollTopBtn;
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+function MobileNav() {
+
+  var buttonOpen = document.querySelector('.primary-nav__open-btn');
+  var buttonClose = document.querySelector('.primary-nav__close-btn');
+  var mobileNav = document.querySelector('#primary-nav__mobile');
+
+  buttonOpen.addEventListener('click', function () {
+    mobileNav.style.height = '100%';
+    buttonOpen.style.display = 'none';
+  });
+
+  buttonClose.addEventListener('click', function () {
+    mobileNav.style.height = '0%';
+    buttonOpen.style.display = 'initial';
+  });
+
+
+}
+
+module.exports = MobileNav;
 
 
 /***/ })

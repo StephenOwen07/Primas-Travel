@@ -1,29 +1,58 @@
 .primary-nav {
-  &__close-btn {
-    position: absolute;
-    display: none;
-    right: 1%;
-    top: 0%;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: 300;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: 0.2s;
+
+  &::after {
+    border: none;
+    transition: none;
   }
 
   @include large {
+    position: static;
+    top: initial;
+    width: initial;
+    height: inital;
     padding-right: 2%;
+    background: none;
+    overflow:inital;
   }
 
   ul {
-    display: none;
+    position: relative;
+    top: 10%;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+
+    @include small {
+      top: 20%;
+      font-size: 1em;
+    }
 
     @include large {
+      position: static;
       float: right;
-      display: inline-block;
+      width: inital;
+      margin-top:0;
+      text-align: right;
     }
   }
 
   li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+
     @include large {
       padding: 0 10px;
       display: inline-block;
@@ -32,6 +61,16 @@
   }
 
   &__link{
+
+    padding: 8px;
+    color: #818181;
+    font-size: 1.8em;
+    font-weight: 500;
+    transition: 0.3s;
+
+    &:hover, &:focus {
+      color:#fff;
+    }
     
     @include large {
       position: relative;
@@ -66,6 +105,7 @@
     color: $red;
   }
 
+  
   &__open-btn {
     position: absolute;
     display: block;
@@ -73,7 +113,8 @@
     right: 5%;
     color: #fff;
     font-size: 1.6em;
-
+    
+    
     &:hover {
       color: #fff;
     }
@@ -82,5 +123,23 @@
       display:none;
     }
   }
-  
+
+  &__close-btn {
+    position: absolute;
+    right: 1%;
+    top: 0%;
+    display: block;
+    padding: 10px 20px;
+    color: #818181;
+    font-size: 2.5em;
+    font-weight: 300;
+
+    &:hover, &:focus {
+      color: #f1f1f1;
+    }
+
+    @include large {
+      display: none;
+    }
+  }
 }
