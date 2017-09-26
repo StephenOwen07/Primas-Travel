@@ -10,9 +10,11 @@
       padding: 0;
       margin-bottom: 30px;
       text-align: center;
+      letter-spacing: 1px;
 
       @include medium {
         margin-bottom: 0;
+        bottom: 0;
         text-align: left;
       }
     }
@@ -56,6 +58,7 @@
       padding: 0;
       text-align: center;
       font-size: 0.9em;
+      letter-spacing: 1px;
 
       @include medium {
         text-align: right;

@@ -1,0 +1,310 @@
+.masonry {
+  @include clearfix;
+
+  &__item {
+    margin: 10% 10%;
+    float: none;
+    height: auto;
+    width: auto;
+
+    @include medium {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      margin:0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__1st {
+    margin: 5% auto;
+    width: 95%;
+    height: 95%;
+
+    @include small {
+      width: 80%;
+      height: 80%;
+    }  
+
+    @include medium {
+      height: 400px;
+      width: 60%;
+      float: left;
+      margin: 0;
+    }
+  }
+
+  &__2nd {
+    margin: auto;
+    width: 95%;
+    height: 95%;
+
+    @include small {
+      width: 80%;
+      height: 80%;
+  }
+
+    @include medium {
+    float: right;
+    height: 315px;
+    width: 39.5%;
+    margin: 0;
+    margin-left: .5%;
+    }
+  }
+
+  &__3rd {
+    display: none;
+
+    @include medium {
+      display: block;
+      float: left;
+      width: 19%;
+      margin: .5% 0 0;
+      height: 180px;
+      clear: both;
+    }
+  }
+
+  &__4th {
+    display: none;
+
+    @include medium {
+      display: block;
+      float: left;
+      width: 40.5%;
+      margin: .5% 0 0 .5%;
+      height: 180px;
+    }
+  }
+
+  &__5th {
+    display: none;
+
+    @include medium {
+      display: block;
+      float: left;
+      width: 19.5%;
+      height: 266px;
+      margin-top: -80px;
+      margin-left: .5%;
+    }
+  }
+
+  &__6th {
+  display: none;
+
+    @include medium {
+      display: block;
+      float: left;
+      width: 19.5%;
+      height: 149px;
+      border: 1px solid #ccc;
+      margin-top: -80px;
+      margin-left: .5%;
+    }
+  }
+
+  &__7th {
+    display: none;
+
+    @include medium {
+      display: block;
+      float: left;
+      width: 19.5%;
+      height: 110px;
+      margin-top: 6px;
+      margin-left: .5%;
+    }
+
+    &-caption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      padding-top: 50px;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+      transition: color 250ms ease-in-out;
+
+      &:hover {
+        color: #84b5fe;
+      }
+    }
+  }
+
+  &__author-name {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__engagement {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 1.4px;
+    text-align: center;
+
+    span {
+      display: block;
+      font-size: 1.5em;
+    }
+  }
+
+  &__enagement-text {
+    margin-top: 15px;
+    line-height: 1.4;
+  }
+
+  &__review-snippet {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.4px;
+    font-size: 0.9em;
+  }
+
+  &__review {
+
+    span {
+      display: block;
+      font-size: 1.5em;
+    }
+
+    &-text {
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  &__overlay {
+    display:none;
+
+    @include medium {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: all 250ms ease-in-out;  
+    }
+
+    &:hover {
+      background-color: rgba(1, 1, 1, 0.8);
+    }
+
+    &:hover .masonry__see-map, &:focus .masonry__see-map {
+      opacity: 0;
+    }
+
+    &:hover .masonry__overlay--info-caption, &:hover .masonry__overlay--info-title,   &:focus .masonry__overlay--info-caption, &:focus .masonry__overlay--info-title {
+      opacity: 1;
+    }
+
+    &--info-caption {
+      color: #84b5fe;
+      opacity: 0;
+      width: 100%;
+      height: 49px;
+      position: absolute;
+      left: 5%;
+      bottom: 25%;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.1em;
+      line-height: normal;
+      letter-spacing: 0.2px;
+      transition: color 250ms ease-in-out;
+      z-index: 1;
+
+      @include medium {
+        bottom:0%;
+      }
+    }
+
+    &--dark {
+      background-color: rgba(1, 1, 1, 0.5); 
+
+      &:hover .masonry__review-snippet, &:focus .masonry__review-snippet {
+        visibility: hidden;
+      }
+
+      &:hover .masonry__engagement, &:focus .masonry__engagement {
+        visibility: hidden;
+      }
+    }
+
+    &--info-title {
+      position: absolute;
+      bottom: 50%;
+      left: 5%;
+      width: 100%;
+      color: #fff;
+      opacity: 0;
+      font-size: 1.6em;
+      font-weight: 400;
+      transition: all 250ms ease-in-out;
+
+      @include medium {
+        bottom: 15%;
+      }
+
+      &-2 {
+        bottom: 20%;
+      }
+
+      &-3 {
+        bottom: 35%;
+      }
+
+      &-4 {
+        bottom: 35%;
+      }
+
+      &-5 {
+        bottom: 25%;
+      }
+    }
+  }
+
+  &__see-map {
+    width: 100%;
+    height: 48px;
+    position: absolute;
+    bottom: -10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    transition: color 250ms ease-in-out;
+
+    &-title {
+      bottom: 70px;
+      left: 20px;
+    }
+
+    &-caption {
+      text-align: center;
+      left: 0;
+      bottom: -10px;
+    }
+  }
+}

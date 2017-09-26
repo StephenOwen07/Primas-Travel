@@ -5,26 +5,6 @@ Tablet Portrait
 
 @media (max-width:767px) {
 
-  /* .masonry-item.masonry-2nd, */
-  .masonry-item.masonry-3rd,
-  .masonry-item.masonry-4th,
-  .masonry-item.masonry-5th,
-  .masonry-item.masonry-6th,
-  .masonry-item.masonry-7th {
-    display: none;
-  }
-  .masonry-item {
-    margin: 10% 10%;
-    float: none;
-    height: auto;
-    width: auto;
-  }
-  .ms-overlay-info-title {
-    bottom: 50%;
-  }
-  .ms-overlay-info-caption {
-    bottom: 25%;
-  }
   .room-choices {
     text-align: center;
   }
@@ -89,17 +69,7 @@ Landscape phone
 
 @media (max-width: 480px) {
 
- 
-  /* hotel pages */
-  .masonry-item {
-    margin: 10% 0%;
-  }
-  .ms-overlay-info-title {
-    top: 20%;
-  }
-  .ms-overlay-info-caption {
-    bottom: 20%;
-  }
+
   .room-choices-card {
     margin-bottom: 100px;
     width: 100%;
