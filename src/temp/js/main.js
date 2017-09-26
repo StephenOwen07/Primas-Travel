@@ -60,11 +60,51 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Preloader = __webpack_require__(1);
+var ScrollTopBtn = __webpack_require__(3);
+var MobileNav = __webpack_require__(4);
+var PriceSlider = __webpack_require__(5);
+var DatePicker = __webpack_require__(6);
+var RoomSortDropDown = __webpack_require__(7);
+
+var preloader = new Preloader();
+var scrollTopBtn = new ScrollTopBtn();
+var mobileNav = new MobileNav();
+var priceSlider = new PriceSlider();
+var datePicker = new DatePicker();
+var roomSortDropDown = new RoomSortDropDown();
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(2);
+
+function Preloader() {
+  $(window).on('load', function () { // makes sure the whole site is loaded 
+
+    $('#spinner').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({
+      'overflow': 'visible'
+    });
+
+  });
+}
+
+module.exports = Preloader;
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10324,47 +10364,8 @@ return jQuery;
 
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Preloader = __webpack_require__(2);
-var ScrollTopBtn = __webpack_require__(3);
-var MobileNav = __webpack_require__(4);
-
-var preloader = new Preloader();
-var scrollTopBtn = new ScrollTopBtn();
-var mobileNav = new MobileNav();
-
-
-
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $ = __webpack_require__(0);
-
-function Preloader() {
-  $(window).on('load', function () { // makes sure the whole site is loaded 
-
-    $('#spinner').fadeOut(); // will first fade out the loading animation 
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-    $('body').delay(350).css({
-      'overflow': 'visible'
-    });
-
-  });
-}
-
-module.exports = Preloader;
-
-
-/***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $ = __webpack_require__(0);
+/***/ (function(module, exports) {
 
 function ScrollTopBtn() {
   $(document).ready(function () {
@@ -10418,6 +10419,124 @@ function MobileNav() {
 
 module.exports = MobileNav;
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+function PriceSlider() {
+
+  $('#slider-range').slider({
+    range: true,
+    step: 100,
+    min: 0,
+    max: 30000,
+    values: [0, 30000],
+    slide: function (event, ui) {
+      $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+
+      $("#amount").val("TWD " + $("#slider-range").slider("values", 0) +
+        " - TWD " + $("#slider-range").slider("values", 1));
+    }
+  });
+}
+
+module.exports = PriceSlider;
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+function DatePicker() {
+
+  // datepicker 
+  var $tomorrowsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+
+  $('#check-in').datepicker({
+    dateFormat: "dd-M-yy",
+    minDate: 0,
+    onSelect: function (date) {
+      var date2 = $('#check-in').datepicker('getDate');
+      date2.setDate(date2.getDate() + 1);
+      $('#check-out').datepicker('setDate', date2);
+      //sets minDate to dt1 date + 1
+      $('#check-out').datepicker('option', 'minDate', date2);
+    }
+  });
+
+  $('#check-out').datepicker({
+    dateFormat: "dd-M-yy",
+    onClose: function () {
+      var dt1 = $('#check-in').datepicker('getDate');
+      console.log(dt1);
+      var dt2 = $('#check-out').datepicker('getDate');
+      if (dt2 <= dt1) {
+        var minDate = $('#check-out').datepicker('option', 'minDate');
+        $('#check-out').datepicker('setDate', minDate);
+      }
+    }
+  });
+
+  // set checkout placeholder = current date
+  $('#check-in').attr('placeholder', Date());
+  // set checkout placeholder = tomorrows date
+  $('#check-out').attr('placeholder', $tomorrowsDate);
+
+}
+
+module.exports = DatePicker;
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+function RoomSortDropDown() {
+  (function () {
+
+    var dropBtns = document.querySelectorAll('.room-sort-menu__dropdown');
+
+    function closeOpenItems() {
+      var openMenus = document.querySelectorAll('.room-sort-menu__drop-menu');
+      openMenus.forEach(function (menus) {
+        menus.classList.remove('show');
+      });
+    }
+
+    dropBtns.forEach(function (btn) {
+
+      btn.addEventListener('click', function (e) {
+        var
+          dropContent = btn.querySelector('.room-sort-menu__drop-menu'),
+          shouldOpen = !dropContent.classList.contains('show');
+        e.preventDefault();
+
+        // First close all open items.
+        closeOpenItems();
+        // Check if the clicked item should be opened. It is already closed at this point so no further action is required if it should be closed.
+        if (shouldOpen) {
+          // Open the clicked item.
+          dropContent.classList.add('show');
+        }
+        // prevent event bubbling
+        e.stopPropagation();
+      });
+
+
+    });
+
+    //   close menus when clicking outside of them
+    window.addEventListener('click', function (event) {
+      if (event.target != dropBtns) {
+        // Moved the code here to its own function.
+        closeOpenItems();
+      }
+    });
+  })();
+}
+
+module.exports = RoomSortDropDown;
 
 /***/ })
 /******/ ]);

@@ -1,5 +1,3 @@
-var $ = require("jquery");
-
 function ScrollTopBtn() {
   $(document).ready(function () {
 

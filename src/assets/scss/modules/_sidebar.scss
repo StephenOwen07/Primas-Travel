@@ -1,7 +1,16 @@
 .sidebar {
+  margin-bottom: 50px;
+
+  @include extra-large {
+    margin-bottom: 0;
+  }
+  input {
+    font-weight: 400;
+  }
 
   span {
-    font-size: 1em;
+    font-size: 1.1em;
+    font-weight: 400;
   }
 
   label {
@@ -9,7 +18,7 @@
   }
 
   &__form {
-    background: #E9EAEA;
+    background: $greyLight;
     border-radius: 5px;
     padding: 0;
     font-size: 0.9em;
@@ -18,7 +27,7 @@
       border: none;
       border-radius: 2px;
       height: 40px;
-      width: 230px;
+      width: 100%;
       padding: 5px;
       outline-color: #0283DF;
 
@@ -55,11 +64,22 @@
     background: $greyDark;
   }
 
-  &__search span {
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-left: 1px;
-    margin-top: 20px;
+  &__search {
+    
+    span {
+      display: inline-block;
+      margin-bottom: 5px;
+      margin-left: 1px;
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+
+      @include extra-large {
+        display: initial;
+      }
+    }
   }
 
   &__select {
@@ -73,12 +93,20 @@
 
     &-2 {
       position: relative;
+      left:0;
+
+      @include extra-large {
       left: 4px;
+      }
     }
 
     &-3 {
       position: relative;
-      right: 11px;
+      right: 0;
+
+      @include extra-large {
+        right: 11px;
+      }
     }
 
     &--submit {
@@ -98,12 +126,38 @@
     
 
     label {
+      margin-bottom: 10px;
+      margin-top: 10px;
       padding-right: 50px;
+      font-weight: 400;
     }
   }
 
   .button {
     float: right;
+  }
+
+  .fa {
+    text-align: center;
+    width:20px;
+  }
+
+  &__price-slider {
+    margin-top: 10px;
+
+    &-range {
+      margin-left: 5%;
+      margin-top: 10%;
+      border: none;
+      color: $greyDark;
+      background: $greyLight;
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+  }
+
+  .form {
+    width: 100%;
   }
 }  
 
@@ -118,11 +172,24 @@
   }
 
   &__item {
-    display: block;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 30px;
     padding: 5px 0 5px 10px;
 
+    @include extra-large {
+      display: block;
+      margin-bottom: 0px;
+      padding: 0;
+    }
+
+    input {
+      position: relative;
+      top:4px;
+    }
+
     &:hover {
-      background: #E9EAEA;
+      background: $greyLight;
     }
 
     img {
@@ -137,4 +204,41 @@
   &__item, &__item input, &__item img, &__item span, &__item i {
     cursor: pointer;
   }
+}
+
+.ui-slider-horizontal {
+  position: relative;
+  margin: 0;
+  height: 5px;
+  width: 210px;
+  background-color: #ccc;
+
+  @include extra-large {
+    margin: 0 auto;
+  }
+}
+
+.ui-slider .ui-slider-handle {
+  top: -9px;
+  border: 2px solid $red;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+
+.ui-slider .ui-slider-handle:hover,
+.ui-slider .ui-slider-handle:active {
+  transform: scale(1.5);
+  border-color: #a31d24;
+}
+
+.ui-slider .ui-slider-range {
+  background: $red;
+  height: 5px;
 }

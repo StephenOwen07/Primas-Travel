@@ -1,41 +1,5 @@
 
 
-/*************************************** 
-Desktop         
-/**************************************/
-
-@media (max-width:1200px) {
-
-  /*   Destination page  */
-  .sidebar {
-    margin-bottom: 50px;
-  }
-  .sb-search label {
-    display: block;
-  }
-  .sb-form input[type="text"] {
-    width: 100%;
-  }
-  .sb-select-item label {
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  .sb-select-2 {
-    left: 0;
-  }
-  .sb-select-3 {
-    right: 0;
-  }
-  .filter-item {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 30px;
-  }
-  .ui-slider-horizontal {
-    margin: 0;
-  }
-}
-
 
 /*************************************** 
 Tablet Landscape          

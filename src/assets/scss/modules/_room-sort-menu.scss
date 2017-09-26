@@ -1,0 +1,65 @@
+.room-sort-menu {
+  background: $greyDark;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &__title {
+    margin-right: 30px;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+
+    a {
+      display: inline-block;
+      padding: 16px 30px;
+      margin: 0;
+      color: #fff;
+      font-size: 0.9em;
+
+      &:hover, &:focus {
+        background: #2e333a;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__drop-menu {
+    position: absolute;
+    display: none;
+    top: 52px;
+    left: 0px;
+    border: 1px solid color;
+    width: inherit;
+    background: $red;
+    font-size: 0.9em;
+    z-index: 1;
+
+    a {
+      display: block;
+      padding: 16px 20px;
+
+      &:hover {
+        background: $redDark;
+      }
+    }
+
+    &--width {
+      width: 169px;
+    }
+  }
+
+  .fa {
+    margin-left: 5px;
+  }
+}
+
+.show {
+  display: block;
+}
+
