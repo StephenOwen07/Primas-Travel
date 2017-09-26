@@ -1,0 +1,125 @@
+.rooms {
+ padding-top: 0;
+  
+  &__title {
+    padding: 0 5px 20px;
+    font-weight: 500;
+  }
+
+  &__card {
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+
+  &__card-heading {
+    padding: 15px;
+    background: rgba(227, 227, 227, 0.65);
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  &__card-content {
+    display: flex;
+    padding: 0;
+
+    h5 {
+      margin: 0;
+      padding: 10px 0 20px;
+      font-weight: 500;
+    }
+  }
+
+  &__card-space {
+    display: inline-block;
+    width: 25%;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+  }
+
+  &__card-img-container {
+    overflow: hidden;
+  }
+
+  &__card-img {
+    height: 150px;
+    width: 95%;
+    background-image: url('../../assets/img/hotels/Marina-bay-sands/premiere-twin-garden-view.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__card-img-tagline {
+    margin: 15px 0 15px 5px;
+    display: block;
+    font-size: 0.8em;
+  }
+
+  &__card-specification {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+
+    ul {
+      margin: 5px 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px 0;
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    i {
+      margin-right: 15px;
+    }
+  }
+  
+  &__card-capacity {
+    display: inline-block;
+    width: 10%;
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+  }
+
+  &__card-capacity-text {
+    margin-top: 50px;
+    font-size: 1.2em;
+
+    i {
+      margin-left: 5px;
+      font-size: 1.5em;
+    }
+  }
+
+  &__card-price-container {
+    display: inline-block;
+    width: 20%;
+    border-right: 1px solid #ccc;
+    text-align: center;
+  }
+
+  &__card-price {
+    margin-top: 38px;
+
+    p {
+      margin: 0;
+      color: $red;
+    }
+
+    span {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+}

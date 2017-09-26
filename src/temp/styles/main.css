@@ -1734,3 +1734,88 @@ input[type="submit"] {
     text-align: center;
     left: 0;
     bottom: -10px; }
+
+.rooms {
+  padding-top: 0; }
+  .rooms__title {
+    padding: 0 5px 20px;
+    font-weight: 500; }
+  .rooms__card {
+    border: 1px solid #ccc;
+    margin-bottom: 50px; }
+  .rooms__card-heading {
+    padding: 15px;
+    background: rgba(227, 227, 227, 0.65); }
+    .rooms__card-heading h4 {
+      margin: 0; }
+  .rooms__card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0; }
+    .rooms__card-content h5 {
+      margin: 0;
+      padding: 10px 0 20px;
+      font-weight: 500; }
+  .rooms__card-space {
+    display: inline-block;
+    width: 25%;
+    padding: 0 10px;
+    border-right: 1px solid #ccc; }
+  .rooms__card-img-container {
+    overflow: hidden; }
+  .rooms__card-img {
+    height: 150px;
+    width: 95%;
+    background-image: url("../../assets/img/hotels/Marina-bay-sands/premiere-twin-garden-view.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer; }
+    .rooms__card-img:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+  .rooms__card-img-tagline {
+    margin: 15px 0 15px 5px;
+    display: block;
+    font-size: 0.8em; }
+  .rooms__card-specification {
+    width: 20%;
+    border-right: 1px solid #ccc;
+    padding: 0 10px; }
+    .rooms__card-specification ul {
+      margin: 5px 0;
+      padding: 0; }
+    .rooms__card-specification li {
+      padding: 5px 0;
+      font-size: 0.9em;
+      line-height: 1.4; }
+    .rooms__card-specification i {
+      margin-right: 15px; }
+  .rooms__card-capacity {
+    display: inline-block;
+    width: 10%;
+    border-right: 1px solid #ccc;
+    padding: 0 10px; }
+  .rooms__card-capacity-text {
+    margin-top: 50px;
+    font-size: 1.2em; }
+    .rooms__card-capacity-text i {
+      margin-left: 5px;
+      font-size: 1.5em; }
+  .rooms__card-price-container {
+    display: inline-block;
+    width: 20%;
+    border-right: 1px solid #ccc;
+    text-align: center; }
+  .rooms__card-price {
+    margin-top: 38px; }
+    .rooms__card-price p {
+      margin: 0;
+      color: #CB242D; }
+    .rooms__card-price span {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-left: 5px; }
