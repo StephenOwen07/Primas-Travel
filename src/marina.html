@@ -475,18 +475,18 @@
     <section class="hotel-overview bg-white">
       <div class="container">
         <div class="row">
-          <div class="hotel-overview-heading">
-            <h2>More about Marina Bay Sands</h2>
+          <div>
+            <h2 class="hotel-overview__title">More about Marina Bay Sands</h2>
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <div class="hotel-overview-title">
-              <h3>Marina Bay Sands overview</h3>
+            <div class="hotel-overview__subtitle-container">
+              <h3 class="hotel-overview__subtitle">Marina Bay Sands overview</h3>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-8">
-            <div class="hotel-overview-description show-more-content">
+            <div class="hotel-overview__description show-more-content">
               <p>Marina Bay Sands is located in one of the world’s most iconic landmarks and premier lifestyle destinations.
                 Emerge from the elegant comfort of your own room to relax in the utmost luxury at the world's largest rooftop
                 Infinity Pool, while enjoying the panoramic view of the city’s skyline, or soar 57 levels above the heart
@@ -507,13 +507,13 @@
           </div>
 
           <div class="col-xs-12 col-sm-4">
-            <div class="hotel-overview-title">
-              <h3>Guest policies</h3>
+            <div class="hotel-overview__subtitle-container">
+              <h3 class="hotel-overview__subtitle">Guest policies</h3>
             </div>
           </div>
 
           <div class="col-xs-12 col-sm-8">
-            <div class="hotel-overview-description show-more-content">
+            <div class="hotel-overview__description show-more-content">
               <p>
                 A cash security deposit of SGD 200 is required upon check-in for charges or damages during the stay and will be refunded
                 upon departure. Please note that check-in location for the Orchid / Orchid View Suite guest will now be at
@@ -545,14 +545,13 @@
             </div>
           </div>
 
-
         </div>
       </div>
     </section>
     <!-- hotel overview -->
 
     <!-- guest reviews -->
-    <section class="guest-reviews bg-white">
+    <section class="page-section">
       <div class="container">
         <div class="row">
           <div class="hotel-overview-heading">
@@ -662,7 +661,7 @@
                 <div class="guest-review-comment-title">
                   <span>"Amazing Experience"</span>
                 </div>
-                <div class="guest-review-comment-text ">
+                <div class="guest-review-comment-text">
                   <span class="">We were here only for 2 nights stay, but it was well worth it! We queued up in wrong line to check in, as we didn't know which tower we will be staying at, and stuff was helpful and they even gave us free upgrade. We had HUGE apartment few floors below Infinity Pool with the same view. And the View was AMAZING! we stayed up almost all night just looking sity skyline and admiring it! Probably the best experience in Singapore, it's a must see place, well worth the money.
                     </span>
                 </div>
@@ -788,30 +787,7 @@
     crossorigin=" anonymous "></script>
   <script src="temp/js/main.js "></script>
   <script>
-    // Show more Button
-    (function () {
-
-      var showMoreBtns = document.querySelectorAll('.show-more-btn');
-
-      showMoreBtns.forEach(function (btn) {
-
-        btn.addEventListener('click', function () {
-          var showMoreContent = btn.previousElementSibling;
-          var shouldOpen = !showMoreContent.classList.contains('show-more-open');
-
-          if (shouldOpen) {
-            showMoreContent.classList.add('show-more-open');
-            btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
-          } else {
-            showMoreContent.classList.remove('show-more-open');
-            btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
-          }
-        });
-
-      });
-
-    })();
-
+    
     // Map overlay
     var mapTrigger = document.getElementById('seeMap');
     var mapOverlay = document.querySelector('.directions-map-overlay');
@@ -1037,8 +1013,6 @@
 
     }
   </script>
-
-
 </body>
 
 </html>

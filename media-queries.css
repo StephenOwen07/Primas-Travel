@@ -4,11 +4,6 @@ Tablet Portrait
 /**************************************/
 
 @media (max-width:767px) {
-
-  .hotel-overview-title,
-  .hotel-overview-description {
-    border: none;
-  }
   .guest-review-card {
     border: none;
     margin-bottom: 0;

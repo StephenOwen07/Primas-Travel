@@ -155,54 +155,6 @@
 }
 
 
-/* hotel overview */
-
-.hotel-overview {
-  padding-top: 0;
-}
-
-.hotel-overview-heading h2 {
-  padding: 0 5px 20px;
-  margin-left: 10px;
-  font-weight: 500;
-  font-size: 1.6em;
-  text-transform: initial;
-}
-
-.hotel-overview-title {
-  border-top: 1px solid #ccc;
-}
-
-.hotel-overview-title h3 {
-  padding: 0 5px 20px;
-  font-weight: 500;
-  font-size: 1.2em;
-  text-transform: initial;
-}
-
-.hotel-overview-description {
-  border-top: 1px solid #ccc;
-  max-height: 90px;
-  margin-bottom: 30px;
-  font-size: 0.9em;
-  overflow: hidden;
-}
-
-.show-more-btn {
-  display: inline-block;
-  margin-bottom: 50px;
-  padding: 5px 0;
-  color: #488BF8;
-  cursor: pointer;
-}
-
-.show-more-btn i {
-  margin-left: 5px;
-}
-
-.show-more-open {
-  max-height: 2000px;
-}
 
 
 /* guest reviews */

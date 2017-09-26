@@ -73,6 +73,7 @@ var MobileNav = __webpack_require__(4);
 var PriceSlider = __webpack_require__(5);
 var DatePicker = __webpack_require__(6);
 var RoomSortDropDown = __webpack_require__(7);
+var ShowMoreBtn = __webpack_require__(8)
 
 var preloader = new Preloader();
 var scrollTopBtn = new ScrollTopBtn();
@@ -80,6 +81,7 @@ var mobileNav = new MobileNav();
 var priceSlider = new PriceSlider();
 var datePicker = new DatePicker();
 var roomSortDropDown = new RoomSortDropDown();
+var showMoreBtn = new ShowMoreBtn();
 
 
 /***/ }),
@@ -10537,6 +10539,39 @@ function RoomSortDropDown() {
 }
 
 module.exports = RoomSortDropDown;
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+function ShowMoreBtn() {
+  // Show more Button
+  (function () {
+    
+    var showMoreBtns = document.querySelectorAll('.show-more-btn');
+
+    showMoreBtns.forEach(function (btn) {
+
+      btn.addEventListener('click', function () {
+        var showMoreContent = btn.previousElementSibling;
+        var shouldOpen = !showMoreContent.classList.contains('show-more-open');
+
+        if (shouldOpen) {
+          showMoreContent.classList.add('show-more-open');
+          btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
+        } else {
+          showMoreContent.classList.remove('show-more-open');
+          btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
+        }
+      });
+    });
+
+  })();
+    
+}
+
+module.exports = ShowMoreBtn;
+
 
 /***/ })
 /******/ ]);

@@ -1,0 +1,51 @@
+.hotel-overview {
+
+  &__title {
+    padding: 0 5px 20px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-transform: initial;
+  }
+
+  &__subtitle-container {
+
+    @include medium {
+      border-top: 1px solid #ccc;
+    }  
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 1.2em;
+    text-transform: initial;
+ 
+  }
+
+  &__description {
+    max-height: 90px;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    overflow: hidden;
+
+    @include medium {
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
+.show-more-btn {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 5px 0;
+  color: #488BF8;
+  cursor: pointer;
+
+  i {
+    margin-left: 5px;
+  }
+}
+
+.show-more-open {
+  max-height: 2000px;
+}

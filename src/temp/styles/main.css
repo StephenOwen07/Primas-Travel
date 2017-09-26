@@ -1903,7 +1903,7 @@ input[type="submit"] {
       height: 30px; }
     .rooms__card-rooms .button {
       width: auto;
-      margin-top: 15px; }
+      margin-top: 5px; }
       @media (min-width: 768px) {
         .rooms__card-rooms .button {
           position: absolute;
@@ -1921,3 +1921,40 @@ input[type="submit"] {
     background-image: url("../../assets/img/hotels/Marina-bay-sands/sande-suite.jpg"); }
   .rooms__card-img--orchard-suite {
     background-image: url("../../assets/img/hotels/Marina-bay-sands/orchard-suite.jpg"); }
+
+.hotel-overview__title {
+  padding: 0 5px 20px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 1.6em;
+  text-transform: initial; }
+
+@media (min-width: 768px) {
+  .hotel-overview__subtitle-container {
+    border-top: 1px solid #ccc; } }
+
+.hotel-overview__subtitle {
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: initial; }
+
+.hotel-overview__description {
+  max-height: 90px;
+  margin-bottom: 30px;
+  font-size: 0.9em;
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    .hotel-overview__description {
+      border-top: 1px solid #ccc; } }
+
+.show-more-btn {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 5px 0;
+  color: #488BF8;
+  cursor: pointer; }
+  .show-more-btn i {
+    margin-left: 5px; }
+
+.show-more-open {
+  max-height: 2000px; }
