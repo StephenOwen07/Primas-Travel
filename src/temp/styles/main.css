@@ -986,6 +986,7 @@ input[type="submit"] {
         padding: 12px; }
   .sidebar__select-item {
     display: inline-block;
+    margin-right: 10px;
     margin-top: 10px; }
     .sidebar__select-item label {
       margin-bottom: 10px;
@@ -1070,15 +1071,182 @@ input[type="submit"] {
   background: #CB242D;
   height: 5px; }
 
+.hotel-card {
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  background: #E9EAEA;
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  transition: -webkit-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  outline: none; }
+  .hotel-card:hover {
+    -webkit-box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93);
+            box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93); }
+  .hotel-card h4 {
+    padding: 0;
+    margin: 0;
+    color: #0283DF;
+    font-size: 1.1em;
+    cursor: pointer; }
+    .hotel-card h4:hover {
+      color: #CB242D; }
+  .hotel-card .property__info {
+    position: relative; }
+  .hotel-card .property__info > h4 > a {
+    padding: 0;
+    margin: 0;
+    color: #0283DF;
+    font-size: 0.9em;
+    cursor: pointer; }
+    .hotel-card .property__info > h4 > a:hover {
+      color: #CB242D; }
+    @media (min-width: 576px) {
+      .hotel-card .property__info > h4 > a {
+        font-size: 1em; } }
+  .hotel-card .property__stars {
+    font-size: .8em; }
+    @media (min-width: 576px) {
+      .hotel-card .property__stars {
+        font-size: 1em; } }
+    .hotel-card .property__stars img {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+      bottom: 1px; }
+      @media (min-width: 576px) {
+        .hotel-card .property__stars img {
+          margin-top: 0; } }
+
+.hotel__info-location {
+  display: block;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer; }
+  @media (min-width: 576px) {
+    .hotel__info-location {
+      display: inline-block;
+      margin-top: 12px; } }
+
+.hotel__info-directions {
+  display: none; }
+  @media (min-width: 576px) {
+    .hotel__info-directions {
+      display: initial; } }
+  .hotel__info-directions ul {
+    padding: 0;
+    margin-top: 10px;
+    list-style-type: circle; }
+  .hotel__info-directions li {
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 0.8em; }
+
+.hotel__img, .hotel__info, .hotel__promo {
+  display: inline-block; }
+
+.hotel__info {
+  padding: 10px;
+  width: 50%; }
+
+.hotel__review > span {
+  font-size: 0.8em;
+  margin-top: 5px; }
+
+.hotel__features {
+  display: none;
+  margin-top: 60px;
+  color: #003580; }
+  .hotel__features i {
+    padding: 1%;
+    cursor: help; }
+  @media (min-width: 576px) {
+    .hotel__features {
+      display: block; } }
+  @media (min-width: 768px) {
+    .hotel__features {
+      margin-top: 100px; } }
+
+.hotel__button {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 85%;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 0.9em; }
+  .hotel__button:hover {
+    color: #fff; }
+  @media (min-width: 768px) {
+    .hotel__button {
+      padding: 10px 0; } }
+
+.hotel__button--mobile {
+  display: block;
+  position: absolute;
+  top: 175px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 12px;
+  width: 70%;
+  text-align: center;
+  font-size: 0.8em; }
+  @media (min-width: 576px) {
+    .hotel__button--mobile {
+      display: none; } }
+
+.hotel__promo {
+  display: none;
+  position: relative;
+  padding: 20px 15px;
+  width: 20%;
+  background: #fff;
+  text-align: right; }
+  @media (min-width: 576px) {
+    .hotel__promo {
+      display: inline-block;
+      position: relative; } }
+  .hotel__promo h4, .hotel__promo h4 > span {
+    font-size: 0.9em; }
+    @media (min-width: 768px) {
+      .hotel__promo h4, .hotel__promo h4 > span {
+        font-size: 1.1em; } }
+  .hotel__promo-price {
+    position: absolute;
+    bottom: 25%;
+    right: 8%; }
+    .hotel__promo-price h3 {
+      color: #2e333a;
+      font-size: 1em; }
+      @media (min-width: 768px) {
+        .hotel__promo-price h3 {
+          font-size: 1.3em; } }
+    .hotel__promo-price span {
+      color: #CB242D; }
+
 .hotel__img {
   background-color: transparent;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 30%; }
+  width: 50%; }
+  @media (min-width: 576px) {
+    .hotel__img {
+      width: 30%; } }
   .hotel__img--marina {
     background-image: url("../../assets/img/destinations/marina-bay.jpg"); }
   .hotel__img--studio-m {
+    background-image: url("../../assets/img/destinations/studio-m.jpg"); }
+  .hotel__img--sentosa {
     background-image: url("../../assets/img/destinations/sentosa.jpg"); }
   .hotel__img--indigo {
     background-image: url("../../assets/img/destinations/indigo.jpg"); }

@@ -1,19 +1,238 @@
 .hotel {
 
+  &-card {
+    height: 240px;
+    display: flex;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    background: $greyLight;
+    transition: box-shadow .2s ease-in-out;
+    outline: none;
+  
+    &:hover {
+      box-shadow: 4px 4px 13px 0px rgba(96, 96, 96, 0.93);
+    }
+    
+    h4 {
+      padding: 0;
+      margin: 0;
+      color: #0283DF;
+      font-size: 1.1em;
+      cursor: pointer;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    .property__info {
+      position: relative;
+    }
+
+    .property__info>h4>a {
+      padding: 0;
+      margin: 0;
+      color: #0283DF;
+      font-size: 0.9em;
+      cursor: pointer;
+
+      &:hover {
+        color: $red;
+      }
+
+      @include small {
+        font-size: 1em;
+      }
+    }
+    
+
+    .property__stars {
+      font-size: .8em;
+
+      @include small {
+        font-size: 1em;
+      }
+
+      img {
+        position: relative;
+        display: inline-block; 
+        margin-top: 10px;
+        bottom:1px;
+
+        @include small {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__info-location {
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+
+    @include small {
+      display: inline-block;
+      margin-top: 12px;
+    }
+  }
+
+  &__info-directions {
+    display: none;
+
+    @include small{
+      display: initial;
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 10px;
+      list-style-type: circle;
+    }
+
+    li {
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size: 0.8em;
+    }
+  }
+
+  &__img, &__info, &__promo {
+    display: inline-block;
+  }
+
+  &__info {
+    padding: 10px;
+    width: 50%;
+  }
+
+  &__review >span {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+  &__features {
+    display: none;
+    margin-top: 60px;
+    color: #003580;
+
+    i {
+      padding: 1%;
+      cursor: help;
+    }
+
+    @include small {
+      display: block;
+    }
+
+    @include medium {
+      margin-top: 100px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    left:50%;
+    bottom:5%;
+    transform: translateX(-50%);
+    width: 85%;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 0.9em;
+
+    &:hover {
+      color: #fff;
+    }
+
+    @include medium {
+      padding: 10px 0;
+    }
+  }
+
+  &__button--mobile {
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+    width: 70%;
+    text-align: center;
+    font-size: 0.8em;
+
+    @include small {
+      display: none;
+    }
+  }
+
+  &__promo {
+    display: none;
+    position: relative;
+    padding: 20px 15px;
+    width: 20%;
+    background: #fff;
+    text-align: right;
+
+    @include small {
+      display: inline-block;
+      position: relative;
+    }
+
+    h4, h4>span {
+      font-size: 0.9em;
+
+      @include medium {
+        font-size: 1.1em;
+      }
+    }
+
+    &-price {
+      position: absolute;
+      bottom: 25%;
+      right:8%;
+
+      h3 {
+        color: #2e333a;
+        font-size: 1em;
+
+        @include medium {
+          font-size: 1.3em;
+        }
+      }
+
+      span {
+        color:$red;
+      }
+    }
+  }
+
   &__img {
     background-color: transparent;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 30%;
+    width: 50%;
+
+    @include small {
+      width: 30%;
+    }
 
     &--marina {
       background-image: url('../../assets/img/destinations/marina-bay.jpg');
     }
 
     &--studio-m {
-      background-image: url('../../assets/img/destinations/sentosa.jpg')
+      background-image: url('../../assets/img/destinations/studio-m.jpg')
     }
+
+    &--sentosa {
+      background-image: url('../../assets/img/destinations/sentosa.jpg');
+    }
+
+  
 
     &--indigo {
       background-image: url('../../assets/img/destinations/indigo.jpg');
@@ -44,3 +263,5 @@
     }
   }
 }
+
+

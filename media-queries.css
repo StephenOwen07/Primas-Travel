@@ -1,25 +1,4 @@
 
-
-
-/*************************************** 
-Tablet Landscape          
-/**************************************/
-
-@media (max-width: 992px) {
-
-  
-  /*  How it works  */
-  section.how-it-works.bg-white {
-    padding-bottom: 0;
-  }
-
-  /*   Destination page  */
-  .promo-price {
-    margin-top: 50px;
-  }
-}
-
-
 /*************************************** 
 Tablet Portrait     
 /**************************************/
@@ -27,27 +6,6 @@ Tablet Portrait
 @media (max-width:767px) {
   /*  base styles  */
 
-  /* Destination: page */
-  span.sort {
-    display: none;
-  }
-  .hotel-features {
-    margin-top: 70px;
-  }
-  .hotel-promo h4,
-  .hotel-promo h4>span {
-    font-size: 0.9em;
-  }
-  .hotel-promo .promo-price {
-    margin-top: 20px;
-  }
-  .hotel-promo a.promo-button {
-    padding: 12% 4%;
-    margin-top: 50px;
-  }
-  .promo-price h3 {
-    font-size: 1em;
-  }
   /* Hotels pages */
   .hotel-header-info {
     margin-bottom: 30px;
@@ -144,47 +102,7 @@ Landscape phone
 
 @media (max-width: 480px) {
 
-
-  /*  About: Price plan  */
-  .price-plan a.button {
-    font-size: 0.9em;
-  }
-
-  }
  
-  .hotel-info-location {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  .hotel-img {
-    width: 50%;
-  }
-  .property-info>h4 {
-    font-size: 1em;
-  }
-  .hotel-info-directions,
-  .hotel-features {
-    display: none;
-  }
-  .property-info {
-    position: relative;
-  }
-  .property-stars a {
-    font-size: 0.8em;
-  }
-  .hotel-promo {
-    display: none;
-  }
-  .promo-btn-mobile {
-    display: block;
-    position: absolute;
-    top: 180px;
-    padding: 12px;
-    width: 100px;
-    text-align: center;
-    font-size: 0.8em;
-  }
   /* hotel pages */
   .masonry-item {
     margin: 10% 0%;
