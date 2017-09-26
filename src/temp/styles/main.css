@@ -472,7 +472,7 @@ input[type="submit"] {
 .form {
   margin: 0;
   padding: 0 10px;
-  height: 3.3em;
+  height: 3em;
   outline: 0;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -507,7 +507,8 @@ input[type="submit"] {
         width: 400px;
         margin-bottom: 0; } }
   .newsletter .button {
-    width: 80%; }
+    width: 80%;
+    cursor: pointer; }
     @media (min-width: 768px) {
       .newsletter .button {
         width: 150px; } }
@@ -1736,55 +1737,96 @@ input[type="submit"] {
     bottom: -10px; }
 
 .rooms {
-  padding-top: 0; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    .rooms {
+      padding-top: 0;
+      text-align: left; } }
   .rooms__title {
-    padding: 0 5px 20px;
+    padding: 0 5px 40px;
     font-weight: 500; }
   .rooms__card {
-    border: 1px solid #ccc;
-    margin-bottom: 50px; }
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 100%;
+    border: 1px solid #ccc; }
+    @media (min-width: 576px) {
+      .rooms__card {
+        width: 80%; } }
+    @media (min-width: 768px) {
+      .rooms__card {
+        margin: 0;
+        margin-bottom: 50px;
+        width: 100%; } }
   .rooms__card-heading {
     padding: 15px;
     background: rgba(227, 227, 227, 0.65); }
     .rooms__card-heading h4 {
       margin: 0; }
   .rooms__card-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0; }
+    display: block; }
+    @media (min-width: 768px) {
+      .rooms__card-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0; } }
     .rooms__card-content h5 {
       margin: 0;
       padding: 10px 0 20px;
       font-weight: 500; }
   .rooms__card-space {
-    display: inline-block;
-    width: 25%;
-    padding: 0 10px;
-    border-right: 1px solid #ccc; }
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      .rooms__card-space {
+        display: inline-block;
+        width: 25%;
+        padding: 0 10px;
+        border-bottom: 0;
+        border-right: 1px solid #ccc; } }
   .rooms__card-img-container {
     overflow: hidden; }
   .rooms__card-img {
-    height: 150px;
-    width: 95%;
-    background-image: url("../../assets/img/hotels/Marina-bay-sands/premiere-twin-garden-view.jpg");
+    margin: 0 auto;
+    width: 90%;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: none;
+    transition: none;
     cursor: pointer; }
-    .rooms__card-img:hover {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2); }
+    @media (min-width: 576px) {
+      .rooms__card-img {
+        width: 80%; } }
+    @media (min-width: 768px) {
+      .rooms__card-img {
+        height: 150px;
+        width: 95%;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; } }
+    @media (min-width: 768px) {
+      .rooms__card-img:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2); } }
   .rooms__card-img-tagline {
     margin: 15px 0 15px 5px;
     display: block;
     font-size: 0.8em; }
   .rooms__card-specification {
-    width: 20%;
-    border-right: 1px solid #ccc;
-    padding: 0 10px; }
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      .rooms__card-specification {
+        width: 20%;
+        border-bottom: 0;
+        border-right: 1px solid #ccc;
+        padding: 0 10px; } }
     .rooms__card-specification ul {
       margin: 5px 0;
       padding: 0; }
@@ -1795,10 +1837,17 @@ input[type="submit"] {
     .rooms__card-specification i {
       margin-right: 15px; }
   .rooms__card-capacity {
-    display: inline-block;
-    width: 10%;
-    border-right: 1px solid #ccc;
-    padding: 0 10px; }
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      .rooms__card-capacity {
+        display: inline-block;
+        width: 10%;
+        border-bottom: 0;
+        border-right: 1px solid #ccc;
+        padding: 0 10px; } }
   .rooms__card-capacity-text {
     margin-top: 50px;
     font-size: 1.2em; }
@@ -1806,16 +1855,69 @@ input[type="submit"] {
       margin-left: 5px;
       font-size: 1.5em; }
   .rooms__card-price-container {
-    display: inline-block;
-    width: 20%;
-    border-right: 1px solid #ccc;
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
     text-align: center; }
+    @media (min-width: 768px) {
+      .rooms__card-price-container {
+        display: inline-block;
+        width: 20%;
+        padding: 0;
+        border-bottom: 0;
+        border-right: 1px solid #ccc; } }
   .rooms__card-price {
     margin-top: 38px; }
     .rooms__card-price p {
       margin: 0;
       color: #CB242D; }
     .rooms__card-price span {
-      font-size: 1.8em;
+      font-size: 1.6em;
       font-weight: 500;
       margin-left: 5px; }
+  .rooms__card-rooms {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+    @media (min-width: 768px) {
+      .rooms__card-rooms {
+        position: relative;
+        display: inline-block;
+        width: 25%;
+        padding: 0 10px;
+        border: none; } }
+    .rooms__card-rooms select {
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-align: right; }
+    .rooms__card-rooms span {
+      display: block;
+      margin-top: 30px;
+      color: #CB242D;
+      font-weight: 500;
+      font-size: 0.9em;
+      text-align: center; }
+    .rooms__card-rooms .form {
+      height: 30px; }
+    .rooms__card-rooms .button {
+      width: auto;
+      margin-top: 15px; }
+      @media (min-width: 768px) {
+        .rooms__card-rooms .button {
+          position: absolute;
+          top: 75%;
+          left: 5%;
+          width: 90%;
+          text-align: center; } }
+      .rooms__card-rooms .button:hover {
+        color: #fff; }
+  .rooms__card-img--premiere-twin-garden-view {
+    background-image: url("../../assets/img/hotels/Marina-bay-sands/premiere-twin-garden-view.jpg"); }
+  .rooms__card-img--preimere-king-garden-view {
+    background-image: url("../../assets/img/hotels/Marina-bay-sands/premiere-king-garden-view.jpg"); }
+  .rooms__card-img--sande-suite {
+    background-image: url("../../assets/img/hotels/Marina-bay-sands/sande-suite.jpg"); }
+  .rooms__card-img--orchard-suite {
+    background-image: url("../../assets/img/hotels/Marina-bay-sands/orchard-suite.jpg"); }
