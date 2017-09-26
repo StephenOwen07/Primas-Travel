@@ -151,23 +151,12 @@ Landscape phone
   }
 
   }
-  /* destination page */
-  .room-sort-menu>li {
-    display: block;
-  }
+ 
   .hotel-info-location {
     display: block;
     margin-top: 10px;
   }
-  .room-sort-menu>li>a {
-    width: 100%;
-  }
-  .dropMenu {
-    width: 100%;
-  }
-  .room-sort-menu li:last-of-type ul.dropMenu {
-    width: 100%;
-  }
+  
   .hotel-img {
     width: 50%;
   }

@@ -4,10 +4,27 @@
   padding: 0;
   text-align: center;
 
+  li{
+    display: block;
+
+    @include small {
+      display: inline-block;
+    }
+
+    a {
+      width: 100%;
+    }
+  }
+
   &__title {
-    margin-right: 30px;
-    color: #fff;
-    font-weight: 500;
+    display:none;
+
+    @include small {
+      display: inline-block;
+      margin-right: 30px;
+      color: #fff;
+      font-weight: 500;
+    }
   }
 
   &__dropdown {
@@ -35,14 +52,18 @@
     top: 52px;
     left: 0px;
     border: 1px solid color;
-    width: inherit;
+    width: 100%;
     background: $red;
     font-size: 0.9em;
     z-index: 1;
 
+    @include small {
+      width: inherit;
+    }
+
     a {
       display: block;
-      padding: 16px 20px;
+      padding: 17px 20px;
 
       &:hover {
         background: $redDark;
@@ -50,7 +71,10 @@
     }
 
     &--width {
-      width: 169px;
+
+      @include small{
+        width: 168px;
+      }
     }
   }
 
