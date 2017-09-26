@@ -4,20 +4,7 @@ Tablet Portrait
 /**************************************/
 
 @media (max-width:767px) {
-  /*  base styles  */
 
-  /* Hotels pages */
-  .hotel-header-info {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .hotel-header-info-name-stars {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .hotel-header-rating-review {
-    text-align: center;
-  }
   /* .masonry-item.masonry-2nd, */
   .masonry-item.masonry-3rd,
   .masonry-item.masonry-4th,
@@ -126,3 +113,4 @@ Landscape phone
 
 
 
+}

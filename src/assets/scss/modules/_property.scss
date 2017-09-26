@@ -1,0 +1,77 @@
+.property {
+
+  &__header {
+    margin-bottom: 30px;
+    line-height: 1.6;
+
+    &-info {
+      position: relative;
+      bottom: 10px;
+      padding: 0;
+      margin-bottom: 30px;
+      text-align: center;
+
+      @include medium {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    &-title {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0px;
+      font-size: 1.8em;
+      font-weight: 500;
+      word-spacing: initial;
+      letter-spacing: initial;
+
+      @include medium{
+        margin-top: 8px;
+      }
+    }
+
+    &-stars {
+      position: relative;
+      bottom: 7px;
+      display: inline-block;
+      margin: 20px 0;
+
+      @include medium {
+        margin: 5px 0;
+      }
+    }
+
+    &-address {
+      font-size: 0.9em;
+
+      a {
+        display: inline-block;
+      }
+    }
+
+    &-review {
+      position: relative;
+      bottom: -5px;
+      padding: 0;
+      text-align: center;
+      font-size: 0.9em;
+
+      @include medium {
+        text-align: right;
+      }
+
+      &-number {
+        margin-left: 5px;
+        color: #488BF8;
+        font-size: 1.8em;
+      }
+    }
+
+    &-score {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+  
+}

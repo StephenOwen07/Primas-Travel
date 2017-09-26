@@ -15,83 +15,80 @@
   <!-- stylesheets  -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/hotels.css">
-  <link rel="stylesheet" href="css/media-queries.css">
+  <link rel="stylesheet" href="temp/styles/main.css">
 </head>
 
 <body>
 
-  <header class="header-default bg-white clearfix">
+  <header class="header header--solid">
     <div class="container-fluid">
 
-      <a class="logo ta-center float-left" href="index.html"><span>PT</span> PrimasTravel</a>
+      <a class="header__logo header__logo--inverse" href="index.html"><span>PT</span> PrimasTravel</a>
 
-      <!--  preload spinner  -->
-      <div id="preload">
-        <div class="spinner"></div>
-      </div>
-      <nav class="overlay">
+      <nav id="primary-nav__mobile" class="primary-nav primary-nav--inverse">
 
-        <a class="nav--close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <a class="primary-nav__close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-        <ul class="overlay-content ta-center float-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="destination.html">Destination</a></li>
-          <li><a href="contact.html">Contact</a>
+        <ul class="primary-nav__mobile-content">
+          <li><a class="primary-nav__link primary-nav__link--grey" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="about.html">About</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link  primary-nav__link--grey" href="destination.html">Destination</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="contact.html">Contact</a>
           </li>
         </ul>
 
       </nav>
-      <a class="nav--open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <a class="primary-nav__open-btn primary-nav__open-btn--grey" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
     </div>
   </header>
-
   <main>
 
-    <!-- hotel intro -->
-    <section class="hotel-intro bg-white">
+    <!-- Property intro -->
+    <section class="page-section">
 
-      <!-- hotel header -->
-      <div class="hotel-header">
+      <!--  preload spinner  -->
+      <div id="preloader">
+        <div class="spinner"></div>
+      </div>
+
+      <!-- Property header -->
+      <div class="property__header">
         <div class="container">
           <div class="row">
 
             <!-- scroll top btn -->
-            <button class="scroll-btn">
-                  <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
-                </button>
+            <button class="scroll-top-btn">
+              <i class="fa fa-chevron-up scroll-top-btn__icon" aria-hidden="true"></i>
+            </button>
             <!-- /scroll top btn -->
 
             <div class="col-sm-8 col-xs-12">
-              <div class="hotel-header-info">
-                <div class="hotel-header-info-name">
-                  <h1>Marina Bay Sands</h1>
-                  <span class="hotel-header-info-name-stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
+              <div class="property__header-info">
+                <div>
+                  <h1 class="property__header-title">Marina Bay Sands</h1>
+                  <span class="property__header-stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
                   </span>
                 </div>
-                <div class="hotel-header-info-address"><a class="info-link-blue" href="#">10 Bayfront Avenue, Marina Bay, Singapore, Singapore, 018956</a></div>
+                <div class="property__header-address"><a class="info-link--blue" href="#">10 Bayfront Avenue, Marina Bay, Singapore, Singapore, 018956</a></div>
               </div>
             </div>
 
             <div class="col-sm-4 col-xs-12">
-              <div class="hotel-header-rating-review">
-                <div class="hotel-header-rating-score">
-                  <span>Excellent</span> <span class="hotel-header-rating-score-number">8.8</span>
+              <div class="property__header-review">
+                <div class="property__header-score">
+                  <span>Excellent</span> <span class="property__header-review-number">8.8</span>
                 </div>
-                <div class="hotel-header-rating-reviews">
+                <div>
                   <span>
-                    <a class="info-link-blue" href="#">Based on 22,882 reviews</a>
+                    <a class="info-link--blue" href="#">Based on 22,882 reviews</a>
                   </span>
                 </div>
                 <div class="hotel-header-rating-recommendation-score">
@@ -729,29 +726,30 @@
   </main>
 
   <!--  Footer  -->
-  <footer>
+  <footer class="footer ">
     <div class="container ">
 
       <div class="row ">
         <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="index.html "><strong>Home</strong></a></li>
+          <ul class="footer__nav ">
+            <li><a href="index.html "><strong class="footer__list-title ">Home</strong></a></li>
             <li><a href="index.html ">Tesimonials</a></li>
             <li><a href="index.html ">Newsletter</a></li>
+
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="about.html "><strong>About</strong></a></li>
+          <ul class="footer__nav ">
+            <li><a href="about.html "><strong class="footer__list-title ">About</strong></a></li>
             <li><a href="about.html ">Statistics</a></li>
             <li><a href="about.html ">Leadership</a></li>
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="services.html "><strong>Services</strong></a></li>
+          <ul class="footer__nav ">
+            <li><a href="services.html "><strong class="footer__list-title ">Services</strong></a></li>
             <li><a href="services.html ">How it works</a></li>
             <li><a href="services.html ">Price</a></li>
             <li><a href="services.html ">FAQ</a></li>
@@ -759,8 +757,8 @@
         </div>
 
         <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="contact.html "><strong>Contact</strong></a></li>
+          <ul class="footer__nav ">
+            <li><a href="contact.html "><strong class="footer__list-title ">Contact</strong></a></li>
             <li><a href="contact.html "> +65 7461 6556</a></li>
             <li><a href="contact.html ">Location</a></li>
             <li><a href="contact.html ">Contact form</a></li>
@@ -772,18 +770,18 @@
 
       <div class="row ">
         <div class="col-md-12 ">
-          <ul class="footer-social ta-center ">
-            <li><a href="https://www.facebook.com/ "><i class="fa fa-facebook-official " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.instagram.com "><i class="fa fa-instagram " aria-hidden="true "></i></a></li>
+          <ul class="footer__social-icons ">
+            <li><a href="https://www.facebook.com/ "><i class="fa fa-facebook-official " aria-hidden ="true "></i></a></li>
+            <li><a href="https://www.instagram.com "><i class="fa fa-instagram " aria-hidden ="true "></i></a></li>
             <li><a href="https://twitter.com/ "><i class="fa fa-twitter " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.snapchat.com/ "><i class="fa fa-snapchat-ghost " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.linkedin.com/ "><i class="fa fa-linkedin-square " aria-hidden="true "></i></a></li>
+            <li><a href="https://www.snapchat.com/ "><i class="fa fa-snapchat-ghost " aria-hidden= "true "></i></a></li>
+            <li><a href="https://www.linkedin.com/ "><i class="fa fa-linkedin-square " aria-hidden= "true "></i></a></li>
           </ul>
         </div>
       </div>
 
       <div class="row ">
-        <p class="ta-center ">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
+        <p class="footer__copyright ">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
       </div>
 
     </div>
@@ -792,8 +790,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfA4kDCyNzNLJJFanuaWlbwWzPSxMAXL4&callback=initMap"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin=" anonymous "></script>
-
-  <script src="js/main.js "></script>
+  <script src="temp/js/main.js "></script>
   <script>
     // Show more Button
     (function () {

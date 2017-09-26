@@ -25,11 +25,11 @@
       }
     }
 
-    .property__info {
+    .hotel__property-info {
       position: relative;
     }
 
-    .property__info>h4>a {
+    .hotel__property-info>h4>a {
       padding: 0;
       margin: 0;
       color: #0283DF;
@@ -46,7 +46,7 @@
     }
     
 
-    .property__stars {
+    .hotel__property-stars {
       font-size: .8em;
 
       @include small {

@@ -1095,31 +1095,31 @@ input[type="submit"] {
     cursor: pointer; }
     .hotel-card h4:hover {
       color: #CB242D; }
-  .hotel-card .property__info {
+  .hotel-card .hotel__property-info {
     position: relative; }
-  .hotel-card .property__info > h4 > a {
+  .hotel-card .hotel__property-info > h4 > a {
     padding: 0;
     margin: 0;
     color: #0283DF;
     font-size: 0.9em;
     cursor: pointer; }
-    .hotel-card .property__info > h4 > a:hover {
+    .hotel-card .hotel__property-info > h4 > a:hover {
       color: #CB242D; }
     @media (min-width: 576px) {
-      .hotel-card .property__info > h4 > a {
+      .hotel-card .hotel__property-info > h4 > a {
         font-size: 1em; } }
-  .hotel-card .property__stars {
+  .hotel-card .hotel__property-stars {
     font-size: .8em; }
     @media (min-width: 576px) {
-      .hotel-card .property__stars {
+      .hotel-card .hotel__property-stars {
         font-size: 1em; } }
-    .hotel-card .property__stars img {
+    .hotel-card .hotel__property-stars img {
       position: relative;
       display: inline-block;
       margin-top: 10px;
       bottom: 1px; }
       @media (min-width: 576px) {
-        .hotel-card .property__stars img {
+        .hotel-card .hotel__property-stars img {
           margin-top: 0; } }
 
 .hotel__info-location {
@@ -1322,3 +1322,56 @@ input[type="submit"] {
 
 .show {
   display: block; }
+
+.property__header {
+  margin-bottom: 30px;
+  line-height: 1.6; }
+  .property__header-info {
+    position: relative;
+    bottom: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .property__header-info {
+        margin-bottom: 0;
+        text-align: left; } }
+  .property__header-title {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+    font-weight: 500;
+    word-spacing: initial;
+    letter-spacing: initial; }
+    @media (min-width: 768px) {
+      .property__header-title {
+        margin-top: 8px; } }
+  .property__header-stars {
+    position: relative;
+    bottom: 7px;
+    display: inline-block;
+    margin: 20px 0; }
+    @media (min-width: 768px) {
+      .property__header-stars {
+        margin: 5px 0; } }
+  .property__header-address {
+    font-size: 0.9em; }
+    .property__header-address a {
+      display: inline-block; }
+  .property__header-review {
+    position: relative;
+    bottom: -5px;
+    padding: 0;
+    text-align: center;
+    font-size: 0.9em; }
+    @media (min-width: 768px) {
+      .property__header-review {
+        text-align: right; } }
+    .property__header-review-number {
+      margin-left: 5px;
+      color: #488BF8;
+      font-size: 1.8em; }
+  .property__header-score {
+    font-size: 1.2em;
+    font-weight: 500; }
