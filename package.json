@@ -26,7 +26,6 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
-    "browser-sync": "^2.18.13",
-    "jquery": "^3.2.1"
+    "browser-sync": "^2.18.13"
   }
 }

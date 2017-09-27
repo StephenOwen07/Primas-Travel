@@ -7,8 +7,7 @@ body {
   padding: 0;
   color: #2e333a;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px; }
+  font-size: 16px; }
 
 h1 {
   font-size: 3em;
@@ -1170,6 +1169,9 @@ input[type="submit"] {
   background: #CB242D;
   height: 5px; }
 
+.price-slider {
+  margin-top: 10px; }
+
 #amount {
   margin-left: 5%;
   margin-top: 10%;
@@ -1178,9 +1180,6 @@ input[type="submit"] {
   background: #E9EAEA;
   font-size: 0.8em;
   font-weight: 700; }
-
-.price-slider {
-  margin-top: 10px; }
 
 .hotel-card {
   height: 240px;
@@ -1902,6 +1901,8 @@ input[type="submit"] {
       font-weight: 500;
       font-size: 0.9em;
       text-align: center; }
+    .rooms__card-rooms .form {
+      height: 30px; }
     .rooms__card-rooms .button {
       width: auto;
       margin-top: 5px; }
@@ -1959,76 +1960,3 @@ input[type="submit"] {
 
 .show-more-open {
   max-height: 2000px; }
-
-.guest-review__heading {
-  margin-left: 20px; }
-  @media (min-width: 768px) {
-    .guest-review__heading {
-      margin-left: 5px; } }
-
-.guest-review__card {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-top: 20px;
-  line-height: 1.8;
-  font-size: 0.9em;
-  height: auto; }
-  .guest-review__card:after {
-    content: '';
-    display: block;
-    clear: both; }
-  @media (min-width: 768px) {
-    .guest-review__card {
-      border-top: 1px solid #ccc;
-      margin-bottom: 30px; } }
-  .guest-review__card i {
-    width: 20px;
-    margin-right: 2px;
-    margin-left: -2px;
-    text-align: center; }
-
-.guest-review__score {
-  color: #488BF8;
-  font-size: 2.5em; }
-
-.guest-review__comment {
-  background: #e3e3e3;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 30px; }
-  @media (min-width: 768px) {
-    .guest-review__comment {
-      margin-top: 0;
-      padding: 25px 50px; } }
-
-.guest-review__comment-title {
-  font-weight: 500;
-  font-size: 1.2em;
-  margin-bottom: 15px; }
-
-.guest-review__comment-text {
-  margin-bottom: 15px; }
-
-.guest-review__comment-date {
-  color: #7B838D; }
-
-.flag {
-  background-image: url("../../assets/img/hotels/flags.png");
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-  border: none; }
-
-.flag-us {
-  background-position: -16px -11px; }
-
-.flag-it {
-  background-position: -16px 0; }
-
-.flag-id {
-  background-position: 0 0; }
-
-.flag-za {
-  background-position: 0 -11px; }

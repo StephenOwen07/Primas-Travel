@@ -159,82 +159,8 @@
 
 /* guest reviews */
 
-.guest-reviews {
-  padding-top: 0;
-}
 
-.guest-review-card {
-  border-top: 1px solid #ccc;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  line-height: 1.8;
-  font-size: 0.9em;
-  height: auto;
-}
 
-.guest-review-info-score {
-  color: #488BF8;
-  font-size: 2.5em;
-}
-
-.flag {
-  background-image: url('../img/hotels/flags.png');
-  background-repeat: no-repeat;
-  display: inline-block;
-  width: 16px;
-  height: 11px;
-  margin-right: 10px;
-  border: none;
-}
-
-.flag-us {
-  background-position: -16px -11px;
-}
-
-.flag-it {
-  background-position: -16px 0;
-}
-
-.flag-id {
-  background-position: 0 0;
-}
-
-.flag-za {
-  background-position: 0 -11px;
-}
-
-.guest-review-info-traveler-type i {
-  margin-right: 7px;
-}
-
-.guest-review-info-room-type i {
-  margin-right: 5px;
-}
-
-.guest-review-info-stay-detail i {
-  margin-right: 8px;
-}
-
-.guest-review-comment {
-  background: #e3e3e3;
-  border-radius: 10px;
-  padding: 25px 50px;
-}
-
-.guest-review-comment-title {
-  font-weight: 500;
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
-.guest-review-comment-text {
-  margin-bottom: 15px;
-}
-
-.guest-review-comment-date {
-  color: #7B838D;
-}
 
 
 /* booking form */

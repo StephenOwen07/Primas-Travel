@@ -1,0 +1,93 @@
+.guest-review {
+
+  &__heading {
+    margin-left: 20px;
+
+    @include medium {
+      margin-left: 5px;      
+    }
+  }
+
+  &__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 0.9em;
+    height: auto;
+
+    @include clearfix;
+
+
+    @include medium {
+      border-top: 1px solid #ccc;
+      margin-bottom: 30px;
+    }
+
+    i {
+      width: 20px;
+      margin-right: 2px;
+      margin-left: -2px;
+      text-align: center;
+    }
+  }
+
+  &__score {
+    color: #488BF8;
+    font-size: 2.5em;
+  }
+
+  &__comment {
+    background: #e3e3e3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+
+    @include medium {
+      margin-top: 0;
+      padding: 25px 50px;
+    }
+  }
+
+  &__comment-title {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  &__comment-text {
+    margin-bottom: 15px;
+  }
+
+  &__comment-date {
+    color: #7B838D;
+  }
+
+}
+
+
+.flag {
+  background-image: url('../../assets/img/hotels/flags.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  border: none;
+}
+
+.flag-us {
+  background-position: -16px -11px;
+}
+
+.flag-it {
+  background-position: -16px 0;
+}
+
+.flag-id {
+  background-position: 0 0;
+}
+
+.flag-za {
+  background-position: 0 -11px;
+}

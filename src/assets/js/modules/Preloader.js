@@ -1,5 +1,3 @@
-var $ = require("jquery");
-
 function Preloader() {
   $(window).on('load', function () { // makes sure the whole site is loaded 
 

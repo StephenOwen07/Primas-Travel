@@ -13,9 +13,9 @@
     crossorigin="anonymous">
 
   <!-- stylesheets  -->
-  <link href="temp/styles/boostrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="temp/jquery-ui/jquery-ui.min.css">
-  <link rel="stylesheet" href="temp/jquery-ui/jquery-ui.theme.css">
+  <link href="assets/styles/boostrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.theme.css">
   <link rel="stylesheet" href="temp/styles/main.css">
 </head>
 
@@ -239,9 +239,9 @@
                     <h4>Price per night</h4>
                   </div>
                   <div class="sidebar__wrapper">
-                    <div class="sidebar__price-slider">
-                      <div class="sidebar__price-slider-range" id="slider-range"></div>
-                      <input type="text" id="amount" class="sidebar__price-slider-range">
+                    <div class="price-slider">
+                      <div id="slider-range"></div>
+                      <input type="text" id="amount">
                     </div>
                   </div>
                   <!--  /Price  -->
@@ -489,7 +489,7 @@
 
               <!--  hotel info  -->
               <div class="hotel__info">
-                <div class="hote__property-info">
+                <div class="hotel__property-info">
                   <h4><a href="hopInn.html">Hop Inn on Carnarvon</a></h4>
                   <div class="hotel__property-stars">
                     <img src="assets/img/destinations/star.png" alt="">
@@ -626,9 +626,9 @@
 
             <!--  hotel info  -->
             <div class="hotel__info">
-              <div class="hote__property-info">
+              <div class="hotel__property-info">
                 <h4><a href="dreamHouse.html">Ximen Taipei - DreamHouse</a></h4>
-                <div class="hote__property-stars">
+                <div class="hotel__property-stars">
                   <img src="assets/img/destinations/star.png" alt="">
                   <img src="assets/img/destinations/star.png" alt="">
                   <img src="assets/img/destinations/star2.png" alt="">
@@ -764,71 +764,71 @@
   </main>
 
   <!--  Footer  -->
-  <footer class="footer ">
-    <div class="container ">
+  <footer class="footer">
+    <div class="container">
 
-      <div class="row ">
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer__nav ">
-            <li><a href="index.html "><strong class="footer__list-title ">Home</strong></a></li>
-            <li><a href="index.html ">Tesimonials</a></li>
-            <li><a href="index.html ">Newsletter</a></li>
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="index.html"><strong class="footer__list-title">Home</strong></a></li>
+            <li><a href="index.html">Tesimonials</a></li>
+            <li><a href="index.html">Newsletter</a></li>
 
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer__nav ">
-            <li><a href="about.html "><strong class="footer__list-title ">About</strong></a></li>
-            <li><a href="about.html ">Statistics</a></li>
-            <li><a href="about.html ">Leadership</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="about.html"><strong class="footer__list-title">About</strong></a></li>
+            <li><a href="about.html">Statistics</a></li>
+            <li><a href="about.html">Leadership</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer__nav ">
-            <li><a href="services.html "><strong class="footer__list-title ">Services</strong></a></li>
-            <li><a href="services.html ">How it works</a></li>
-            <li><a href="services.html ">Price</a></li>
-            <li><a href="services.html ">FAQ</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="services.html"><strong class="footer__list-title">Services</strong></a></li>
+            <li><a href="services.html">How it works</a></li>
+            <li><a href="services.html">Price</a></li>
+            <li><a href="services.html">FAQ</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer__nav ">
-            <li><a href="contact.html "><strong class="footer__list-title ">Contact</strong></a></li>
-            <li><a href="contact.html "> +65 7461 6556</a></li>
-            <li><a href="contact.html ">Location</a></li>
-            <li><a href="contact.html ">Contact form</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="contact.html"><strong class="footer__list-title">Contact</strong></a></li>
+            <li><a href="contact.html"> +65 7461 6556</a></li>
+            <li><a href="contact.html">Location</a></li>
+            <li><a href="contact.html">Contact form</a></li>
           </ul>
         </div>
       </div>
 
       <hr>
 
-      <div class="row ">
-        <div class="col-md-12 ">
-          <ul class="footer__social-icons ">
-            <li><a href="https://www.facebook.com/ "><i class="fa fa-facebook-official " aria-hidden ="true "></i></a></li>
-            <li><a href="https://www.instagram.com "><i class="fa fa-instagram " aria-hidden ="true "></i></a></li>
-            <li><a href="https://twitter.com/ "><i class="fa fa-twitter " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.snapchat.com/ "><i class="fa fa-snapchat-ghost " aria-hidden= "true "></i></a></li>
-            <li><a href="https://www.linkedin.com/ "><i class="fa fa-linkedin-square " aria-hidden= "true "></i></a></li>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="footer__social-icons">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden ="true"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden ="true"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.snapchat.com/"><i class="fa fa-snapchat-ghost" aria-hidden= "true"></i></a></li>
+            <li><a href="https://www.linkedin.com "><i class="fa fa-linkedin-square" aria-hidden= "true"></i></a></li>
           </ul>
         </div>
       </div>
 
-      <div class="row ">
-        <p class="footer__copyright ">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
+      <div class="row">
+        <p class="footer__copyright">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
       </div>
 
     </div>
   </footer>
 
   <!-- scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
-  <script src="temp/jquery-ui/jquery-ui.min.js "></script>
-  <script src="temp/js/main.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+  <script src="temp/js/main.js"></script>
   <script>
     $('#slider-range').slider({
       range: true,
@@ -837,12 +837,45 @@
       max: 30000,
       values: [0, 30000],
       slide: function (event, ui) {
-        $("#amount ").val("$ " + ui.values[0] + " - $ " + ui.values[1]);
+        $("#amount").val("$ " + ui.values[0] + " - $ " + ui.values[1]);
 
-        $("#amount ").val("TWD " + $("#slider-range ").slider("values ", 0) +
-          " - TWD " + $("#slider-range ").slider("values ", 1));
+        $("#amount").val("TWD " + $("#slider-range").slider("values", 0) +
+          " - TWD " + $("#slider-range").slider("values", 1));
       }
     });
+
+      // datepicker 
+  var $tomorrowsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+
+  $('#check-in').datepicker({
+    dateFormat: "dd-M-yy",
+    minDate: 0,
+    onSelect: function (date) {
+      var date2 = $('#check-in').datepicker('getDate');
+      date2.setDate(date2.getDate() + 1);
+      $('#check-out').datepicker('setDate', date2);
+      //sets minDate to dt1 date + 1
+      $('#check-out').datepicker('option', 'minDate', date2);
+    }
+  });
+
+  $('#check-out').datepicker({
+    dateFormat: "dd-M-yy",
+    onClose: function () {
+      var dt1 = $('#check-in').datepicker('getDate');
+      console.log(dt1);
+      var dt2 = $('#check-out').datepicker('getDate');
+      if (dt2 <= dt1) {
+        var minDate = $('#check-out').datepicker('option', 'minDate');
+        $('#check-out').datepicker('setDate', minDate);
+      }
+    }
+  });
+
+  // set checkout placeholder = current date
+  $('#check-in').attr('placeholder', Date());
+  // set checkout placeholder = tomorrows date
+  $('#check-out').attr('placeholder', $tomorrowsDate);
   </script>
 </body>
 

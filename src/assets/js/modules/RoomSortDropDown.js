@@ -1,5 +1,4 @@
 function RoomSortDropDown() {
-  (function () {
 
     var dropBtns = document.querySelectorAll('.room-sort-menu__dropdown');
 
@@ -39,7 +38,6 @@ function RoomSortDropDown() {
         closeOpenItems();
       }
     });
-  })();
 }
 
 module.exports = RoomSortDropDown;

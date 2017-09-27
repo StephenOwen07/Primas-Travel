@@ -1,6 +1,5 @@
 function ShowMoreBtn() {
   // Show more Button
-  (function () {
     
     var showMoreBtns = document.querySelectorAll('.show-more-btn');
 
@@ -19,8 +18,6 @@ function ShowMoreBtn() {
         }
       });
     });
-
-  })();
     
 }
 

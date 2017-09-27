@@ -143,20 +143,6 @@
     width:20px;
   }
 
-  &__price-slider {
-    margin-top: 10px;
-
-    &-range {
-      margin-left: 5%;
-      margin-top: 10%;
-      border: none;
-      color: $greyDark;
-      background: $greyLight;
-      font-size: 0.8em;
-      font-weight: 700;
-    }
-  }
-
   .form {
     width: 100%;
   }
@@ -228,7 +214,6 @@
   background: #fff;
   cursor: pointer;
   outline: none;
-  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
@@ -242,4 +227,18 @@
 .ui-slider .ui-slider-range {
   background: $red;
   height: 5px;
+}
+
+#amount {
+  margin-left: 5%;
+  margin-top: 10%;
+  border: none;
+  color: #434A54;
+  background: #E9EAEA;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.price-slider {
+  margin-top: 10px;
 }

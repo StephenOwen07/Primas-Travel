@@ -85,6 +85,7 @@ var showMoreBtn = new ShowMoreBtn();
 /***/ (function(module, exports) {
 
 function Preloader() {
+
   $(window).on('load', function () { // makes sure the whole site is loaded 
 
     $('#spinner').fadeOut(); // will first fade out the loading animation 
@@ -94,6 +95,7 @@ function Preloader() {
     });
 
   });
+
 }
 
 module.exports = Preloader;
@@ -104,6 +106,7 @@ module.exports = Preloader;
 /***/ (function(module, exports) {
 
 function ScrollTopBtn() {
+
   $(document).ready(function () {
 
     // scroll top button
@@ -123,8 +126,8 @@ function ScrollTopBtn() {
         500
       );
     });
-
   });
+
 }
 
 module.exports = ScrollTopBtn;
@@ -150,7 +153,6 @@ function MobileNav() {
     buttonOpen.style.display = 'initial';
   });
 
-
 }
 
 module.exports = MobileNav;
@@ -162,44 +164,45 @@ module.exports = MobileNav;
 
 function RoomSortDropDown() {
 
-    var dropBtns = document.querySelectorAll('.room-sort-menu__dropdown');
+  var dropBtns = document.querySelectorAll('.room-sort-menu__dropdown');
 
-    function closeOpenItems() {
-      var openMenus = document.querySelectorAll('.room-sort-menu__drop-menu');
-      openMenus.forEach(function (menus) {
-        menus.classList.remove('show');
-      });
-    }
-
-    dropBtns.forEach(function (btn) {
-
-      btn.addEventListener('click', function (e) {
-        var
-          dropContent = btn.querySelector('.room-sort-menu__drop-menu'),
-          shouldOpen = !dropContent.classList.contains('show');
-        e.preventDefault();
-
-        // First close all open items.
-        closeOpenItems();
-        // Check if the clicked item should be opened. It is already closed at this point so no further action is required if it should be closed.
-        if (shouldOpen) {
-          // Open the clicked item.
-          dropContent.classList.add('show');
-        }
-        // prevent event bubbling
-        e.stopPropagation();
-      });
-
-
+  function closeOpenItems() {
+    var openMenus = document.querySelectorAll('.room-sort-menu__drop-menu');
+    openMenus.forEach(function (menus) {
+      menus.classList.remove('show');
     });
+  }
 
-    //   close menus when clicking outside of them
-    window.addEventListener('click', function (event) {
-      if (event.target != dropBtns) {
-        // Moved the code here to its own function.
-        closeOpenItems();
+  dropBtns.forEach(function (btn) {
+
+    btn.addEventListener('click', function (e) {
+      var
+        dropContent = btn.querySelector('.room-sort-menu__drop-menu'),
+        shouldOpen = !dropContent.classList.contains('show');
+      e.preventDefault();
+
+      // First close all open items.
+      closeOpenItems();
+      // Check if the clicked item should be opened. It is already closed at this point so no further action is required if it should be closed.
+      if (shouldOpen) {
+        // Open the clicked item.
+        dropContent.classList.add('show');
       }
+      // prevent event bubbling
+      e.stopPropagation();
     });
+
+
+  });
+
+  //   close menus when clicking outside of them
+  window.addEventListener('click', function (event) {
+    if (event.target != dropBtns) {
+      // Moved the code here to its own function.
+      closeOpenItems();
+    }
+  });
+
 }
 
 module.exports = RoomSortDropDown;
@@ -210,29 +213,28 @@ module.exports = RoomSortDropDown;
 
 function ShowMoreBtn() {
   // Show more Button
-    
-    var showMoreBtns = document.querySelectorAll('.show-more-btn');
+  var showMoreBtns = document.querySelectorAll('.show-more-btn');
 
-    showMoreBtns.forEach(function (btn) {
+  showMoreBtns.forEach(function (btn) {
 
-      btn.addEventListener('click', function () {
-        var showMoreContent = btn.previousElementSibling;
-        var shouldOpen = !showMoreContent.classList.contains('show-more-open');
+    btn.addEventListener('click', function () {
+      var showMoreContent = btn.previousElementSibling;
+      var shouldOpen = !showMoreContent.classList.contains('show-more-open');
 
-        if (shouldOpen) {
-          showMoreContent.classList.add('show-more-open');
-          btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
-        } else {
-          showMoreContent.classList.remove('show-more-open');
-          btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
-        }
-      });
+      if (shouldOpen) {
+        showMoreContent.classList.add('show-more-open');
+        btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
+      } else {
+        showMoreContent.classList.remove('show-more-open');
+        btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
+      }
     });
-    
+  });
+
 }
 
 module.exports = ShowMoreBtn;
-
+ 
 
 /***/ })
 /******/ ]);
