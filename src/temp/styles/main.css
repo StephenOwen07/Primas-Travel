@@ -115,7 +115,8 @@ input[type="submit"] {
     font-size: 1.2em;
     font-weight: 500;
     line-height: 40px;
-    text-align: center; }
+    text-align: center;
+    letter-spacing: 1px; }
     .header__logo:hover {
       color: #fff;
       text-decoration: none; }
@@ -205,7 +206,7 @@ input[type="submit"] {
         position: relative;
         padding: 15px;
         color: #fff;
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 500;
         -webkit-transition: 400ms;
         transition: 400ms; }
@@ -1740,7 +1741,17 @@ input[type="submit"] {
     bottom: -10px; }
 
 .rooms {
-  text-align: center; }
+  text-align: center;
+  /* marina bay sands */
+  /* studio m */
+  /* studio m */
+  /* Hotel Indigo */
+  /* Hop Inn */
+  /* Hotel Mini */
+  /* Hotel ICON */
+  /* dreamHouse */
+  /* La Maison */
+  /* fairytale hotel */ }
   @media (min-width: 768px) {
     .rooms {
       padding-top: 0;
@@ -1922,6 +1933,70 @@ input[type="submit"] {
     background-image: url("../../assets/img/hotels/Marina-bay-sands/sande-suite.jpg"); }
   .rooms__card-img--orchard-suite {
     background-image: url("../../assets/img/hotels/Marina-bay-sands/orchard-suite.jpg"); }
+  .rooms__card-img--studio-loft {
+    background-image: url("../../assets/img/hotels/studioM/studio-loft.jpg"); }
+  .rooms__card-img--premiere-loft {
+    background-image: url("../../assets/img/hotels/studioM/premiere-loft.jpg"); }
+  .rooms__card-img--executive-loft {
+    background-image: url("../../assets/img/hotels/studioM/executive-loft.jpg"); }
+  .rooms__card-img--one-bedroom-villa {
+    background-image: url("../../assets/img/hotels/sentosa/1-bedroom-villa.jpg"); }
+  .rooms__card-img--ocean-suite {
+    background-image: url("../../assets/img/hotels/sentosa/ocean-suite.jpg"); }
+  .rooms__card-img--two-bedroom-villa {
+    background-image: url("../../assets/img/hotels/sentosa/2-bedroom-villa.jpg"); }
+  .rooms__card-img--three-bedroom-villa {
+    background-image: url("../../assets/img/hotels/sentosa/3-bedroom-villa.jpg"); }
+  .rooms__card-img--deluxe-king-room {
+    background-image: url("../../assets/img/hotels/indigo-hotel/deluxe-king-room.png"); }
+  .rooms__card-img--deluxe-twin-room {
+    background-image: url("../../assets/img/hotels/indigo-hotel/deluxe-twin.jpg"); }
+  .rooms__card-img--premier-king-room {
+    background-image: url("../../assets/img/hotels/indigo-hotel/premiere-king.png"); }
+  .rooms__card-img--premier-executive-1-king-bath {
+    background-image: url("../../assets/img/hotels/indigo-hotel/premiere-executive.png"); }
+  .rooms__card-img--hop-double-room {
+    background-image: url("../../assets/img/hotels/hop-inn/double-room.jpg"); }
+  .rooms__card-img--hop-twin-room {
+    background-image: url("../../assets/img/hotels/hop-inn/twin-room.jpg"); }
+  .rooms__card-img--hop-triple-room {
+    background-image: url("../../assets/img/hotels/hop-inn/triple-room.jpg"); }
+  .rooms__card-img--mini-double {
+    background-image: url("../../assets/img/hotels/mini-hotel/basic-double-twin.jpg"); }
+  .rooms__card-img--smart-room {
+    background-image: url("../../assets/img/hotels/mini-hotel/smart-room.jpg"); }
+  .rooms__card-img--solo-room {
+    background-image: url("../../assets/img/hotels/mini-hotel/solo-room.jpg"); }
+  .rooms__card-img--ICON-36-city-view {
+    background-image: url("../../assets/img/hotels/hotel-icon/icon-city-view.jpg"); }
+  .rooms__card-img--ICON-36-harbour-view {
+    background-image: url("../../assets/img/hotels/hotel-icon/icon-harbour-view.jpg"); }
+  .rooms__card-img--ICON-club-65-studio-view {
+    background-image: url("../../assets/img/hotels/hotel-icon/icon-club-65.jpg"); }
+  .rooms__card-img--ICON-club-80-harbour {
+    background-image: url("../../assets/img/hotels/hotel-icon/icon-club-80.jpg"); }
+  .rooms__card-img--dream-double {
+    background-image: url("../../assets/img/hotels/dreamHouse/dream-double.jpg"); }
+  .rooms__card-img--dream-twin {
+    background-image: url("../../assets/img/hotels/dreamHouse/dream-twin.jpg"); }
+  .rooms__card-img--dream-triple {
+    background-image: url("../../assets/img/hotels/dreamHouse/dream-triple.jpg"); }
+  .rooms__card-img--dream-noWindow {
+    background-image: url("../../assets/img/hotels/dreamHouse/dream-no-window.jpg"); }
+  .rooms__card-img--DeluxeDouble {
+    background-image: url("../../assets/img/hotels/laMaison/laMaison-deluxeDouble.jpg"); }
+  .rooms__card-img--DeluxeTwin {
+    background-image: url("../../assets/img/hotels/laMaison/laMaison-deluxeTwin.jpg"); }
+  .rooms__card-img--DeluxeFamily {
+    background-image: url("../../assets/img/hotels/laMaison/laMaison-deluxeFamily.jpg"); }
+  .rooms__card-img--fairytale-budgetDouble {
+    background-image: url("../../assets/img/hotels/fairytale/fairytale-budgetDouble.jpg"); }
+  .rooms__card-img--fairytale-deluxeDouble {
+    background-image: url("../../assets/img/hotels/fairytale/fairytale-DeluxeDouble.jpg"); }
+  .rooms__card-img--fairytale-premierQuad {
+    background-image: url("../../assets/img/hotels/fairytale/fairytale-premierQuad.jpg"); }
+  .rooms__card-img--fairytale-familySuite {
+    background-image: url("../../assets/img/hotels/fairytale/fairytale-familySuite.jpg"); }
 
 .hotel-overview__title {
   padding: 0 5px 20px;
@@ -1961,7 +2036,8 @@ input[type="submit"] {
   max-height: 2000px; }
 
 .guest-review__heading {
-  margin-left: 20px; }
+  margin-left: 20px;
+  font-size: 0.9em; }
   @media (min-width: 768px) {
     .guest-review__heading {
       margin-left: 5px; } }

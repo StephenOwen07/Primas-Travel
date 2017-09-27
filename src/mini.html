@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Primas Travel | mini hotel Central</title>
+  <title>Primas Travel | Mini Hotel Central</title>
 
   <!-- fonts  -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet">
@@ -13,88 +13,83 @@
     crossorigin="anonymous">
 
   <!-- stylesheets  -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/hotels.css">
-  <link rel="stylesheet" href="css/media-queries.css">
+  <link href="assets/styles/boostrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="temp/styles/main.css">
 </head>
 
 <body>
 
-  <header class="header-default bg-white clearfix">
+  <header class="header header--solid">
     <div class="container-fluid">
 
-      <a class="logo ta-center float-left" href="index.html"><span>PT</span> PrimasTravel</a>
+      <a class="header__logo header__logo--inverse" href="index.html"><span>PT</span> PrimasTravel</a>
 
-      <!--  preload spinner  -->
-      <div id="preload">
-        <div class="spinner"></div>
-      </div>
-      <nav class="overlay">
+      <nav id="primary-nav__mobile" class="primary-nav primary-nav--inverse">
 
-        <a class="nav--close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <a class="primary-nav__close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-        <ul class="overlay-content ta-center float-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="destination.html">Destination</a></li>
-          <li><a href="contact.html">Contact</a>
+        <ul class="primary-nav__mobile-content">
+          <li><a class="primary-nav__link primary-nav__link--grey" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="about.html">About</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link  primary-nav__link--grey" href="destination.html">Destination</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="contact.html">Contact</a>
           </li>
         </ul>
 
       </nav>
-      <a class="nav--open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <a class="primary-nav__open-btn primary-nav__open-btn--grey" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
     </div>
   </header>
-
   <main>
 
-    <!-- hotel intro -->
-    <section class="hotel-intro bg-white">
+    <!-- Property intro -->
+    <section class="page-section">
 
-      <!-- hotel header -->
-      <div class="hotel-header">
+      <!--  preload spinner  -->
+      <div id="preloader">
+        <div class="spinner"></div>
+      </div>
+
+      <!-- Property header -->
+      <div class="property__header">
         <div class="container">
           <div class="row">
 
             <!-- scroll top btn -->
-            <button class="scroll-btn">
-                  <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
-                </button>
+            <button class="scroll-top-btn">
+              <i class="fa fa-chevron-up scroll-top-btn__icon" aria-hidden="true"></i>
+            </button>
             <!-- /scroll top btn -->
 
             <div class="col-sm-8 col-xs-12">
-              <div class="hotel-header-info">
-                <div class="hotel-header-info-name">
-                  <h1>mini hotel Central</h1>
-                  <span class="hotel-header-info-name-stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star.png" alt="stars">
-                    <img src="img/destinations/star2.png" alt="stars">
-                    <img src="img/destinations/star2.png" alt="stars">
+              <div class="property__header-info">
+                <div>
+                  <h1 class="property__header-title">Mini Hotel Central</h1>
+                  <span class="property__header-stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star.png" alt="stars">
+                    <img src="assets/img/destinations/star2.png" alt="stars">
+                    <img src="assets/img/destinations/star2.png" alt="stars">
                   </span>
                 </div>
-                <div class="hotel-header-info-address"><a class="info-link-blue" href="#">38 Ice House Street, Central, Hong Kong Central, Hong Kong</a></div>
+                <div class="property__header-address"><a class="info-link--blue" href="#">38 Ice House Street, Central, Hong Kong Central, Hong Kong</a></div>
               </div>
             </div>
 
             <div class="col-sm-4 col-xs-12">
-              <div class="hotel-header-rating-review">
-                <div class="hotel-header-rating-score">
-                  <span>Good</span> <span class="hotel-header-rating-score-number">7</span>
+              <div class="property__header-review">
+                <div class="property__header-score">
+                  <span>Good</span> <span class="property__header-review-number">7</span>
                 </div>
-                <div class="hotel-header-rating-reviews">
+                <div>
                   <span>
-                    <a class="info-link-blue" href="#">Based on 953  reviews</a>
+                    <a class="info-link--blue" href="#">Based on 953 reviews</a>
                   </span>
                 </div>
-                <div class="hotel-header-rating-recommendation-score">
+                <div>
                   <span><strong>87%</strong> Would recommend to a friend</span>
                 </div>
               </div>
@@ -106,59 +101,58 @@
       <!-- /hotel header -->
 
       <!-- masonry -->
-      <div class="container masonry-grid clearfix">
-        <div class="masonry-item masonry-1st">
-          <img src="img/hotels/mini-hotel/mini-main.jpg" alt="">
-          <div class="masonry-overlay">
-            <div class="ms-overlay-info-title">mini hotel Central</div>
-            <div class="ms-overlay-info-caption">See more photos</div>
+      <div class="container masonry">
+        <div class="masonry__item masonry__1st">
+          <img src="assets/img/hotels/mini-hotel/mini-main.jpg" alt="">
+          <div class="masonry__overlay">
+            <div class="masonry__overlay--info-title">Mini Hotel Central</div>
+            <div class="masonry__overlay--info-caption">See more photos</div>
           </div>
         </div>
-        <div class="masonry-item masonry-2nd">
-          <img src="img/hotels/mini-hotel/mini-lobby.jpg" alt="">
-          <div class="masonry-overlay">
-            <div class="ms-overlay-info-title ms-overlay-info-title-2">Lobby</div>
-            <div class="ms-overlay-info-caption">See more photos</div>
+        <div class="masonry__item masonry__2nd">
+          <img src="assets/img/hotels/mini-hotel/mini-lobby.jpg" alt="">
+          <div class="masonry__overlay">
+            <div class="masonry__overlay--info-title masonry__overlay--info-title-2">Lobby</div>
+            <div class="masonry__overlay--info-caption">See more photos</div>
           </div>
         </div>
-        <div class="masonry-item masonry-3rd">
-          <img src="img/hotels/mini-hotel/mini-lobby2.jpg" alt="">
-          <div class="masonry-overlay">
-            <div class="ms-overlay-info-title ms-overlay-info-title-3">Lobby</div>
-            <div class="ms-overlay-info-caption">See more photos</div>
+        <div class="masonry__item masonry__3rd">
+          <img src="assets/img/hotels/mini-hotel/mini-lobby2.jpg" alt="">
+          <div class="masonry__overlay">
+            <div class="masonry__overlay--info-title masonry__overlay--info-title-3">Lobby</div>
+            <div class="masonry__overlay--info-caption">See more photos</div>
           </div>
         </div>
-        <div class="masonry-item masonry-4th">
-          <img src="img/hotels/mini-hotel/mini-interior.jpg" alt="">
-          <div class="masonry-overlay mansonry-overlay-alt">
-            <div class="ms-overlay-info-title ms-overlay-info-title-4">Interior view</div>
-            <div class="ms-overlay-info-caption">See more photos</div>
-
+        <div class="masonry__item masonry__4th">
+          <img src="assets/img/hotels/mini-hotel/mini-interior.jpg" alt="">
+          <div class="masonry__overlay masonry__overlay--dark">
+            <div class="masonry__overlay--info-title masonry__overlay--info-title-4">Interior view</div>
+            <div class="masonry__overlay--info-caption">See more photos</div>
           </div>
         </div>
-        <div class="masonry-item masonry-5th">
-          <img src="img/hotels/mini-hotel/mini-interior2.jpg" alt="">
-          <div class="masonry-overlay mansonry-overlay-alt">
-            <div class="ms-overlay-info-title ms-overlay-info-title-5">Interior view</div>
-            <div class="ms-overlay-info-caption">See more photos</div>
-            <div class="ms-engagement">
+        <div class="masonry__item masonry__5th">
+          <img src="assets/img/hotels/mini-hotel/mini-interior2.jpg" alt="">
+          <div class="masonry__overlay masonry__overlay--dark">
+            <div class="masonry__overlay--info-title masonry__overlay--info-title-5">Interior view</div>
+            <div class="masonry__overlay--info-caption">See more photos</div>
+            <div class="masonry__engagement">
               <span><i class="fa fa-users" aria-hidden="true"></i></span>
-              <div class="ms-engagement-text">Mini Double Room booked 6 hours, 3 minutes ago</div>
+              <div class="masonry__engagement-text">Mini Double Room booked 6 hours, 3 minutes ago</div>
             </div>
           </div>
         </div>
-        <div class="masonry-item masonry-6th">
-          <img src="img/hotels/see-map.png" alt="">
-          <div class="masonry-overlay">
-            <div class="ms-overlay-info-title see-map-overlay-title">Excellent location</div>
-            <div class="ms-overlay-info-caption see-map-overlay-caption">See map</div>
+        <div class="masonry__item masonry__6th" id="seeMap">
+          <img src="assets/img/hotels/see-map.png" alt="">
+          <div class="masonry__overlay">
+            <div class="masonry__overlay--info-title masonry__see-map-title">Excellent location</div>
+            <div class="masonry__overlay--info-caption masonry__see-map-caption">See map</div>
           </div>
-          <div class="see-map">See map</div>
+          <div class="masonry__see-map">See map</div>
         </div>
-        <div class="masonry-item masonry-7th">
-          <img src="img/hotels/mini-hotel/mini-see-more.jpg" alt="">
-          <div class="masonry-overlay mansonry-overlay-alt ms-overlay-7th ">
-            <div class="mansonry-7th-caption ">See all photos</div>
+        <div class="masonry__item masonry__7th">
+          <img src="assets/img/hotels/mini-hotel/mini-see-more.jpg" alt="">
+          <div class="masonry__overlay masonry__overlay--dark masonry__overlay-7th">
+            <div class="masonry__7th-caption">See all photos</div>
           </div>
         </div>
       </div>
@@ -168,189 +162,190 @@
     <!-- /hotel intro -->
 
     <!-- room choices -->
-    <section class="room-choices bg-white ">
-      <div class="container ">
-        <div class="row ">
-          <div class="col-xs-12 ">
-            <div class="room-choices-heading ">
-              <h2>Room choices</h2>
+    <section class="rooms page-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="rooms__title">
+              <h2>Available Rooms</h2>
             </div>
 
             <!-- room choices card -->
-            <div class="room-choices-card ">
+            <div class="rooms__card">
 
-              <div class="room-choices-card-heading bg-white ">
+              <div class="rooms__card-heading">
                 <h4>Mini Double</h4>
               </div>
 
-              <div class="room-choices-card-content ">
-                <div class="room-choices-card-content-space ">
+              <div class="rooms__card-content">
+                <div class="rooms__card-space">
                   <h5>The space</h5>
-                  <div class="room-choices-card-content-space-container-img ">
-                    <div class="room-choices-card-content-space-img mini-double-img"></div>
+                  <div class="rooms__card-img-container">
+                    <div class="rooms__card-img rooms__card-img--mini-double"></div>
                   </div>
-                  <span class="room-choices-card-content-space-img-tagline "><a class="info-link-blue " href="# ">See photos and details</a></span>
+                  <span class="rooms__card-img-tagline"><a class="info-link--blue" href="#">See photos and details</a></span>
 
                 </div>
 
-                <div class="room-choices-card-content-specification ">
+                <div class="rooms__card-specification">
                   <h5>Specification</h5>
                   <ul>
-                    <li><i class="fa fa-building-o " aria-hidden="true "></i><span>No View</span></li>
-                    <li><i class="fa fa-arrows-h " aria-hidden="true "></i><span>10 m²/108ft²</span></li>
-                    <li><i class="fa fa-fire " aria-hidden="true "></i><span>Non-smoking</span></li>
-                    <li><i class="fa fa-shower " aria-hidden="true "></i><span>Shower</span></li>
-                    <li><i class="fa fa-bed " aria-hidden="true "></i><span>1 double bed</span></li>
+                    <li><i class="fa fa-building-o" aria-hidden="true"></i><span>No View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>10 m²/108ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-shower" aria-hidden="true"></i><span>Shower</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>1 Double bed</span></li>
                   </ul>
                 </div>
 
-                <div class="room-choices-card-content-capacity ">
+                <div class="rooms__card-capacity">
                   <h5>Capacity</h5>
-                  <div class="room-choices-card-content-capacity-text ">
-                    <span>2 x </span><i class="fa fa-user " aria-hidden="true "></i>
-                  </div>
-                </div>
-
-                <div class="room-choices-card-content-price ">
-                  <h5>Price per night</h5>
-                  <div class="room-choices-card-content-price-text ">
-                    <p>TWD <span>1,548</span></p>
-                  </div>
-                </div>
-                <div class="room-choices-card-content-rooms ">
-                  <h5>Rooms</h5>
-                  <select>
-                    <option value=" ">1</option>
-                    <option value=" ">2</option>
-                    <option value=" ">3</option>
-                    <option value=" ">4</option>
-                    <option value=" ">5</option>
-                    <option value=" ">6</option>
-                    <option value=" ">7</option>
-                    <option value=" ">8</option>
-                    <option value=" ">9</option>
-                  </select>
-                  <span>Limited availability</span>
-                  <a href="booking.html" class="button button-primary button-submit">Book now</a>
-                </div>
-
-              </div>
-            </div>
-            <!-- /room choices card -->
-
-            <!-- room choices card -->
-            <div class="room-choices-card ">
-
-              <div class="room-choices-card-heading bg-white ">
-                <h4>Smart Room</h4>
-              </div>
-
-              <div class="room-choices-card-content ">
-                <div class="room-choices-card-content-space ">
-                  <h5>The space</h5>
-                  <div class="room-choices-card-content-space-container-img ">
-                    <div class="room-choices-card-content-space-img smart-room-img"></div>
-                  </div>
-                  <span class="room-choices-card-content-space-img-tagline "><a class="info-link-blue " href="# ">See photos and details</a></span>
-
-                </div>
-
-                <div class="room-choices-card-content-specification ">
-                  <h5>Specification</h5>
-                  <ul>
-                    <li><i class="fa fa-building-o " aria-hidden="true "></i><span>City View</span></li>
-                    <li><i class="fa fa-arrows-h " aria-hidden="true "></i><span>10 m²/108ft²</span></li>
-                    <li><i class="fa fa-fire " aria-hidden="true "></i><span>Non-smoking</span></li>
-                    <li><i class="fa fa-shower " aria-hidden="true "></i><span>Shower</span></li>
-                    <li><i class="fa fa-bed " aria-hidden="true "></i><span>1 double bed</span></li>
-                  </ul>
-                </div>
-
-                <div class="room-choices-card-content-capacity ">
-                  <h5>Capacity</h5>
-                  <div class="room-choices-card-content-capacity-text ">
-                    <span>2 x </span><i class="fa fa-user " aria-hidden="true "></i>
-                  </div>
-                </div>
-
-                <div class="room-choices-card-content-price ">
-                  <h5>Price per night</h5>
-                  <div class="room-choices-card-content-price-text ">
-                    <p>TWD <span>2,548</span></p>
-                  </div>
-                </div>
-                <div class="room-choices-card-content-rooms ">
-                  <h5>Rooms</h5>
-                  <select>
-                    <option value=" ">1</option>
-                    <option value=" ">2</option>
-                    <option value=" ">3</option>
-                    <option value=" ">4</option>
-                    <option value=" ">5</option>
-                    <option value=" ">6</option>
-                    <option value=" ">7</option>
-                    <option value=" ">8</option>
-                    <option value=" ">9</option>
-                  </select>
-                  <span>Limited availability</span>
-                  <a href="booking.html" class="button button-primary button-submit">Book now</a>
-                </div>
-
-              </div>
-            </div>
-            <!-- /room choices card -->
-
-            <!-- room choices card -->
-            <div class="room-choices-card">
-
-              <div class="room-choices-card-heading bg-white">
-                <h4>Solo room</h4>
-              </div>
-
-              <div class="room-choices-card-content">
-                <div class="room-choices-card-content-space">
-                  <h5>The space</h5>
-                  <div class="room-choices-card-content-space-container-img ">
-                    <div class="room-choices-card-content-space-img solo-room-img"></div>
-                  </div>
-                  <span class="room-choices-card-content-space-img-tagline"><a class="info-link-blue" href="#">See photos and details</a></span>
-
-                </div>
-
-                <div class="room-choices-card-content-specification">
-                  <h5>Specification</h5>
-                  <ul>
-                    <li><i class="fa fa-building-o" aria-hidden="true "></i><span>No View</span></li>
-                    <li><i class="fa fa-arrows-h " aria-hidden="true "></i><span>7 m²/75ft²</span></li>
-                    <li><i class="fa fa-fire " aria-hidden="true "></i><span>Non-smoking</span></li>
-                    <li><i class="fa fa-shower" aria-hidden="true "></i><span>Shower</span></li>
-                    <li><i class="fa fa-bed" aria-hidden="true "></i><span>1 single</span></li>
-                  </ul>
-                </div>
-
-                <div class="room-choices-card-content-capacity">
-                  <h5>Capacity</h5>
-                  <div class="room-choices-card-content-capacity-text">
+                  <div class="rooms__card-capacity-text">
                     <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
                   </div>
                 </div>
 
-                <div class="room-choices-card-content-price">
+                <div class="rooms__card-price-container">
                   <h5>Price per night</h5>
-                  <div class="room-choices-card-content-price-text">
+                  <div class="rooms__card-price">
+                    <p>TWD <span>1,548</span></p>
+                  </div>
+                </div>
+                <div class="rooms__card-rooms">
+                  <h5>Rooms</h5>
+                  <select class="form">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                  </select>
+                  <span>Limited availability</span>
+                  <a href="booking.html" class="button">Book now</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+            <!-- room choices card -->
+            <div class="rooms__card">
+
+              <div class="rooms__card-heading">
+                <h4>Smart Room</h4>
+              </div>
+
+              <div class="rooms__card-content">
+                <div class="rooms__card-space">
+                  <h5>The space</h5>
+                  <div class="rooms__card-img-container">
+                    <div class="rooms__card-img rooms__card-img--smart-room"></div>
+                  </div>
+                  <span class="rooms__card-img-tagline"><a class="info-link--blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="rooms__card-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-building-o" aria-hidden="true"></i><span>City View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>10 m²/108ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-shower" aria-hidden="true"></i><span>Shower</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>1 Double bed</span></li>
+                  </ul>
+                </div>
+
+                <div class="rooms__card-capacity">
+                  <h5>Capacity</h5>
+                  <div class="rooms__card-capacity-text">
+                    <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="rooms__card-price-container">
+                  <h5>Price per night</h5>
+                  <div class="rooms__card-price">
+                    <p>TWD <span>2,548</span></p>
+                  </div>
+                </div>
+                <div class="rooms__card-rooms">
+                  <h5>Rooms</h5>
+                  <select class="form">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                  </select>
+                  <span>Limited availability</span>
+                  <a href="booking.html" class="button">Book now</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- /room choices card -->
+
+            <!-- room choices card -->
+            <div class="rooms__card">
+
+              <div class="rooms__card-heading">
+                <h4>Solo Room</h4>
+              </div>
+
+              <div class="rooms__card-content">
+                <div class="rooms__card-space">
+                  <h5>The space</h5>
+                  <div class="rooms__card-img-container">
+                    <div class="rooms__card-img rooms__card-img--solo-room"></div>
+                  </div>
+                  <span class="rooms__card-img-tagline"><a class="info-link--blue" href="#">See photos and details</a></span>
+
+                </div>
+
+                <div class="rooms__card-specification">
+                  <h5>Specification</h5>
+                  <ul>
+                    <li><i class="fa fa-building-o" aria-hidden="true"></i><span>No View</span></li>
+                    <li><i class="fa fa-arrows-h" aria-hidden="true"></i><span>7 m²/75ft²</span></li>
+                    <li><i class="fa fa-fire" aria-hidden="true"></i><span>Non-smoking</span></li>
+                    <li><i class="fa fa-shower" aria-hidden="true"></i><span>Shower</span></li>
+                    <li><i class="fa fa-bed" aria-hidden="true"></i><span>1 Single bed</span></li>
+                  </ul>
+                </div>
+
+                <div class="rooms__card-capacity">
+                  <h5>Capacity</h5>
+                  <div class="rooms__card-capacity-text">
+                    <span>2 x </span><i class="fa fa-user" aria-hidden="true"></i>
+                  </div>
+                </div>
+
+                <div class="rooms__card-price-container">
+                  <h5>Price per night</h5>
+                  <div class="rooms__card-price">
                     <p>TWD <span>1,935</span></p>
                   </div>
                 </div>
-                <div class="room-choices-card-content-rooms">
+                <div class="rooms__card-rooms">
                   <h5>Rooms</h5>
-                  <select>
-                    <option value=" ">1</option>
-                    <option value=" ">2</option>
-                    <option value=" ">3</option>
-                    <option value=" ">4</option>
+                  <select class="form">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
                   </select>
-                  <span>Our last 4 rooms!</span>
-                  <a href="booking.html" class="button button-primary button-submit">Book now</a>
+                  <span>Our last 4 rooms!
+                  </span>
+                  <a href="booking.html" class="button">Book now</a>
                 </div>
 
               </div>
@@ -364,21 +359,21 @@
     <!-- /room choices -->
 
     <!-- hotel overview -->
-    <section class="hotel-overview bg-white ">
-      <div class="container ">
-        <div class="row ">
-          <div class="hotel-overview-heading ">
-            <h2>More about mini hotel Central</h2>
+    <section class="hotel-overview bg-white">
+      <div class="container">
+        <div class="row">
+          <div>
+            <h2 class="hotel-overview__title">More about Mini Hotel Central</h2>
           </div>
 
-          <div class="col-xs-12 col-sm-4 ">
-            <div class="hotel-overview-title ">
-              <h3>mini hotel Central overview</h3>
+          <div class="col-xs-12 col-sm-4">
+            <div class="hotel-overview__subtitle-container">
+              <h3 class="hotel-overview__subtitle">Mini Hotel Central overview</h3>
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-8 ">
-            <div class="hotel-overview-description show-more-content ">
+          <div class="col-xs-12 col-sm-8">
+            <div class="hotel-overview__description show-more-content">
               <p>Mini hotel Central, located in Hong Kong Central, Hong Kong, is a popular choice for travelers. The excitement
                 of the city center is only 0.1 km away. Also within easy reach are Lower Albert Road & Ice House Street,
                 Wyndham Street, Consulate of Bhutan.
@@ -391,22 +386,21 @@
 
               <p>Guests can choose from 196 rooms, all of which exude an atmosphere of total peace and harmony. Besides, the
                 hotel's host of recreational offerings ensures you have plenty to do during your stay. Enjoy unparalleled
-                services and a truly prestigious address at the mini hotel Central.
-              </p>
+                services and a truly prestigious address at the mini hotel Central.</p>
             </div>
-            <div class="show-more-btn ">
-              <span>Show more</span> <i class="fa fa-caret-down " aria-hidden="true "></i>
-            </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-4 ">
-            <div class="hotel-overview-title ">
-              <h3>Guest policies</h3>
+            <div class="show-more-btn">
+              <span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
           </div>
 
-          <div class="col-xs-12 col-sm-8 ">
-            <div class="hotel-overview-description show-more-content ">
+          <div class="col-xs-12 col-sm-4">
+            <div class="hotel-overview__subtitle-container">
+              <h3 class="hotel-overview__subtitle">Guest policies</h3>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-8">
+            <div class="hotel-overview__description show-more-content">
               <p>
                 Guests 13 years and older are considered adults.</p>
 
@@ -414,13 +408,11 @@
               </p>
               <p>When booking more than 5 rooms, different policies and additional supplements may apply.
               </p>
-
             </div>
             <div class="show-more-btn">
-              <span>Show more</span> <i class="fa fa-caret-down " aria-hidden="true "></i>
+              <span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
           </div>
-
 
         </div>
       </div>
@@ -428,44 +420,44 @@
     <!-- hotel overview -->
 
     <!-- guest reviews -->
-    <section class="guest-reviews bg-white ">
-      <div class="container ">
-        <div class="row ">
-          <div class="hotel-overview-heading ">
+    <section class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="hotel__subtitle guest-review__heading">
             <h2>Verified guest reviews</h2>
           </div>
 
           <!-- guest review card -->
-          <div class="guest-review-card clearfix ">
-            <div class="col-xs-12 col-sm-4 ">
-              <div class="guest-review-info ">
-                <div class="guest-review-info-score ">
+          <div class="guest-review__card">
+            <div class="col-xs-12 col-sm-4">
+              <div class="guest-review__info">
+                <div class="guest-review__score">
                   <span>9.6</span>
                 </div>
-                <div class="guest-review-info-name ">
-                  <span><span class="flag flag-za "></span><strong>Lana</strong> from United States</span>
+                <div>
+                  <span><span class="flag flag-za"></span><strong>Lana</strong> from United States</span>
                 </div>
-                <div class="guest-review-info-traveler-type ">
-                  <span><i class="fa fa-suitcase " aria-hidden="true "></i> Solo Traveler</span>
+                <div>
+                  <span><i class="fa fa-suitcase" aria-hidden="true"></i> Solo Traveler</span>
                 </div>
-                <div class="guest-review-info-room-type ">
-                  <span><i class="fa fa-bed " aria-hidden="true "></i> Orchard Suite</span>
+                <div>
+                  <span><i class="fa fa-bed" aria-hidden="true"></i> Orchard Suite</span>
                 </div>
-                <div class="guest-review-info-stay-detail ">
-                  <span><i class="fa fa-calendar-o " aria-hidden="true "></i> Stayed 1 night in August 2017</span>
+                <div>
+                  <span><i class="fa fa-calendar-o" aria-hidden="true"></i> Stayed 1 night in August 2017</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-8 ">
-              <div class="guest-review-comment clearfix ">
-                <div class="guest-review-comment-title ">
-                  <span>"No words "</span>
+            <div class="col-xs-12 col-sm-8">
+              <div class="guest-review__comment">
+                <div class="guest-review__comment-title">
+                  <span>"No words"</span>
                 </div>
-                <div class="guest-review-comment-text ">
+                <div class="guest-review__comment-text">
                   <span>Excellent beyond belief</span>
                 </div>
-                <div class="guest-review-comment-date ">
+                <div class="guest-review__comment-date">
                   <span>Reviewed August 20, 2017</span>
                 </div>
               </div>
@@ -474,36 +466,36 @@
           <!-- /guest review card -->
 
           <!-- guest review card -->
-          <div class="guest-review-card clearfix ">
-            <div class="col-xs-12 col-sm-4 ">
-              <div class="guest-review-info ">
-                <div class="guest-review-info-score ">
+          <div class="guest-review__card">
+            <div class="col-xs-12 col-sm-4">
+              <div class="guest-review__info">
+                <div class="guest-review__score">
                   <span>8.8</span>
                 </div>
-                <div class="guest-review-info-name ">
-                  <span><span class="flag flag-us "></span><strong>Alan</strong> from South Africa</span>
+                <div>
+                  <span><span class="flag flag-us"></span><strong>Alan</strong> from South Africa</span>
                 </div>
-                <div class="guest-review-info-traveler-type ">
-                  <span><i class="fa fa-suitcase " aria-hidden="true "></i> Couple</span>
+                <div>
+                  <span><i class="fa fa-suitcase" aria-hidden="true"></i> Couple</span>
                 </div>
-                <div class="guest-review-info-room-type ">
-                  <span><i class="fa fa-bed " aria-hidden="true "></i> Sande Suite</span>
+                <div>
+                  <span><i class="fa fa-bed" aria-hidden="true"></i> Sande Suite</span>
                 </div>
-                <div class="guest-review-info-stay-detail ">
-                  <span><i class="fa fa-calendar-o " aria-hidden="true "></i> Stayed 1 night in August 2017</span>
+                <div>
+                  <span><i class="fa fa-calendar-o" aria-hidden="true"></i> Stayed 1 night in August 2017</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-8 ">
-              <div class="guest-review-comment ">
-                <div class="guest-review-comment-title ">
-                  <span>"Excellent "</span>
+            <div class="col-xs-12 col-sm-8">
+              <div class="guest-review__comment">
+                <div class="guest-review__comment-title">
+                  <span>"Excellent"</span>
                 </div>
-                <div class="guest-review-comment-text ">
+                <div class="guest-review__comment-text">
                   <span>Beautiful location. Bucket lists experience!</span>
                 </div>
-                <div class="guest-review-comment-date ">
+                <div class="guest-review__comment-date">
                   <span>Reviewed August 19, 2017</span>
                 </div>
               </div>
@@ -512,37 +504,37 @@
           <!-- /guest review card -->
 
           <!-- guest review card -->
-          <div class="guest-review-card clearfix ">
-            <div class="col-xs-12 col-sm-4 ">
-              <div class="guest-review-info ">
-                <div class="guest-review-info-score ">
+          <div class="guest-review__card">
+            <div class="col-xs-12 col-sm-4">
+              <div class="guest-review__info">
+                <div class="guest-review__score">
                   <span>9.6</span>
                 </div>
-                <div class="guest-review-info-name ">
-                  <span><span class="flag flag-id "></span><strong>Irene</strong> from Indonesia</span>
+                <div>
+                  <span><span class="flag flag-id"></span><strong>Irene</strong> from Indonesia</span>
                 </div>
-                <div class="guest-review-info-traveler-type ">
-                  <span><i class="fa fa-suitcase " aria-hidden="true "></i> Business Traveler</span>
+                <div>
+                  <span><i class="fa fa-suitcase" aria-hidden="true"></i> Business Traveler</span>
                 </div>
-                <div class="guest-review-info-room-type ">
-                  <span><i class="fa fa-bed " aria-hidden="true "></i> Premier King Garden View</span>
+                <div>
+                  <span><i class="fa fa-bed" aria-hidden="true"></i> Premier King Garden View</span>
                 </div>
-                <div class="guest-review-info-stay-detail ">
-                  <span><i class="fa fa-calendar-o " aria-hidden="true "></i> Stayed 2 nights in August 2017</span>
+                <div>
+                  <span><i class="fa fa-calendar-o" aria-hidden="true"></i> Stayed 2 nights in August 2017</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-8 ">
-              <div class="guest-review-comment ">
-                <div class="guest-review-comment-title ">
-                  <span>"Amazing Experience "</span>
+            <div class="col-xs-12 col-sm-8">
+              <div class="guest-review__comment">
+                <div class="guest-review__comment-title">
+                  <span>"Amazing Experience"</span>
                 </div>
-                <div class="guest-review-comment-text ">
-                  <span class=" ">We were here only for 2 nights stay, but it was well worth it! We queued up in wrong line to check in, as we didn't know which tower we will be staying at, and stuff was helpful and they even gave us free upgrade. We had HUGE apartment few floors below Infinity Pool with the same view. And the View was AMAZING! we stayed up almost all night just looking sity skyline and admiring it! Probably the best experience in Singapore, it's a must see place, well worth the money.
+                <div class="guest-review__comment-text">
+                  <span class="">We were here only for 2 nights stay, but it was well worth it! We queued up in wrong line to check in, as we didn't know which tower we will be staying at, and stuff was helpful and they even gave us free upgrade. We had HUGE apartment few floors below Infinity Pool with the same view. And the View was AMAZING! we stayed up almost all night just looking sity skyline and admiring it! Probably the best experience in Singapore, it's a must see place, well worth the money.
                     </span>
                 </div>
-                <div class="guest-review-comment-date ">
+                <div class="guest-review__comment-date">
                   <span>Reviewed August 09, 2017</span>
                 </div>
               </div>
@@ -551,36 +543,36 @@
           <!-- /guest review card -->
 
           <!-- guest review card -->
-          <div class="guest-review-card ">
-            <div class="col-xs-12 col-sm-4 ">
-              <div class="guest-review-info ">
-                <div class="guest-review-info-score ">
+          <div class="guest-review__card">
+            <div class="col-xs-12 col-sm-4">
+              <div class="guest-review__info">
+                <div class="guest-review__score">
                   <span>9.6</span>
                 </div>
-                <div class="guest-review-info-name ">
-                  <span><span class="flag flag-it "></span><strong>Monica</strong> from Italy</span>
+                <div>
+                  <span><span class="flag flag-it"></span><strong>Monica</strong> from Italy</span>
                 </div>
-                <div class="guest-review-info-traveler-type ">
-                  <span><i class="fa fa-suitcase " aria-hidden="true "></i> Family with young children</span>
+                <div>
+                  <span><i class="fa fa-suitcase" aria-hidden="true"></i> Family with young children</span>
                 </div>
-                <div class="guest-review-info-room-type ">
-                  <span><i class="fa fa-bed " aria-hidden="true "></i> Premier Twin Garden View</span>
+                <div>
+                  <span><i class="fa fa-bed" aria-hidden="true"></i> Premier Twin Garden View</span>
                 </div>
-                <div class="guest-review-info-stay-detail ">
-                  <span><i class="fa fa-calendar-o " aria-hidden="true "></i> Stayed 1 night in August 2017</span>
+                <div>
+                  <span><i class="fa fa-calendar-o" aria-hidden="true"></i> Stayed 1 night in August 2017</span>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-12 col-sm-8 ">
-              <div class="guest-review-comment ">
-                <div class="guest-review-comment-title ">
-                  <span>"Fantastic "</span>
+            <div class="col-xs-12 col-sm-8">
+              <div class="guest-review__comment">
+                <div class="guest-review__comment-title">
+                  <span>"Fantastic"</span>
                 </div>
-                <div class="guest-review-comment-text ">
+                <div class="guest-review__comment-text">
                   <span>Infinity pool is something unique</span>
                 </div>
-                <div class="guest-review-comment-date ">
+                <div class="guest-review__comment-date">
                   <span>Reviewed August 13, 2017</span>
                 </div>
               </div>
@@ -592,98 +584,303 @@
       </div>
     </section>
     <!-- /guest reviews -->
+
+    <!-- Nearby attractions -->
+
   </main>
 
   <!--  Footer  -->
-  <footer>
-    <div class="container ">
+  <footer class="footer">
+    <div class="container">
 
       <div class="row ">
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="index.html "><strong>Home</strong></a></li>
-            <li><a href="index.html ">Tesimonials</a></li>
-            <li><a href="index.html ">Newsletter</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="index.html"><strong class="footer__list-title">Home</strong></a></li>
+            <li><a href="index.html">Tesimonials</a></li>
+            <li><a href="index.html">Newsletter</a></li>
+
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="about.html "><strong>About</strong></a></li>
-            <li><a href="about.html ">Statistics</a></li>
-            <li><a href="about.html ">Leadership</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="about.html"><strong class="footer__list-title">About</strong></a></li>
+            <li><a href="about.html">Statistics</a></li>
+            <li><a href="about.html">Leadership</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="services.html "><strong>Services</strong></a></li>
-            <li><a href="services.html ">How it works</a></li>
-            <li><a href="services.html ">Price</a></li>
-            <li><a href="services.html ">FAQ</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="services.html"><strong class="footer__list-title">Services</strong></a></li>
+            <li><a href="services.htm ">How it works</a></li>
+            <li><a href="services.html">Price</a></li>
+            <li><a href="services.html">FAQ</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-3 col-xs-6 ">
-          <ul class="footer-nav ">
-            <li><a href="contact.html "><strong>Contact</strong></a></li>
-            <li><a href="contact.html "> +65 7461 6556</a></li>
-            <li><a href="contact.html ">Location</a></li>
-            <li><a href="contact.html ">Contact form</a></li>
+        <div class="col-sm-3 col-xs-6">
+          <ul class="footer__nav">
+            <li><a href="contact.html"><strong class="footer__list-title">Contact</strong></a></li>
+            <li><a href="contact.html"> +65 7461 6556</a></li>
+            <li><a href="contact.html">Location</a></li>
+            <li><a href="contact.html">Contact form</a></li>
           </ul>
         </div>
       </div>
 
       <hr>
 
-      <div class="row ">
-        <div class="col-md-12 ">
-          <ul class="footer-social ta-center ">
-            <li><a href="https://www.facebook.com/ "><i class="fa fa-facebook-official " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.instagram.com "><i class="fa fa-instagram " aria-hidden="true "></i></a></li>
-            <li><a href="https://twitter.com/ "><i class="fa fa-twitter " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.snapchat.com/ "><i class="fa fa-snapchat-ghost " aria-hidden="true "></i></a></li>
-            <li><a href="https://www.linkedin.com/ "><i class="fa fa-linkedin-square " aria-hidden="true "></i></a></li>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="footer__social-icons">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden ="true"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden ="true"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.snapchat.com/"><i class="fa fa-snapchat-ghost" aria-hidden= "true"></i></a></li>
+            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden= "true"></i></a></li>
           </ul>
         </div>
       </div>
 
-      <div class="row ">
-        <p class="ta-center ">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
+      <div class="row">
+        <p class="footer__copyright">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
       </div>
 
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin=" anonymous "></script>
-  <script src="js/main.js "></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfA4kDCyNzNLJJFanuaWlbwWzPSxMAXL4&callback=initMap"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="temp/js/main.js"></script>
   <script>
-    // Show more Button
-    (function () {
+    
+    // Map overlay
+    var mapTrigger = document.getElementById('seeMap');
+    var mapOverlay = document.querySelector('.directions-map-overlay');
+    var mapClose = document.querySelector('.directions-map-close i');
+    var body = window.document.body;
 
-      var showMoreBtns = document.querySelectorAll('.show-more-btn');
 
-      showMoreBtns.forEach(function (btn) {
+    mapTrigger.addEventListener('click', openMap);
+    mapClose.addEventListener('click', closeMap);
+    body.addEventListener('keyup', keyCloseMap);
 
-        btn.addEventListener('click', function () {
-          var showMoreContent = btn.previousElementSibling;
-          var shouldOpen = !showMoreContent.classList.contains('show-more-open');
 
-          if (shouldOpen) {
-            showMoreContent.classList.add('show-more-open');
-            btn.innerHTML = '<span>Show less</span> <i class="fa fa-caret-up" aria-hidden="true"></i>';
-          } else {
-            showMoreContent.classList.remove('show-more-open');
-            btn.innerHTML = '<span>Show more</span> <i class="fa fa-caret-down" aria-hidden="true"></i>';
-          }
+    function openMap() {
+      mapOverlay.style.visibility = "visible";
+      body.style.overflow = "hidden";
+    }
+
+    function closeMap() {
+      mapOverlay.style.visibility = "hidden";
+      body.style.overflow = "initial";
+      document.getElementById('distance').innerHTML = "";
+      document.querySelector('[data-disabled="attractions"]').removeAttribute('disabled');
+      document.querySelector('[data-disabled="mode"]').removeAttribute('disabled');
+      document.getElementById('end').selectedIndex = "0";
+      document.getElementById('mode').selectedIndex = "0";
+      initMap();
+    }
+
+    // Close map with esc key
+    function keyCloseMap(e) {
+      if (e.keyCode === 27) {
+        closeMap()
+      }
+    }
+
+
+    function initMap() {
+      var directionsService = new google.maps.DirectionsService;
+      var directionsDisplay = new google.maps.DirectionsRenderer;
+      var map = new google.maps.Map(document.getElementById('directionsMap'), {
+        zoom: 17,
+        center: { lat: 1.2836, lng: 103.8604 }
+      });
+      directionsDisplay.setMap(map);
+
+
+      var onChangeHandler = function () {
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        var disableOption = document.querySelector('[data-disabled="attractions"]');
+        disableOption.setAttribute('disabled', true);
+      };
+      document.getElementById('end').addEventListener('change', onChangeHandler);
+
+      var travelMode = function () {
+        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        var disableOption = document.querySelector('[data-disabled="mode"]');
+        disableOption.setAttribute('disabled', true);
+      };
+      document.getElementById('mode').addEventListener('change', travelMode);
+
+      // array of markers 
+      var markers = [{
+        coords: {
+          lat: 1.283559,
+          lng: 103.860767
+        },
+        content: '<div class="info-window"><h3>Marina Bay Sands</h3><p>10 Bayfront Ave<br>2 Singapore 018956</p><img src="assets/img/destinations/marina-bay.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2816,
+          lng: 103.8636
+        },
+        content: '<div class="info-window"><h3>Gardens by the Bay</h3><p>18 Marina Gardens Dr<br>Singapore 018953</p><img src="assets/img/hotels/Marina-bay-sands/gardens-by-the-bay.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.249736,
+          lng: 103.832040
+        },
+        content: '<div class="info-window"><h3>Sentosa</h3><p>Sentosa Island</p><img src="assets/img/hotels/Marina-bay-sands/sentosa.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2540,
+          lng: 103.8238
+        },
+        content: '<div class="info-window"><h3>Universal Studios Singapore</h3><p>8 Sentosa Gateway<br>Singapore 098269</p><img src="assets/img/hotels/Marina-bay-sands/universal-studios.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.4043,
+          lng: 103.7930
+        },
+        content: '<div class="info-window"><h3>Singapore Zoo</h3><p>80 Mandai Lake Rd<br>Singapore 729826</p><img src="assets/img/hotels/Marina-bay-sands/zoo.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.3138,
+          lng: 103.8159
+        },
+        content: '<div class="info-window"><h3>Singapore Botanic Gardens</h3><p>1 Cluny Rd<br>Singapore 259569</p><img src="assets/img/hotels/Marina-bay-sands/botanic-gardens.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2893,
+          lng: 103.8631
+        },
+        content: '<div class="info-window"><h3>Singapore Flyer</h3><p>30 Raffles Ave<br>Singapore 039803</p><img src="assets/img/hotels/Marina-bay-sands/singapore-flyer.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.2868,
+          lng: 103.8545
+        },
+        content: '<div class="info-window"><h3>Merlion Park</h3><p>Singapore</p><img src="assets/img/hotels/Marina-bay-sands/merlion.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.3187,
+          lng: 103.7064
+        },
+        content: '<div class="info-window"><h3>Jurong Bird Park</h3><p>2 Jurong Hill<br>Singapore 628925</p><img src="assets/img/hotels/Marina-bay-sands/jurong-bird-park.jpg"></img></div>'
+      },
+      {
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',
+        coords: {
+          lat: 1.306458,
+          lng: 103.929589
+        },
+        content: '<div class="info-window"><h3>East Coast Park</h3><p> E Coast Park Service Rd<br> Singapore 449876</p><img src="assets/img/hotels/Marina-bay-sands/ecp.jpg"></img></div>'
+      }];
+
+      // loop through markers
+      for (var i = 0; i < markers.length; i++) {
+        addMarker(markers[i]);
+      }
+
+      var currWindow = false;
+
+      //  Add marker function
+      function addMarker(props) {
+
+        var marker = new google.maps.Marker({
+          position: props.coords,
+          map: map,
+          icon: props.icon
         });
 
+        // check content 
+        if (props.content) {
+          var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          });
+
+
+          marker.addListener('click', function (e) {
+            // check if infoWindow is open
+            if (currWindow) {
+              currWindow.close();
+            }
+            currWindow = infoWindow;
+            infoWindow.open(map, marker);
+            map.setZoom(17);
+            map.setCenter(marker.getPosition());
+          });
+
+          // close infowindows if the map is clicked
+          map.addListener('click', function (e) {
+            if (e.target !== marker) {
+              infoWindow.close();
+            }
+          });
+
+          // Close infowindows when route is chosen
+          var dropDown = document.getElementById('end');
+          dropDown.addEventListener('change', closeWindows);
+          // Close infowindows if travel mode is selected
+          var travelDropDown = document.getElementById('mode');
+          travelDropDown.addEventListener('change', closeWindows);
+
+          function closeWindows() {
+            infoWindow.close();
+          }
+ 
+
+
+          var hotelBtn = document.getElementById('hotelMapBtn');
+          hotelBtn.addEventListener('click', goToHotel);
+          // Center on hotel and open infowindow when clicked
+          function goToHotel(e) {
+            e.preventDefault();
+            map.setZoom(17);
+            map.setCenter(markers[0].coords);
+          }
+        }
+      }
+
+    }
+
+    function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+      var selectedMode = document.getElementById('mode').value;
+      directionsService.route({
+        origin: { lat: 1.2836, lng: 103.8604 },
+        destination: document.getElementById('end').value,
+        travelMode: google.maps.TravelMode[selectedMode]
+      }, function (response, status) {
+        if (status === 'OK') {
+          directionsDisplay.setDirections(response);
+          document.getElementById('distance').innerHTML = response.routes[0].legs[0].distance.text;
+        } else {
+          console.log('Directions request failed due to ' + status);
+        }
       });
 
-    })();
+    }
   </script>
-
 </body>
 
 </html>
