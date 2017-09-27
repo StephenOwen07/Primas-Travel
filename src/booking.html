@@ -13,41 +13,34 @@
     crossorigin="anonymous">
 
   <!-- stylesheets  -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
-  <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/hotels.css">
-  <link rel="stylesheet" href="css/media-queries.css">
+  <link href="assets/styles/boostrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/jquery-ui/jquery-ui.theme.css">
+  <link rel="stylesheet" href="temp/styles/main.css">
 </head>
 
 <body>
 
-  <header class="header-default bg-white clearfix">
+  <header class="header header--solid">
     <div class="container-fluid">
 
-      <a class="logo ta-center float-left" href="index.html"><span>PT</span> PrimasTravel</a>
+      <a class="header__logo header__logo--inverse" href="index.html"><span>PT</span> PrimasTravel</a>
 
-      <!--  preload spinner  -->
-      <div id="preload">
-        <div class="spinner"></div>
-      </div>
-      <nav class="overlay">
+      <nav id="primary-nav__mobile" class="primary-nav primary-nav--inverse">
 
-        <a class="nav--close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+        <a class="primary-nav__close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
 
-        <ul class="overlay-content ta-center float-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="destination.html">Destination</a></li>
-          <li><a href="contact.html">Contact</a>
+        <ul class="primary-nav__mobile-content">
+          <li><a class="primary-nav__link primary-nav__link--grey" href="index.html">Home</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="about.html">About</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="services.html">Services</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="destination.html">Destination</a></li>
+          <li><a class="primary-nav__link primary-nav__link--grey" href="contact.html">Contact</a>
           </li>
         </ul>
 
       </nav>
-      <a class="nav--open" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <a class="primary-nav__open-btn primary-nav__open-btn--grey" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
 
     </div>
   </header>
@@ -55,18 +48,25 @@
   <main>
 
     <!-- booking -->
-    <section class="booking">
+    <section class="booking page-section page-section--grey">
+
+      <!--  preload spinner  -->
+      <div id="preloader">
+          <div class="spinner"></div>
+        </div>
+  
       <div class="container">
         <div class="row">
+
           <!-- scroll button -->
-          <button class="scroll-btn">
-          <i class="fa fa-chevron-up scroll-btn__icon" aria-hidden="true"></i>
-        </button>
+          <button class="scroll-top-btn">
+            <i class="fa fa-chevron-up scroll-top-btn__icon" aria-hidden="true"></i>
+          </button>
 
 
           <div class="col-sm-8 col-sm-offset-2">
-            <h1>Booking & contact</h1>
-            <div class="booking-form-card">
+            <h1 class="booking__title">Booking & contact</h1>
+            <div class="booking__card">
               <form class="form-group" id="bookingForm" name="bookingForm">
 
                 <label>First name
@@ -100,8 +100,8 @@
                   <input class="datepicker" id="check-out" type="text" name="date" value="">
                 </label>
 
-                <div class="booking-form-card-room-details">
-                  <div class="booking-form-card-room-details-guests">
+                <div class="booking__details">
+                  <div>
                     <span> <i class="fa fa-male" aria-hidden="true"></i> Guests</span>
                     <select name="" id="guests">
                       <option value="1">1</option>
@@ -112,7 +112,7 @@
                       <option value="6">6</option>
                   </select>
                   </div>
-                  <div class="booking-form-card-room-details-rooms">
+                  <div>
                     <span><i class="fa fa-bed" aria-hidden="true"></i>
                       Rooms</span>
                     <select name="" id="rooms">
@@ -129,11 +129,11 @@
                   </div>
                 </div>
 
-                <div class="booking-form-card-comment">
-                  <span class="booking-form-comment">Please describe any extra needs</span>
+                <div class="booking__comment">
+                  <span>Please describe any extra needs</span>
                   <textarea id="extraNeeds" rows="10" placeholder="Comments"></textarea>
                 </div>
-                <input id="myBtn" type="submit" value="Book" class="button button-primary button-submit">
+                <input id="myBtn" type="submit" value="Book" class="button">
               </form>
             </div>
           </div>
@@ -168,41 +168,42 @@
   </main>
 
   <!--  Footer  -->
-  <footer>
-    <div class="container ">
+  <footer class="footer">
+    <div class="container">
 
-      <div class="row ">
+      <div class="row">
         <div class="col-sm-3 col-xs-6">
-          <ul class="footer-nav ">
-            <li><a href="index.html "><strong>Home</strong></a></li>
-            <li><a href="index.html ">Tesimonials</a></li>
-            <li><a href="index.html ">Newsletter</a></li>
+          <ul class="footer__nav">
+            <li><a href="index.html"><strong class="footer__list-title">Home</strong></a></li>
+            <li><a href="index.html">Tesimonials</a></li>
+            <li><a href="index.html">Newsletter</a></li>
+
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <ul class="footer-nav ">
-            <li><a href="about.html "><strong>About</strong></a></li>
-            <li><a href="about.html ">Statistics</a></li>
-            <li><a href="about.html ">Leadership</a></li>
+          <ul class="footer__nav">
+            <li><a href="about.html"><strong class="footer__list-title">About</strong></a></li>
+            <li><a href="about.html">Statistics</a></li>
+            <li><a href="about.html">Leadership</a></li>
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <ul class="footer-nav ">
-            <li><a href="services.html "><strong>Services</strong></a></li>
-            <li><a href="services.html ">How it works</a></li>
-            <li><a href="services.html ">Price</a></li>
-            <li><a href="services.html ">FAQ</a></li>
+          <ul class="footer__nav">
+            <li><a href="services.html"><strong class="footer__list-title">Services</strong></a></li>
+            <li><a href="services.html">How it works</a></li>
+            <li><a href="services.html">Price</a></li>
+            <li><a href="services.html">FAQ</a></li>
           </ul>
         </div>
 
         <div class="col-sm-3 col-xs-6">
-          <ul class="footer-nav ">
-            <li><a href="contact.html "><strong>Contact</strong></a></li>
+          <ul class="footer__nav">
+            <li><a href="contact.html"><strong class="footer__list-title">Contact</strong></a></li>
             <li><a href="contact.html"> +65 7461 6556</a></li>
-            <li><a href="contact.html ">Location</a></li>
-            <li><a href="contact.html ">Contact form</a></li>
+            <li><a href="contact.html">Location</a></li>
+            <li><a href="contact.html">Contact form</a></li>
           </ul>
         </div>
       </div>
@@ -211,175 +212,60 @@
 
       <div class="row">
         <div class="col-md-12">
-          <ul class="footer-social ta-center">
-            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <ul class="footer__social-icons">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden ="true"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden ="true"></i></a></li>
             <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.snapchat.com/"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.snapchat.com/"><i class="fa fa-snapchat-ghost" aria-hidden= "true"></i></a></li>
+            <li><a href="https://www.linkedin.com "><i class="fa fa-linkedin-square" aria-hidden= "true"></i></a></li>
           </ul>
         </div>
       </div>
 
       <div class="row">
-        <p class="ta-center">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
+        <p class="footer__copyright">Copyright &copy; 2017 by Primas Travel. All rights reserved.</p>
       </div>
 
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-  <script src="jquery-ui/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/jquery-ui/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/destination.js"></script>
+  <script src="temp/js/main.js"></script>
   <script>
-    $(function () {
-      // country autocomplete 
-      var availableTags = [
-        "China",
-        "India",
-        "United States",
-        "Indonesia",
-        "Brazil",
-        "Japan",
-        "Germany",
-        "Russia",
-        "United Kingdom",
-        "France",
-        "Mexico",
-        "Italy",
-        "South Korea",
-        "Canada",
-        "Spain",
-        "Turkey",
-        "Australia",
-        "Iran",
-        "Saudi Arabia",
-        "Taiwan",
-        "Poland",
-        "Argentina",
-        "Netherlands",
-        "South Africa",
-        "Thailand",
-        "Singapore",
-        "Pakistan",
-        "Malaysia",
-        "Hong Kong",
-        "Vietnam",
-        "Nigeria",
-        "Colombia",
-        "Portugal",
-        "Cambodia"
-      ];
-      $("#tags").autocomplete({
-        source: availableTags
-      });
+       // datepicker 
+       var $tomorrowsDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
-      // jquery validate
-
-      $.validator.setDefaults({
-        highlight: function (element) {
-          $(element).closest('.required').addClass('has-error');
-        },
-        unhighlight: function (element) {
-          $(element).closest('.required').removeClass('has-error').addClass('valid');
-        },
-      })
-
-      $('#bookingForm').validate({
-        rules: {
-          firstname: "required",
-          lastname: "required",
-          country: "required",
-
-          phone: {
-            required: true,
-            digits: true
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          reEnterEmail: {
-            required: true,
-            email: true,
-            equalTo: "#email"
-          }
-        },
-        messages: {
-          firstname: "Please enter your firstname",
-          lastname: "Please enter your lastname",
-          email: "Please enter a valid email",
-          verifyEmail: "Please enter a matching email",
-          phone: "Please enter your phone number",
-          country: "Please enter your country"
-        },
-        submitHandler: function (form) {
-          formModal.style.visibility = "visible";
-          body.style.overflow = "hidden";
-
-          var firstName = document.getElementById('firstName').value;
-          var lastName = document.getElementById('lastName').value;
-          var email = document.getElementById('email').value;
-          var phone = document.getElementById('phone').value;
-          var country = document.getElementById('tags').value;
-          var checkIn = document.getElementById('check-in').value;
-          var checkOut = document.getElementById('check-out').value;
-          var guests = document.getElementById('guests').value;
-          var rooms = document.getElementById('rooms').value;
-          var extraNeeds = document.getElementById('extraNeeds').value;
-
-
-
-          document.getElementById('formDisplay').innerHTML =
-            "<strong>First name: </strong>" + firstName +
-            "<br><strong>Last name: </strong>" + lastName +
-            "<br><strong>Email: </strong>" + email +
-            "<br><strong>Phone: </strong>" + phone +
-            "<br><strong>Country: </strong>" + country +
-            "<br><br><strong>Check-in date: </strong>" + checkIn +
-            "<br><strong>Check-out date: </strong>" + checkOut +
-            "<br><strong>Guests: </strong>" + guests +
-            "<br><strong>Rooms: </strong>" + rooms +
-            "<br><br><strong>Extra Needs: </strong>" + extraNeeds;
-
-          return false;
-
-        }
-      });
-
-    });
-
-    var formModal = document.getElementById('myModal');
-    var modalContent = document.querySelector('.modal-content');
-    var closeModalBtn = document.querySelector('span.close');
-    var bookingSummary = document.getElementById('formDisplay');
-    var body = window.document.body;
-
-    closeModalBtn.addEventListener('click', function () {
-      closeBookingModal();
-    });
-
-    formModal.addEventListener('click', function (e) {
-      if (e.target !== modalContent && e.target !== bookingSummary) {
-        closeBookingModal();
-      }
-    });
-
-
-    body.addEventListener('keyup', function (e) {
-      if (e.keyCode === 27) {
-        closeBookingModal();
-      }
-    });
-
-    function closeBookingModal() {
-      formModal.style.visibility = "hidden";
-      body.style.overflow = "initial";
-      body.scrollTop = 0;
+  $('#check-in').datepicker({
+    dateFormat: "dd-M-yy",
+    minDate: 0,
+    onSelect: function (date) {
+      var date2 = $('#check-in').datepicker('getDate');
+      date2.setDate(date2.getDate() + 1);
+      $('#check-out').datepicker('setDate', date2);
+      //sets minDate to dt1 date + 1
+      $('#check-out').datepicker('option', 'minDate', date2);
     }
+  });
+
+  $('#check-out').datepicker({
+    dateFormat: "dd-M-yy",
+    onClose: function () {
+      var dt1 = $('#check-in').datepicker('getDate');
+      console.log(dt1);
+      var dt2 = $('#check-out').datepicker('getDate');
+      if (dt2 <= dt1) {
+        var minDate = $('#check-out').datepicker('option', 'minDate');
+        $('#check-out').datepicker('setDate', minDate);
+      }
+    }
+  });
+
+  // set checkout placeholder = current date
+  $('#check-in').attr('placeholder', Date());
+  // set checkout placeholder = tomorrows date
+  $('#check-out').attr('placeholder', $tomorrowsDate);
   </script>
 </body>
 
