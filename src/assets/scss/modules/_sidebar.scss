@@ -6,6 +6,7 @@
   }
   input {
     font-weight: 400;
+    font-size: 1em;
   }
 
   span {
@@ -172,7 +173,7 @@
 
     input {
       position: relative;
-      top:4px;
+      bottom: 0px;
     }
 
     &:hover {
@@ -180,7 +181,10 @@
     }
 
     img {
+      position: relative;
       display: inline;
+      top: 2px;
+
     }
 
     label>span {

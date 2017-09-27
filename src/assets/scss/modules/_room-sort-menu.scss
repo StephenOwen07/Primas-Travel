@@ -49,7 +49,7 @@
   &__drop-menu {
     position: absolute;
     display: none;
-    top: 52px;
+    top: 50px;
     left: 0px;
     border: 1px solid color;
     width: 100%;
@@ -73,7 +73,7 @@
     &--width {
 
       @include small{
-        width: 168px;
+        width: 171px;
       }
     }
   }

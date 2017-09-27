@@ -1018,7 +1018,8 @@ input[type="submit"] {
     .sidebar {
       margin-bottom: 0; } }
   .sidebar input {
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 1em; }
   .sidebar span {
     font-size: 1.1em;
     font-weight: 400; }
@@ -1128,11 +1129,13 @@ input[type="submit"] {
       padding: 0; } }
   .filter__item input {
     position: relative;
-    top: 4px; }
+    bottom: 0px; }
   .filter__item:hover {
     background: #E9EAEA; }
   .filter__item img {
-    display: inline; }
+    position: relative;
+    display: inline;
+    top: 2px; }
   .filter__item label > span {
     padding-left: 10px; }
 
@@ -1411,7 +1414,7 @@ input[type="submit"] {
   .room-sort-menu__drop-menu {
     position: absolute;
     display: none;
-    top: 52px;
+    top: 50px;
     left: 0px;
     border: 1px solid color;
     width: 100%;
@@ -1428,7 +1431,7 @@ input[type="submit"] {
         background: #a31d24; }
     @media (min-width: 576px) {
       .room-sort-menu__drop-menu--width {
-        width: 168px; } }
+        width: 171px; } }
   .room-sort-menu .fa {
     margin-left: 5px; }
 
