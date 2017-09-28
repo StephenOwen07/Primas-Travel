@@ -8,18 +8,18 @@ var gulp = require("gulp"),
               Styles tasks
  *******************************************/
 gulp.task("sass", function () {
-  return gulp.src("src/assets/scss/**/*.scss")
+  return gulp.src("./src/assets/scss/**/*.scss")
     .pipe(sass())
 
     .on("error", function (errorInfo) {
       console.log(errorInfo.toString());
-      this.emit("end");
+      this.emit("end"); 
     })
     .pipe(autoprefixer("last 2 versions"))
-    .pipe(gulp.dest("src/temp/styles"))
+    .pipe(gulp.dest("./src/temp/styles"))
     .pipe(browserSync.stream());
 });
-
+   
 
 /******************************************** 
               HTML tasks 
@@ -49,14 +49,14 @@ gulp.task("watch", function () {
     }
   });
   // Watch html
-  gulp.watch("src/*.html", function () {
+  gulp.watch("./src/*.html", function () {
     browserSync.reload();
   });
   // Watch styles
-  gulp.watch("src/assets/scss/**/*.scss", ["sass"]);
+  gulp.watch("./src/assets/scss/**/*.scss", ["sass"]);
 
   // Watch js
-  gulp.watch("src/assets/js/**/*.js", ["scriptsRefresh"]);
+  gulp.watch("./src/assets/js/**/*.js", ["scriptsRefresh"]);
 });
 
 gulp.task("scriptsRefresh", ["scripts"], function () {

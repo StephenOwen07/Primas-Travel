@@ -6,12 +6,12 @@
   text-align: center;
 
   @include medium {
-    text-align: left;
+    text-align: left;  
   }
-
+ 
   &__nav {
     margin-bottom: 40px;
-  }
+  }  
 
   &__list-title {
     text-transform: uppercase;

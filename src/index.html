@@ -14,7 +14,9 @@
     crossorigin="anonymous">
 
   <!-- stylesheets  -->
-  <link href="assets/styles/boostrap.min.css" rel="stylesheet">
+  <link href="temp/vendor/boostrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="temp/vendor/slick/slick.css">
+  <link rel="stylesheet" href="temp/vendor/slick/slick-theme.css">
   <link rel="stylesheet" href="temp/styles/main.css">
 </head>
 
@@ -44,20 +46,34 @@
     </div>
   </header>
 
-  <!-- hero -->
-  <section class="home-hero">
-    <div class="container-fluid">
-      <div class="home-hero__text-content">
-
-        <h1 class="home-hero__title">Your Journey Begins</h1>
-        <h2 class="home-hero__subtitle">Primas Travel will help you to create a once in a life time travel adventure</h2>
-        <a class="button" href="destination.html">View destinations</a>
-
+   <!-- carousell -->
+   <div class="carousell">
+      
+    <div class="carousell__img carousell__img-1">
+      <div class="carousell__text-content">
+        <div class="carousell__text carousell__text--white">
+          <h2 class=" carousell__text">A mystical adventure</h2>
+        </div>
       </div>
     </div>
-  </section>
+    <div class="carousell__img carousell__img-2">
+      <div class="carousell__text-content">
+        <div class="carousell__text carousell__text--white">
+          <h2 class=" carousell__text">Experience true nature</h2>
+        </div>
+      </div>
+    </div>
+    <div class="carousell__img carousell__img-3">
+      <div class="carousell__text-content">
+        <div class="carousell__text carousell__text--white">
+          <h2 class=" carousell__text">Top urban destinations</h2>
+        </div>
+      </div>
+    </div>
+   
+  </div>
 
-  <main>`
+  <main>
 
     <!--  Intro  -->
     <section class="page-section home-intro">
@@ -459,7 +475,23 @@
 
   <!--  scripts  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="temp/vendor/slick/slick.min.js"></script>
   <script src="temp/js/main.js"></script>
+  <script>
+      $(document).ready(function () {
+        // Carousell
+        $('.carousell').slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 3000,
+          fade: true,
+          arrows: false,
+          dots: true,
+          dotsClass: 'slick-dots',
+          pauseOnHover: false
+        });
+      });
+    </script>
 
 </body>
 

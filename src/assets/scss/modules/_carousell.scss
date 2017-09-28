@@ -3,29 +3,25 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-
-  &__img {
+ 
+  &__img {  
     height: 60vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    &-1 {
+ 
+    &-1 {  
       background-image: url("../../assets/img/services/slider-beach-compressor.jpg");
       background-position: center 100%;
     }
-
+  
     &-2{
       background-image: url("../../assets/img/services/slider-safari-compressor.jpeg");
       background-position: center 70%;
     }
-
+ 
     &-3{
       background-image: url("../../assets/img/services/slider-japan-compressor.jpeg");
-    }
-
-    &-4{
-      background-image: url("../../assets/img/services/slider-venice-compressor.jpg");
     }
   }
 
@@ -40,10 +36,10 @@
 
   &__text {
     text-shadow: 1px 1px 10px #000;
-    line-height: 1.2;
+    line-height: 1.2;      
     font-weight: 700;
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.5em;    
+    text-align: center; 
 
     @include medium {
       font-size: 1.8em;
