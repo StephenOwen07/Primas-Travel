@@ -3,26 +3,36 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+
  
   &__img {  
-    height: 60vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
  
     &-1 {  
-      background-image: url("../../assets/img/services/slider-beach-compressor.jpg");
-      background-position: center 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../assets/img/home/slider1.jpg");
+      
+      /*
+      @include retina {
+        background-image: url("../../assets/img/home/slider1--mobile-retina.jpg");
+      }
+*/
+
     }
   
     &-2{
-      background-image: url("../../assets/img/services/slider-safari-compressor.jpeg");
-      background-position: center 70%;
+      background-image: url("../../assets/img/home/slider2.jpg");
     }
- 
+    
     &-3{
-      background-image: url("../../assets/img/services/slider-japan-compressor.jpeg");
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/home/slider3.jpg");
     }
+  } 
+
+  &__text--white {
+    color: #fff;
   }
 
   &__text-content {
@@ -32,26 +42,48 @@
     width:80%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    &--align-left {
+      text-align: left;
+    }
   }
-
-  &__text {
-    text-shadow: 1px 1px 10px #000;
-    line-height: 1.2;      
+  
+  &__title {    
     font-weight: 700;
-    font-size: 1.5em;    
-    text-align: center; 
-
-    @include medium {
-      font-size: 1.8em;
+    font-size: 2em;
+    
+    @include small {
+     font-size: 3em;
     }
 
-    @include large {
-      font-size: 2em; 
+    @include medium {
+      font-size: 4em;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 1em;
+
+    @include small {
+      margin: 10px;
+      font-size: 1.2em;
       
     }
 
-    &--white {
-      color: #fff;
+    @include medium {
+      font-size: 1.5em;
+    }
+  }
+
+  .button {
+    position: relative;
+    top: 50px;
+  
+    @include small {
+      padding: 15px 30px;      
     }
   }
 }
