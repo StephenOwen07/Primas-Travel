@@ -1,8 +1,8 @@
 .services-hero {
   position: relative;
-  height: 100vh;
+  height: 90vh;
   padding: 160px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(33, 120, 140, 0.3)), url("../../assets/img/home/hero-compressor.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../assets/img/services/services-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@
   &__title {
     margin-bottom: 10px;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
 
     @include small{
       font-size: 2.5em;
